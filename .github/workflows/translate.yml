@@ -1,0 +1,57 @@
+name: Translate content
+
+# When English source content changes on main, regenerate the other languages
+# and open a pull request with the updates for review. English is never touched.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "i18n/en.toml"
+      - "data/dogs/en.yaml"
+      - "config/_default/**"
+      - "scripts/translate.mjs"
+  workflow_dispatch: # allow running manually (e.g. the first baseline run)
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: translate
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - name: Translate changed source into the other languages
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Uncomment to translate with a cheaper model:
+          # TRANSLATE_MODEL: claude-sonnet-5
+        run: npm run translate
+
+      - name: Open a pull request with the updated translations
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/auto-translations
+          commit-message: "chore(i18n): update translations for changed English content"
+          title: "Update translations for changed English content"
+          body: |
+            Automated translation update.
+
+            The English source changed, so the other languages were regenerated
+            from it (machine translation via the Claude API). Review the diff —
+            you can tweak any language before merging, and hand-edits you keep
+            in a language are preserved until its English source changes again.
+          labels: translations, automated
+          delete-branch: true

@@ -107,6 +107,36 @@ content files. To **remove** one, delete its block and files.
 > ⚠️ The non-English translations were AI-generated. Have a **native speaker
 > review** each language before launch — especially the factual Crisis page.
 
+### Automatic translation
+
+Editing the **English** source and pushing to `main` automatically regenerates
+the other 12 languages via the Claude API and opens a **pull request** with the
+changes for you to review and merge (workflow: `.github/workflows/translate.yml`,
+script: `scripts/translate.mjs`). English is the source of truth and is never
+overwritten — the default language is read from `defaultContentLanguage` in
+`config/_default/hugo.toml`, nothing is hardcoded.
+
+It only regenerates a language when its **English source changes** (tracked by
+content hash in `.translation-manifest.json`) or when a target file is missing,
+so hand-polished translations survive until you actually change the English. The
+first run just records a baseline — it will **not** clobber the existing
+translations.
+
+**One-time setup:** add an `ANTHROPIC_API_KEY` repository secret
+(**Settings → Secrets and variables → Actions → New repository secret**). Cost is
+a fraction of a cent per edit, since only the changed files are translated.
+
+Run it locally too — after editing English:
+
+```bash
+npm install                 # once
+npm run translate:dry       # preview what would change
+npm run translate           # regenerate, then review with `git diff`
+```
+
+Set `TRANSLATE_MODEL=claude-sonnet-5` (env var, or uncomment it in the workflow)
+to translate with a cheaper model at roughly a third of the cost.
+
 ## Editing in the browser — Sveltia CMS
 
 The site ships with [Sveltia CMS](https://sveltiacms.app) — a free, self-hosted,

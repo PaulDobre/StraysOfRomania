@@ -1,0 +1,13 @@
+{
+  "name": "strays-of-romania-tooling",
+  "private": true,
+  "description": "Build-time tooling for the Strays of Romania Hugo site (auto-translation).",
+  "type": "module",
+  "scripts": {
+    "translate": "node scripts/translate.mjs",
+    "translate:dry": "node scripts/translate.mjs --dry-run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  }
+}

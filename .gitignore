@@ -3,6 +3,9 @@
 /resources/_gen/
 .hugo_build.lock
 
+# Node tooling (translation script)
+/node_modules/
+
 # OS / editor
 .DS_Store
 Thumbs.db
