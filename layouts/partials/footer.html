@@ -1,11 +1,12 @@
 {{- $s := site.Params.social -}}
 <footer class="site-footer">
   <div class="wrap">
+    <p class="footer-colophon">{{ T "site_tagline" }}</p>
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="{{ "/" | relLangURL }}" class="brand" aria-label="{{ site.Title }}">
           {{ partial "brand-mark.html" . }}
-          <span class="brand__text">Strays of Romania<small>{{ T "brand_sub" }}</small></span>
+          <span class="brand__text" aria-hidden="true"><span class="brand__w brand__w--pine">Strays</span><span class="brand__w brand__w--amber">Of</span><span class="brand__w brand__w--ink">Romania</span><span class="brand__tld">.org</span></span>
         </a>
         <p>{{ T "footer_brand_desc" }}</p>
         <div class="social-row">
