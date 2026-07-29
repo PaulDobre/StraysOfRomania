@@ -34,7 +34,7 @@ import crypto from "node:crypto";
 const ROOT = process.cwd();
 const MANIFEST_PATH = path.join(ROOT, ".translation-manifest.json");
 const MODEL = process.env.TRANSLATE_MODEL || "claude-opus-4-8";
-const CONCURRENCY = Number(process.env.TRANSLATE_CONCURRENCY || 5);
+const CONCURRENCY = Number(process.env.TRANSLATE_CONCURRENCY || 3);
 const MAX_TOKENS = 8192;
 const DRY_RUN = process.argv.includes("--dry-run");
 
@@ -254,7 +254,9 @@ async function main() {
 
   if (tasks.length > 0) {
     const { default: Anthropic } = await import("@anthropic-ai/sdk");
-    const client = new Anthropic(); // reads ANTHROPIC_API_KEY from env
+    // maxRetries rides out transient 429/5xx/529 (overloaded) with the SDK's
+    // exponential backoff, so a momentary API spike doesn't fail the run.
+    const client = new Anthropic({ maxRetries: 8 }); // reads ANTHROPIC_API_KEY from env
     await pool(tasks, CONCURRENCY, async ({ src, target }) => {
       try {
         const out = await translateFile(client, src._content, LANG_NAMES[target.lang] || target.lang, src.kind);

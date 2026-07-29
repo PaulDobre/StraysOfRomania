@@ -41,6 +41,10 @@ jobs:
         run: npm run translate
 
       - name: Open a pull request with the updated translations
+        # Run even if a few translations failed (e.g. transient API overload),
+        # so completed languages are captured in the PR rather than discarded.
+        # The failed ones stay flagged in the manifest and retry on the next run.
+        if: ${{ !cancelled() }}
         uses: peter-evans/create-pull-request@v6
         with:
           branch: chore/auto-translations
