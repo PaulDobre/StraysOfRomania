@@ -1,6 +1,6 @@
 ---
 title: "Contactează-ne"
-eyebrow: "Salută-ne"
-subtitle: "Adopți, oferi îngrijire temporară, sponsorizezi, faci voluntariat sau vrei doar să ne saluți? Trimite-ne un mesaj — le citim pe toate."
-description: "Ia legătura cu Strays of Romania — întrebări despre adopție, îngrijire temporară, voluntariat, media și întrebări generale."
+eyebrow: "Ia legătura cu noi"
+subtitle: "Vrei să adopți, să oferi o casă temporară, să sponsorizezi, să fii voluntar sau doar să ne saluți? Trimite-ne un mesaj — le citim pe toate."
+description: "Ia legătura cu Strays of Romania — întrebări despre adopție, adăpost temporar, voluntariat, presă și întrebări generale."
 ---

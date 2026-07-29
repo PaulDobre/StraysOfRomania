@@ -1,6 +1,6 @@
 ---
-title: "Kontakt"
-eyebrow: "Przywitaj się"
-subtitle: "Adopcja, opieka tymczasowa, wsparcie, wolontariat, a może po prostu chcesz się przywitać? Wyślij nam wiadomość — czytamy każdą."
-description: "Skontaktuj się ze Strays of Romania — zapytania o adopcję, opiekę tymczasową, wolontariat, media i pytania ogólne."
+title: "Skontaktuj się z nami"
+eyebrow: "Nawiąż kontakt"
+subtitle: "Chcesz adoptować, zostać rodziną zastępczą, sponsorować, wspierać jako wolontariusz lub po prostu się przywitać? Napisz do nas — czytamy każdą wiadomość."
+description: "Skontaktuj się ze Strays of Romania — pytania o adopcję, opiekę zastępczą, wolontariat, media oraz sprawy ogólne."
 ---

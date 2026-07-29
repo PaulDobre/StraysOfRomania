@@ -1,6 +1,6 @@
 ---
 title: "Kontaktujte nás"
-eyebrow: "Pozdravte nás"
-subtitle: "Chcete adoptovat, stát se pěstounem, sponzorovat, dobrovolničit nebo jen pozdravit? Pošlete nám zprávu — čteme každou z nich."
-description: "Spojte se s organizací Strays of Romania — dotazy k adopci, pěstounská péče, dobrovolnictví, média a obecné otázky."
+eyebrow: "Ozvěte se nám"
+subtitle: "Chcete adoptovat, poskytnout dočasnou péči, sponzorovat, dobrovolničit nebo jen pozdravit? Napište nám zprávu — čteme každou z nich."
+description: "Spojte se s organizací Strays of Romania — dotazy k adopci, dočasné péči, dobrovolnictví, média a obecné otázky."
 ---

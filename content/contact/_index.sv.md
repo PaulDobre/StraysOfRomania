@@ -1,6 +1,6 @@
 ---
 title: "Kontakta oss"
-eyebrow: "Säg hej"
-subtitle: "Vill du adoptera, bli jourhem, sponsra, bli volontär, eller bara säga hej? Skicka oss ett meddelande — vi läser varenda ett."
-description: "Ta kontakt med Strays of Romania — adoptionsförfrågningar, jourhem, volontärarbete, media och allmänna frågor."
+eyebrow: "Hör av dig"
+subtitle: "Vill du adoptera, bli jourhem, sponsra, arbeta ideellt eller bara säga hej? Skicka ett meddelande till oss — vi läser vartenda ett."
+description: "Kontakta Strays of Romania — frågor om adoption, jourhem, ideellt arbete, media och allmänna frågor."
 ---
