@@ -15,15 +15,14 @@
       </div>
     </div>
     <div class="hero__figure">
-      <div class="hero__stats" role="list" aria-label="{{ $p.hero.stats_aria }}">
-        {{- range $p.hero.stats }}
-        <div class="hero__stat" role="listitem">
-          <div class="num">{{ .num }}</div>
-          <div class="lbl">{{ .label }}</div>
-          <div class="src">{{ .note }}</div>
-        </div>
+      <figure class="hero__photo">
+        {{- with $p.hero.image }}
+          <img src="{{ . | relURL }}" alt="{{ $p.hero.image_alt }}">
+        {{- else }}
+          {{ partial "hero-placeholder.html" $p.hero.image_alt }}
         {{- end }}
-      </div>
+        {{- with $p.hero.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
     </div>
   </div>
 </section>

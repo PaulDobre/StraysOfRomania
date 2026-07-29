@@ -4,22 +4,14 @@ description: "A nonprofit that connects and funds a network of rescuers, fostere
 
 hero:
   dateline: "Field report · Romania · Est. 2024"
-  title: "Half a million dogs live on Romania's streets. We connect the people saving them —"
+  title: "Saving Romania's street dogs —"
   emphasis: "one life at a time."
-  lead: "Strays of Romania is a nonprofit that funds and connects a network of rescuers, fosterers and shelters on the front line — turning donations and remote adoptions into sterilisation, care and second chances."
+  lead: "Strays of Romania funds and connects the rescuers, fosterers and shelters on the front line — turning your support into sterilisation, care and second chances."
   cta_primary: "Remotely adopt a dog"
   cta_secondary: "Donate"
-  stats_aria: "The crisis in numbers"
-  stats:
-    - num: "~500,000"
-      label: "Street dogs nationwide"
-      note: "Estimate · Four Paws"
-    - num: "40 years"
-      label: "Since the crisis began"
-      note: "Rooted in the 1980s systematisation"
-    - num: "26,723"
-      label: "Rehomed across the EU"
-      note: "In the first six months of 2023"
+  # image: "images/hero.jpg"   # add a real photo here; a placeholder shows until you do
+  image_alt: "A rescued street dog in the care of the network"
+  caption: "On the front line · Romania"
 
 problem:
   eyebrow: "The crisis"

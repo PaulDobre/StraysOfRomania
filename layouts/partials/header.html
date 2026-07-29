@@ -9,10 +9,7 @@
   <div class="wrap site-header__inner">
     <a href="{{ "/" | relLangURL }}" class="brand" aria-label="{{ site.Title }}">
       {{ partial "brand-mark.html" . }}
-      <span class="brand__text">
-        Strays of Romania
-        <small>{{ T "brand_sub" }}</small>
-      </span>
+      <span class="brand__text" aria-hidden="true"><span class="brand__w brand__w--pine">Strays</span><span class="brand__w brand__w--amber">Of</span><span class="brand__w brand__w--ink">Romania</span><span class="brand__tld">.org</span></span>
     </a>
 
     <nav class="nav" aria-label="{{ T "nav_primary" }}">
