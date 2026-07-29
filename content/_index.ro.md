@@ -1,37 +1,29 @@
 ---
 title: "Strays of Romania"
-description: "O organizație nonprofit care conectează și finanțează o rețea de salvatori, îngrijitori temporari și organizații partenere ce pun capăt crizei câinilor fără stăpân din România."
+description: "O organizație nonprofit care conectează și finanțează o rețea de salvatori, familii temporare și organizații partenere ce pun capăt crizei câinilor de pe străzile României."
 
 hero:
-  dateline: "Raport de teren · România · Înființată în 2024"
-  title: "Jumătate de milion de câini trăiesc pe străzile României. Conectăm oamenii care îi salvează —"
+  dateline: "Raport de teren · România · Fondat 2024"
+  title: "Salvăm câinii de pe străzile României —"
   emphasis: "o viață pe rând."
-  lead: "Strays of Romania este o organizație nonprofit care finanțează și conectează o rețea de salvatori, îngrijitori temporari și adăposturi din prima linie — transformând donațiile și adopțiile la distanță în sterilizare, îngrijire și a doua șansă."
+  lead: "Strays of Romania finanțează și conectează salvatorii, familiile temporare și adăposturile din prima linie — transformând sprijinul tău în sterilizări, îngrijire și a doua șansă."
   cta_primary: "Adoptă la distanță un câine"
   cta_secondary: "Donează"
-  stats_aria: "Criza în cifre"
-  stats:
-    - num: "~500.000"
-      label: "Câini fără stăpân la nivel național"
-      note: "Estimare · Four Paws"
-    - num: "40 de ani"
-      label: "De când a început criza"
-      note: "Înrădăcinată în sistematizarea anilor '80"
-    - num: "26.723"
-      label: "Relocați în toată UE"
-      note: "În primele șase luni ale anului 2023"
+  # image: "images/hero.jpg"   # add a real photo here; a placeholder shows until you do
+  image_alt: "Un câine de stradă salvat, aflat în grija rețelei"
+  caption: "În prima linie · România"
 
 problem:
   eyebrow: "Criza"
   title: "Nu a început cu câinii. A început cu un buldozer."
   lead: "În anii '80, demolarea cartierelor de către Ceaușescu a forțat familiile să se mute în blocuri unde animalele de companie erau interzise. Mii de câini au fost lăsați pe stradă, nesterilizați. Patru decenii mai târziu, urmașii lor se numără cu sutele de mii."
-  body: "Campaniile de ucidere au venit și au trecut; câinii rămân. Singura soluție umană care funcționează cu adevărat este cea lentă — să sterilizezi mai repede decât se pot înmulți și să oferi câinilor deja aici o cale de scăpare de pe stradă."
+  body: "Campaniile de eliminare au venit și au trecut; câinii rămân. Singura soluție umană care chiar funcționează este cea lentă — să sterilizezi mai repede decât se pot înmulți și să oferi câinilor deja aflați aici o cale de a pleca de pe stradă."
   link: "Citește povestea completă"
   caption: "Blocurile sistematizării din anii '80 — locul unde a început criza."
 
 impact:
   label: "Rețeaua, în cifre"
-  note: "Cifre orientative — înlocuiește-le cu numerele tale verificate."
+  note: "Cifre ilustrative — înlocuiește-le cu numerele tale verificate."
   stats:
     - num: "40+"
       label: "Salvatori și adăposturi partenere"
@@ -49,13 +41,13 @@ work:
   link: "Vezi cum funcționează fiecare program"
   cards:
     - title: "Sterilizăm"
-      body: "Clinici mobile care sterilizează, vaccinează și eliberează — singura metodă dovedită de a reduce populația în mod uman."
+      body: "Clinici mobile care sterilizează, vaccinează și readuc câinii — singura metodă dovedită care reduce populația în mod uman."
     - title: "Salvăm"
-      body: "Scoatem răniții, abandonații și nou-născuții de pe străzi și din adăposturile publice sumbre."
+      body: "Scoatem câinii răniți, abandonați și nou-născuți de pe străzi și din adăposturile publice sumbre."
     - title: "Reabilităm"
-      body: "Îngrijire veterinară, hrană și socializare răbdătoare până când un câine speriat de pe stradă învață din nou să aibă încredere."
-    - title: "Relocăm"
-      body: "Organizațiile noastre partenere potrivesc câinii cu familii — în timp ce adoptatorii la distanță îi țin îngrijiți până atunci."
+      body: "Îngrijire veterinară, hrană și socializare răbdătoare până când un câine de stradă speriat învață din nou să aibă încredere."
+    - title: "Găsim o casă nouă"
+      body: "Organizațiile noastre partenere potrivesc câinii cu familii — iar adoptatorii la distanță au grijă de ei până atunci."
 
 featured:
   eyebrow: "Adopție la distanță"
@@ -63,25 +55,25 @@ featured:
   link: "Vezi toți câinii"
 
 ways:
-  label: "Moduri de a ajuta"
+  label: "Cum poți ajuta"
   items:
     - index: "01 — Adoptă la distanță"
       title: "Schimbă viața unui câine"
-      body: "Alege un câine și oferă câțiva euro pe lună. Tu primești noutățile și legătura; el primește hrană, îngrijire și siguranță."
+      body: "Alege un câine și oferă câțiva euro pe lună. Tu primești actualizări și legătura afectivă; el primește hrană, îngrijire și siguranță."
       link: "Alege un câine"
       href: "adopt/"
-    - index: "02 — Dăruiește"
+    - index: "02 — Donează"
       title: "Finanțează întreaga rețea"
-      body: "€25 sterilizează un câine. Donațiile generale sprijină fiecare salvator și adăpost — și munca ce pune capăt crizei."
+      body: "25 € sterilizează un câine. Donațiile generale sprijină fiecare salvator și adăpost — și munca ce pune capăt crizei."
       link: "Donează"
       href: "donate/"
-    - index: "03 — Alătură-te"
-      title: "Îngrijire temporară, voluntariat sau parteneriat"
-      body: "Deschide-ți casa pentru un câine, oferă o abilitate sau adu-ți organizația de salvare în rețea."
+    - index: "03 — Implică-te"
+      title: "Devino familie temporară, voluntar sau partener"
+      body: "Deschide-ți casa unui câine, oferă-ți o pricepere sau adu-ți organizația de salvare în rețea."
       link: "Alătură-te rețelei"
       href: "get-involved/"
 
 cta:
   title: "Fiecare donație înseamnă o viață scoasă de pe stradă."
-  text: "Sterilizare, vaccinare, hrană și un drum sigur spre o casă nouă — totul se sprijină pe oameni care decid să ajute. Începe astăzi."
+  text: "Sterilizare, vaccinare, hrană și trecere în siguranță către o casă nouă — totul se bazează pe oameni care aleg să ajute. Începe azi."
 ---
