@@ -274,7 +274,10 @@ async function main() {
     if (!src._failed && allPresent) nextManifest[src.rel] = src._hash;
   }
 
-  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(nextManifest, null, 2) + "\n");
+  // Sort keys so the manifest is byte-stable regardless of directory-walk order
+  // (macOS vs Linux differ), avoiding spurious diffs.
+  const sorted = Object.fromEntries(Object.keys(nextManifest).sort().map((k) => [k, nextManifest[k]]));
+  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(sorted, null, 2) + "\n");
   console.log("\nUpdated .translation-manifest.json");
 
   const anyFailed = sources.some((s) => s._failed);
