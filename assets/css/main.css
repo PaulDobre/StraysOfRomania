@@ -129,10 +129,12 @@ strong { font-weight: 600; }
 .btn--primary:hover { background: var(--amber-soft); box-shadow: 0 6px 16px -6px rgba(122,68,20,.4), inset 0 1px 0 rgba(255,255,255,.35); }
 .btn--pine { background: var(--pine); color: var(--paper-on-pine); }
 .btn--pine:hover { background: var(--pine-2); }
-.btn--ghost { background: transparent; color: var(--ink); border-color: var(--line); }
-.btn--ghost:hover { border-color: var(--ink); background: color-mix(in srgb, var(--ink) 4%, transparent); }
-.on-pine .btn--ghost { color: var(--paper-on-pine); border-color: color-mix(in srgb, var(--paper-on-pine) 30%, transparent); }
-.on-pine .btn--ghost:hover { border-color: var(--paper-on-pine); background: color-mix(in srgb, var(--paper-on-pine) 8%, transparent); }
+/* ghost button text follows its container's colour (currentColor), so it stays
+   legible on light sections, on amber bands, and on the dark hero/pine alike */
+.btn--ghost { background: transparent; color: currentColor; border-color: color-mix(in srgb, currentColor 30%, transparent); }
+.btn--ghost:hover { border-color: currentColor; background: color-mix(in srgb, currentColor 8%, transparent); }
+.on-pine .btn--ghost, .hero .btn--ghost { color: var(--paper-on-pine); border-color: color-mix(in srgb, var(--paper-on-pine) 30%, transparent); }
+.on-pine .btn--ghost:hover, .hero .btn--ghost:hover { border-color: var(--paper-on-pine); background: color-mix(in srgb, var(--paper-on-pine) 8%, transparent); }
 .btn--lg { padding: 1rem 1.7rem; font-size: .9rem; }
 
 .arrow-link { font-family: var(--mono); font-size: .82rem; letter-spacing: .03em; text-decoration: none; color: var(--pine-2); font-weight: 500; display: inline-flex; align-items: center; gap: .4rem; }
@@ -249,13 +251,10 @@ strong { font-weight: 600; }
 .hero__lead { color: var(--muted-on-pine); font-size: clamp(1.1rem, 1.8vw, 1.3rem); max-width: 46ch; margin-bottom: 2rem; }
 .hero__cta { display: flex; gap: .8rem; flex-wrap: wrap; }
 .hero__figure { position: relative; }
-.hero__stats { display: grid; gap: 0; border: 1px solid color-mix(in srgb, var(--paper-on-pine) 20%, transparent); border-radius: var(--radius); background: color-mix(in srgb, var(--pine-ink) 55%, transparent); }
-.hero__stat { padding: 1.3rem 1.5rem; border-bottom: 1px solid color-mix(in srgb, var(--paper-on-pine) 15%, transparent); }
-.hero__stat:last-child { border-bottom: 0; }
-.hero__stat .num { font-family: var(--serif); font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1; color: var(--amber-soft); }
-.hero__stat .lbl { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-on-pine); margin-top: .5rem; }
-.hero__stat .src { font-size: .72rem; color: color-mix(in srgb, var(--muted-on-pine) 80%, transparent); margin-top: .3rem; }
-@media (max-width: 54rem) { .hero__inner { grid-template-columns: 1fr; } .hero__figure { order: -1; } }
+.hero__photo { margin: 0; border: 1px solid color-mix(in srgb, var(--paper-on-pine) 22%, transparent); border-radius: var(--radius); overflow: hidden; background: var(--sand); box-shadow: 0 24px 60px -30px rgba(0,0,0,.55); }
+.hero__photo img, .hero__photo svg { display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.hero__photo figcaption { font-family: var(--mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted-on-pine); padding: .7rem 1rem; border-top: 1px solid color-mix(in srgb, var(--paper-on-pine) 18%, transparent); background: color-mix(in srgb, var(--pine-ink) 55%, transparent); }
+@media (max-width: 54rem) { .hero__inner { grid-template-columns: 1fr; } .hero__figure { order: -1; } .hero__photo img, .hero__photo svg { aspect-ratio: 16/10; } }
 
 /* ---------- Stat band ---------- */
 .statband { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
