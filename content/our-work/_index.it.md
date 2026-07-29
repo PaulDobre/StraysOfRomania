@@ -1,0 +1,43 @@
+---
+title: "Il nostro lavoro"
+eyebrow: "Programmi"
+subtitle: "Siamo il tessuto connettivo: finanziamo, coordiniamo e diamo voce a una rete di soccorritori, famiglie affidatarie e rifugi. Ecco cosa fa questa rete con il tuo sostegno — e il ruolo che noi vi svolgiamo."
+description: "Come opera Strays of Romania in quanto rete: finanziando la sterilizzazione, sostenendo soccorso e affido presso le organizzazioni partner e gestendo adozioni a distanza che mantengono i cani accuditi."
+
+principles_eyebrow: "Come lavoriamo"
+principles_title: "Quattro principi su cui non scendiamo a compromessi."
+cta_title: "Finanzia il lavoro che pone fine alla crisi."
+cta_text: "Ogni programma qui sopra si regge sulle donazioni. €25 sterilizzano un cane; una donazione mensile tiene una clinica in movimento."
+
+programs:
+  - no: "01"
+    name: "Finanziare la sterilizzazione (CNVR)"
+    tag: "Controllo della popolazione"
+    body: "Convogliamo le donazioni in campagne di cattura-sterilizzazione-vaccinazione-restituzione gestite dai nostri partner e da cliniche mobili. Un cane sterilizzato non può riprodursi e un cane vaccinato non diffonde la rabbia — così la popolazione di strada diminuisce, in modo umano e permanente. È qui che va la maggior parte della tua donazione generale."
+    stat: "€25 sterilizzano un cane"
+  - no: "02"
+    name: "Sostenere soccorso e cure d'emergenza"
+    tag: "Prima risposta"
+    body: "Quando un partner o un soccorritore indipendente mette in salvo un cane in pericolo — l'investito da un'auto, la cucciolata abbandonata, il cane del rifugio a cui sta finendo il tempo — aiutiamo a finanziare le cure veterinarie, l'accoglienza e il luogo sicuro dove riprendersi."
+    stat: "Fondo d'emergenza condiviso"
+  - no: "03"
+    name: "Sostenere l'affido e le cure in santuario"
+    tag: "Ripresa"
+    body: "Un cane di strada non è ancora un animale domestico. Nei rifugi partner e nelle famiglie affidatarie, i cani ricevono il tempo, il cibo e le cure di cui hanno bisogno per guarire. Le adozioni a distanza e le donazioni sostengono chi se ne prende cura mentre un cane aspetta."
+    stat: "Sostenuto da chi adotta a distanza"
+  - no: "04"
+    name: "Collegare i cani alle case"
+    tag: "Nuovi inizi"
+    body: "L'adozione fisica è gestita dalle organizzazioni partner della nostra rete, ciascuna con i propri processi e standard. Noi diamo ai loro cani una piattaforma più ampia, e chi adotta a distanza continua a prendersi cura di quei cani finché — e se — viene trovata una casa definitiva."
+    stat: "40+ partner, un'unica piattaforma"
+
+principles:
+  - title: "Umani, sempre"
+    body: "Mai abbattimenti. Noi e i nostri partner usiamo solo metodi che rispettano il benessere del cane in ogni fase."
+  - title: "Le prove prima dell'emozione"
+    body: "Sosteniamo gli approcci che riducono davvero la sofferenza su larga scala — a cominciare dalla sterilizzazione di massa."
+  - title: "Una rete, non un monopolio"
+    body: "Diamo voce ai soccorritori e alle ONG locali invece di sostituirci a loro. Questa è la loro battaglia; noi li aiutiamo a vincerla."
+  - title: "Onesti sui limiti"
+    body: "Non possiamo salvare ogni cane. Siamo trasparenti su ciò che la rete può fare, e su ciò che non può — ancora."
+---

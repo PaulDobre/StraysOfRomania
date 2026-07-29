@@ -1,0 +1,64 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.subtitle }}</p>
+  </div>
+</div>
+
+{{/* ---- Programmes as dossier rows ---- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="dossier">
+      {{- range $p.programs }}
+      <div class="dossier__row">
+        <div class="dossier__no">{{ .no }}</div>
+        <div class="split" style="grid-template-columns:1.3fr .7fr;gap:2rem;align-items:start">
+          <div>
+            <span class="pill pill--amber" style="margin-bottom:.7rem">{{ .tag }}</span>
+            <h3>{{ .name }}</h3>
+            <p>{{ .body }}</p>
+          </div>
+          <div>
+            <div class="card" style="background:var(--paper-2);text-align:center;padding:1.4rem">
+              <div class="mono small" style="color:var(--pine-2);font-size:1rem;letter-spacing:.02em">{{ .stat }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- Principles ---- */}}
+<section class="section on-pine">
+  <div class="wrap">
+    <div class="split" style="align-items:end;margin-bottom:2.5rem">
+      <div>
+        <p class="eyebrow" style="color:var(--amber-soft)">{{ $p.principles_eyebrow }}</p>
+        <h2 class="mb-0">{{ $p.principles_title }}</h2>
+      </div>
+    </div>
+    <div class="grid grid--4">
+      {{- range $p.principles }}
+      <div>
+        <h3 style="font-size:1.2rem;color:var(--paper-on-pine)">{{ .title }}</h3>
+        <p style="color:var(--muted-on-pine);font-size:.96rem">{{ .body }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{- with .Content }}
+<section class="section"><div class="prose" style="max-width:44rem;margin-inline:auto">{{ . }}</div></section>
+{{- end }}
+
+{{ partial "cta-band.html" (dict "title" $p.cta_title "text" $p.cta_text) }}
+
+{{ end }}

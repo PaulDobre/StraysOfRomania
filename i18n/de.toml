@@ -1,0 +1,86 @@
+# Deutsche UI-Texte. Eine <lang>.toml pro Sprache.
+# Übersetze nur die WERTE — die Schlüssel und alle {{ .placeholder }}-Token bleiben unverändert.
+
+# --- Marke / Website ---
+site_tagline    = "Das Netzwerk, das Rumäniens Straßenhund-Krise beendet"
+site_description = "Strays of Romania ist eine gemeinnützige Organisation, die ein Netzwerk aus Rettern, Pflegestellen und Partnerorganisationen verbindet und finanziert, um die Straßenhund-Krise zu beenden."
+brand_sub       = "Straßenhund-Rettung · RO"
+
+# --- Navigation ---
+nav_primary        = "Hauptmenü"
+nav_crisis         = "Die Krise"
+nav_our_work       = "Unsere Arbeit"
+nav_remote_adoption = "Fernadoption"
+nav_get_involved   = "Mitmachen"
+nav_stories        = "Geschichten"
+nav_about          = "Über uns"
+menu               = "Menü"
+skip_to_content    = "Zum Inhalt springen"
+language           = "Sprache"
+
+# --- Buttons (mehrfach verwendet) ---
+btn_remote_adopt = "Fernadoption"
+btn_donate       = "Spenden"
+btn_get_involved = "Mitmachen"
+
+# --- Fußzeile ---
+footer_explore   = "Entdecken"
+footer_act_now   = "Jetzt handeln"
+footer_brand_desc = "Eine gemeinnützige Organisation, die die Retter, Pflegestellen und Tierheime verbindet und finanziert, die Rumäniens Straßenhund-Krise beenden — human und für immer."
+footer_remote_adopt = "Einen Hund aus der Ferne adoptieren"
+footer_donate    = "Spenden"
+footer_foster    = "Pflegestelle werden"
+footer_partner   = "Partner werden"
+footer_faq       = "FAQ"
+footer_transparency = "Transparenz"
+footer_contact   = "Kontakt"
+footer_follow    = "Den Hunden folgen"
+
+# --- Allgemein ---
+label_home       = "Startseite"
+posts_empty      = "Hier ist noch nichts — schau bald wieder vorbei."
+tag_story        = "Geschichte"
+
+# --- Standard-CTA-Band ---
+cta_default_title = "Jede Spende ist ein Leben weg von der Straße."
+cta_default_text  = "Sterilisation, Impfung, Futter und die sichere Reise in ein neues Zuhause — all das lebt von Menschen, die sich entscheiden zu helfen. Fang heute an."
+
+# --- Hundekarten ---
+in_care_of       = "In der Obhut von {{ .carer }}"
+remotely_adopt   = "Fernadoption"
+remotely_adopt_btn = "{{ .name }} aus der Ferne adoptieren · {{ .amount }} €/Mon."
+photo_coming     = "Foto folgt in Kürze"
+photo_alt        = "Foto von {{ .name }} folgt in Kürze"
+
+# --- Mitmachen ---
+jump_to          = "Springe zu"
+in_short         = "Kurz gesagt"
+
+# --- Kontaktformular ---
+form_intent_label = "Ich interessiere mich für"
+intent_remote_adopt   = "Fernadoption"
+intent_physical_adopt = "Einen Hund wirklich adoptieren (über einen Partner)"
+intent_foster    = "Pflegestelle werden"
+intent_partner   = "Partnerschaft — meine Organisation / Rettung"
+intent_volunteer = "Ehrenamtlich helfen"
+intent_fundraise = "Spenden sammeln"
+intent_media     = "Medien / Presse"
+intent_other     = "Etwas anderes"
+form_name        = "Dein Name"
+form_email       = "E-Mail"
+form_country     = "Wo du lebst"
+form_country_ph  = "Land / Stadt"
+form_message     = "Nachricht"
+form_message_ph  = "Erzähl uns ein wenig über dich und wie wir helfen können."
+form_send        = "Nachricht senden"
+form_consent     = "Mit dem Absenden erklärst du dich einverstanden, dass wir per E-Mail antworten dürfen. Wir geben deine Daten niemals weiter."
+contact_direct   = "Direkt"
+contact_phone    = "Telefon"
+contact_where    = "Wo wir sind"
+contact_registration = "Registrierung"
+contact_dog_label = "Fragst du nach einem bestimmten Hund?"
+contact_dog_text  = "Nenne die ID des Hundes (z. B. RO-241) in deiner Nachricht — ob Fernadoption oder Vermittlung über einen Partner — und wir kümmern uns sofort darum."
+
+# --- Auto-translation notice ---
+autotrans_notice = "Automatisch aus dem Englischen übersetzt – kann Fehler enthalten."
+autotrans_original = "Original lesen"

@@ -1,0 +1,77 @@
+# Animals available for REMOTE ADOPTION (a recurring subscription that funds
+# the dog's care within our partner network). Physical fostering/adoption is
+# handled by the partner NGOs and individuals who look after each dog.
+#
+# Fields:
+#   photo:         path under /static (e.g. /img/dogs/luca.jpg). Empty = placeholder.
+#   carer:         the partner NGO or foster who currently cares for the dog.
+#   monthly:       optional suggested monthly amount (EUR) for this dog.
+#   subscribe_url: optional per-dog subscription link. If empty, the button
+#                  links to params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Male
+    age: "2 years"
+    size: Medium
+    carer: "Partner shelter · Bucharest"
+    status: Needs remote adopters
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Pulled from a public shelter last winter. Gentle and house-trained — his carers cover food and vet bills, and your remote adoption keeps them going.
+  - id: RO-198
+    name: Mara
+    sex: Female
+    age: "8 months"
+    size: Small
+    carer: "Foster home · Cluj"
+    status: Partly funded
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Found in a rubbish tip with her siblings. Safe now in a foster home, fully vaccinated, and growing fast on donated food.
+  - id: RO-263
+    name: Bruno
+    sex: Male
+    age: "4 years"
+    size: Large
+    carer: "Partner sanctuary · Ploiești"
+    status: Needs remote adopters
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: A calm, watchful giant who spent two years on the streets. A big dog costs more to feed — remote adopters make his sanctuary place possible.
+  - id: RO-255
+    name: Sofia
+    sex: Female
+    age: "3 years"
+    size: Medium
+    carer: "Foster home · Bucharest"
+    status: Partly funded
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Rescued after being hit by a car; fully recovered thanks to her foster carer. Affectionate and endlessly grateful.
+  - id: RO-271
+    name: Toby
+    sex: Male
+    age: "1 year"
+    size: Medium
+    carer: "Partner shelter · Sibiu"
+    status: Urgently needs adopters
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Born on the street to a rescued mother. Still learning that people can be kind — his shelter needs help covering his care.
+  - id: RO-233
+    name: Nadia
+    sex: Female
+    age: "5 years"
+    size: Small
+    carer: "Foster home · Sibiu"
+    status: Needs remote adopters
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: A senior lady with the softest eyes, safe in foster care. Older dogs wait longest for support — a few euros a month changes her world.

@@ -1,0 +1,86 @@
+# Textos de interface em português (traduzidos do inglês, fonte de referência). Um ficheiro <lang>.toml por idioma.
+# Traduza apenas os VALORES — mantenha as chaves e quaisquer tokens {{ .placeholder }}.
+
+# --- Marca / site ---
+site_tagline    = "A rede que está a pôr fim à crise dos cães de rua da Roménia"
+site_description = "A Strays of Romania é uma organização sem fins lucrativos que liga e financia uma rede de resgatadores, famílias de acolhimento e organizações parceiras que trabalham para pôr fim à crise dos cães de rua."
+brand_sub       = "Resgate de cães de rua · RO"
+
+# --- Navegação ---
+nav_primary        = "Principal"
+nav_crisis         = "A Crise"
+nav_our_work       = "O Nosso Trabalho"
+nav_remote_adoption = "Adoção à Distância"
+nav_get_involved   = "Participar"
+nav_stories        = "Histórias"
+nav_about          = "Sobre Nós"
+menu               = "Menu"
+skip_to_content    = "Saltar para o conteúdo"
+language           = "Idioma"
+
+# --- Botões (reutilizados) ---
+btn_remote_adopt = "Adotar à distância"
+btn_donate       = "Doar"
+btn_get_involved = "Participar"
+
+# --- Rodapé ---
+footer_explore   = "Explorar"
+footer_act_now   = "Agir agora"
+footer_brand_desc = "Uma organização sem fins lucrativos que liga e financia os resgatadores, as famílias de acolhimento e os abrigos que trabalham para pôr fim à crise dos cães de rua da Roménia — de forma humana e definitiva."
+footer_remote_adopt = "Adotar um cão à distância"
+footer_donate    = "Doar"
+footer_foster    = "Acolher"
+footer_partner   = "Torne-se parceiro"
+footer_faq       = "Perguntas Frequentes"
+footer_transparency = "Transparência"
+footer_contact   = "Contacto"
+footer_follow    = "Siga os cães"
+
+# --- Geral ---
+label_home       = "Início"
+posts_empty      = "Ainda não há nada aqui — volte em breve."
+tag_story        = "História"
+
+# --- Faixa de CTA por defeito ---
+cta_default_title = "Cada donativo é uma vida fora da rua."
+cta_default_text  = "Esterilização, vacinação, comida e uma passagem segura para um novo lar — tudo depende de pessoas que decidem ajudar. Comece hoje."
+
+# --- Fichas dos cães ---
+in_care_of       = "Ao cuidado de {{ .carer }}"
+remotely_adopt   = "Adotar à distância"
+remotely_adopt_btn = "Adotar o(a) {{ .name }} à distância · €{{ .amount }}/mês"
+photo_coming     = "Foto em breve"
+photo_alt        = "Foto do(a) {{ .name }} em breve"
+
+# --- Participar ---
+jump_to          = "Ir para"
+in_short         = "Em resumo"
+
+# --- Formulário de contacto ---
+form_intent_label = "Tenho interesse em"
+intent_remote_adopt   = "Adoção à distância"
+intent_physical_adopt = "Adotar um cão de verdade (através de um parceiro)"
+intent_foster    = "Acolhimento temporário"
+intent_partner   = "Parceria — a minha organização / resgate"
+intent_volunteer = "Voluntariado"
+intent_fundraise = "Angariação de fundos"
+intent_media     = "Imprensa / comunicação social"
+intent_other     = "Outra coisa"
+form_name        = "O seu nome"
+form_email       = "E-mail"
+form_country     = "Onde vive"
+form_country_ph  = "País / cidade"
+form_message     = "Mensagem"
+form_message_ph  = "Conte-nos um pouco sobre si e como podemos ajudar."
+form_send        = "Enviar mensagem"
+form_consent     = "Ao enviar, concorda que possamos responder por e-mail. Nunca partilhamos os seus dados."
+contact_direct   = "Direto"
+contact_phone    = "Telefone"
+contact_where    = "Onde estamos"
+contact_registration = "Registo"
+contact_dog_label = "Tem uma pergunta sobre um cão específico?"
+contact_dog_text  = "Indique o ID do cão (por exemplo, RO-241) na sua mensagem — quer se trate de adoção à distância quer de adoção através de um parceiro — e tratamos disso de imediato."
+
+# --- Auto-translation notice ---
+autotrans_notice = "Traduzido automaticamente do inglês — pode conter erros."
+autotrans_original = "Ler o original"

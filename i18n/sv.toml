@@ -1,0 +1,86 @@
+# Svenska UI-texter. En <lang>.toml per språk.
+# Översätt endast VÄRDENA — behåll nycklarna och alla {{ .placeholder }}-tokens.
+
+# --- Varumärke / webbplats ---
+site_tagline    = "Nätverket som avslutar Rumäniens gatuhundskris"
+site_description = "Strays of Romania är en ideell organisation som kopplar samman och finansierar ett nätverk av räddare, jourhem och partnerorganisationer som arbetar för att avsluta gatuhundskrisen."
+brand_sub       = "Gatuhundsräddning · RO"
+
+# --- Navigation ---
+nav_primary        = "Huvudmeny"
+nav_crisis         = "Krisen"
+nav_our_work       = "Vårt arbete"
+nav_remote_adoption = "Fjärradoption"
+nav_get_involved   = "Engagera dig"
+nav_stories        = "Berättelser"
+nav_about          = "Om oss"
+menu               = "Meny"
+skip_to_content    = "Hoppa till innehållet"
+language           = "Språk"
+
+# --- Knappar (återanvänds) ---
+btn_remote_adopt = "Fjärradoptera"
+btn_donate       = "Skänk"
+btn_get_involved = "Engagera dig"
+
+# --- Sidfot ---
+footer_explore   = "Utforska"
+footer_act_now   = "Agera nu"
+footer_brand_desc = "En ideell organisation som kopplar samman och finansierar räddarna, jourhemmen och härbärgena som arbetar för att avsluta Rumäniens gatuhundskris — humant och för gott."
+footer_remote_adopt = "Fjärradoptera en hund"
+footer_donate    = "Skänk"
+footer_foster    = "Bli jourhem"
+footer_partner   = "Bli partner"
+footer_faq       = "Vanliga frågor"
+footer_transparency = "Transparens"
+footer_contact   = "Kontakt"
+footer_follow    = "Följ hundarna"
+
+# --- Generellt ---
+label_home       = "Hem"
+posts_empty      = "Inget här ännu — titta in igen snart."
+tag_story        = "Berättelse"
+
+# --- Notis om automatisk översättning (visas på varje sida som inte är på engelska; faller tillbaka till engelska) ---
+autotrans_notice = "Automatiskt översatt från engelska — den kan innehålla fel."
+autotrans_original = "Läs originalet"
+
+# --- Standard-CTA-band ---
+cta_default_title = "Varje gåva är ett liv bort från gatan."
+cta_default_text  = "Sterilisering, vaccinering, mat och trygg resa till ett nytt hem — allt drivs av människor som bestämmer sig för att hjälpa. Börja idag."
+
+# --- Hundkort ---
+in_care_of       = "I omsorg hos {{ .carer }}"
+remotely_adopt   = "Fjärradoptera"
+remotely_adopt_btn = "Fjärradoptera {{ .name }} · €{{ .amount }}/mån"
+photo_coming     = "Foto kommer snart"
+photo_alt        = "Foto av {{ .name }} kommer snart"
+
+# --- Engagera dig ---
+jump_to          = "Hoppa till"
+in_short         = "Kort sagt"
+
+# --- Kontaktformulär ---
+form_intent_label = "Jag är intresserad av"
+intent_remote_adopt   = "Fjärradoption"
+intent_physical_adopt = "Att adoptera en hund på riktigt (via en partner)"
+intent_foster    = "Att bli jourhem"
+intent_partner   = "Partnerskap — min organisation / räddning"
+intent_volunteer = "Att bli volontär"
+intent_fundraise = "Insamling"
+intent_media     = "Media / press"
+intent_other     = "Något annat"
+form_name        = "Ditt namn"
+form_email       = "E-post"
+form_country     = "Var du bor"
+form_country_ph  = "Land / stad"
+form_message     = "Meddelande"
+form_message_ph  = "Berätta lite om dig och hur vi kan hjälpa."
+form_send        = "Skicka meddelande"
+form_consent     = "Genom att skicka godkänner du att vi får svara via e-post. Vi delar aldrig dina uppgifter."
+contact_direct   = "Direkt"
+contact_phone    = "Telefon"
+contact_where    = "Var vi finns"
+contact_registration = "Registrering"
+contact_dog_label = "Frågar du om en specifik hund?"
+contact_dog_text  = "Nämn hundens ID (t.ex. RO-241) i ditt meddelande — oavsett om det gäller fjärradoption eller omplacering via en partner — så tar vi tag i det direkt."

@@ -1,0 +1,78 @@
+# Tiere, die zur FERNADOPTION verfügbar sind (ein wiederkehrendes Abonnement,
+# das die Versorgung des Hundes innerhalb unseres Partnernetzwerks finanziert).
+# Physische Pflege/Adoption übernehmen die Partner-NGOs und Privatpersonen,
+# die sich um jeden Hund kümmern.
+#
+# Felder:
+#   photo:         Pfad unter /static (z. B. /img/dogs/luca.jpg). Leer = Platzhalter.
+#   carer:         die Partner-NGO oder Pflegestelle, die den Hund derzeit betreut.
+#   monthly:       optionaler vorgeschlagener Monatsbetrag (EUR) für diesen Hund.
+#   subscribe_url: optionaler Abo-Link je Hund. Wenn leer, verweist der Button auf
+#                  params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Männlich
+    age: "2 Jahre"
+    size: Mittel
+    carer: "Partner-Tierheim · Bukarest"
+    status: Sucht Fernadoptierende
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Letzten Winter aus einem öffentlichen Tierheim geholt. Sanft und stubenrein — seine Betreuer übernehmen Futter und Tierarztkosten, und deine Fernadoption hält sie am Laufen.
+  - id: RO-198
+    name: Mara
+    sex: Weiblich
+    age: "8 Monate"
+    size: Klein
+    carer: "Pflegestelle · Cluj"
+    status: Teilweise finanziert
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Mit ihren Geschwistern auf einer Müllkippe gefunden. Jetzt sicher in einer Pflegestelle, vollständig geimpft und dank gespendetem Futter schnell wachsend.
+  - id: RO-263
+    name: Bruno
+    sex: Männlich
+    age: "4 Jahre"
+    size: Groß
+    carer: "Partner-Auffangstation · Ploiești"
+    status: Sucht Fernadoptierende
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Ein ruhiger, wachsamer Riese, der zwei Jahre auf der Straße verbrachte. Ein großer Hund kostet mehr Futter — Fernadoptierende ermöglichen seinen Platz in der Auffangstation.
+  - id: RO-255
+    name: Sofia
+    sex: Weiblich
+    age: "3 Jahre"
+    size: Mittel
+    carer: "Pflegestelle · Bukarest"
+    status: Teilweise finanziert
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Gerettet, nachdem sie von einem Auto angefahren wurde; dank ihrer Pflegestelle vollständig genesen. Anhänglich und unendlich dankbar.
+  - id: RO-271
+    name: Toby
+    sex: Männlich
+    age: "1 Jahr"
+    size: Mittel
+    carer: "Partner-Tierheim · Sibiu"
+    status: Sucht dringend Adoptierende
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Auf der Straße als Sohn einer geretteten Mutter geboren. Er lernt noch, dass Menschen freundlich sein können — sein Tierheim braucht Hilfe bei den Kosten für seine Versorgung.
+  - id: RO-233
+    name: Nadia
+    sex: Weiblich
+    age: "5 Jahre"
+    size: Klein
+    carer: "Pflegestelle · Sibiu"
+    status: Sucht Fernadoptierende
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Eine ältere Dame mit den sanftesten Augen, sicher in einer Pflegestelle. Ältere Hunde warten am längsten auf Unterstützung — ein paar Euro im Monat verändern ihre Welt.

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.subtitle }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</div>
+
+<div class="section">
+  <div class="wrap">
+    {{- with .Content }}<div class="prose" style="margin-bottom:2.5rem">{{ . }}</div>{{ end }}
+    {{- $pages := .Pages }}
+    {{- if $pages }}
+    <div class="post-list">
+      {{- range $pages.ByPublishDate.Reverse }}
+      <a class="post-row" href="{{ .RelPermalink }}">
+        <span class="date">{{ .PublishDate | time.Format ":date_medium" }}</span>
+        <div>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Summary | plainify | truncate 150 }}</p>
+        </div>
+        <span class="tag">{{ with .Params.tag }}{{ . }}{{ else }}{{ T "tag_story" }}{{ end }}</span>
+      </a>
+      {{- end }}
+    </div>
+    {{- else }}
+    <p class="text-muted">{{ T "posts_empty" }}</p>
+    {{- end }}
+  </div>
+</div>
+{{ end }}

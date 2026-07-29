@@ -1,0 +1,78 @@
+# Animale disponibile pentru ADOPȚIE LA DISTANȚĂ (un abonament recurent care
+# finanțează îngrijirea câinelui în cadrul rețelei noastre de parteneri). Îngrijirea
+# temporară / adopția fizică sunt gestionate de ONG-urile partenere și de persoanele
+# care au grijă de fiecare câine.
+#
+# Câmpuri:
+#   photo:         cale sub /static (de ex. /img/dogs/luca.jpg). Gol = imagine substitut.
+#   carer:         ONG-ul partener sau îngrijitorul temporar care are grijă acum de câine.
+#   monthly:       sumă lunară sugerată (EUR) pentru acest câine (opțional).
+#   subscribe_url: link de abonare per câine (opțional). Dacă e gol, butonul
+#                  trimite către params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Mascul
+    age: "2 ani"
+    size: Mediu
+    carer: "Adăpost partener · București"
+    status: Are nevoie de adoptatori la distanță
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Scos dintr-un adăpost public iarna trecută. Blând și deprins cu locuința — îngrijitorii lui acoperă hrana și cheltuielile veterinare, iar adopția ta la distanță îi ajută să continue.
+  - id: RO-198
+    name: Mara
+    sex: Femelă
+    age: "8 luni"
+    size: Mic
+    carer: "Casă de îngrijire temporară · Cluj"
+    status: Parțial finanțată
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Găsită într-o groapă de gunoi împreună cu frații ei. Acum e în siguranță într-o casă de îngrijire temporară, complet vaccinată și crește repede cu hrana donată.
+  - id: RO-263
+    name: Bruno
+    sex: Mascul
+    age: "4 ani"
+    size: Mare
+    carer: "Adăpost partener · Ploiești"
+    status: Are nevoie de adoptatori la distanță
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Un uriaș calm și atent care a petrecut doi ani pe străzi. Un câine mare costă mai mult să fie hrănit — adoptatorii la distanță îi fac posibil locul în adăpost.
+  - id: RO-255
+    name: Sofia
+    sex: Femelă
+    age: "3 ani"
+    size: Mediu
+    carer: "Casă de îngrijire temporară · București"
+    status: Parțial finanțată
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Salvată după ce a fost lovită de o mașină; complet recuperată datorită îngrijitoarei sale temporare. Afectuoasă și nesfârșit de recunoscătoare.
+  - id: RO-271
+    name: Toby
+    sex: Mascul
+    age: "1 an"
+    size: Mediu
+    carer: "Adăpost partener · Sibiu"
+    status: Are nevoie urgentă de adoptatori
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Născut pe stradă dintr-o mamă salvată. Încă învață că oamenii pot fi buni — adăpostul lui are nevoie de ajutor pentru a-i acoperi îngrijirea.
+  - id: RO-233
+    name: Nadia
+    sex: Femelă
+    age: "5 ani"
+    size: Mic
+    carer: "Casă de îngrijire temporară · Sibiu"
+    status: Are nevoie de adoptatori la distanță
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: O doamnă în vârstă cu cei mai blânzi ochi, în siguranță în îngrijire temporară. Câinii bătrâni așteaptă cel mai mult sprijinul — câțiva euro pe lună îi schimbă lumea.

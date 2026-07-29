@@ -1,0 +1,86 @@
+# Polskie ciągi interfejsu (tłumaczenie z angielskiego źródła). Jeden plik <lang>.toml na język.
+# Tłumacz TYLKO wartości — zachowaj klucze i wszelkie tokeny {{ .placeholder }}.
+
+# --- Marka / witryna ---
+site_tagline    = "Sieć, która kończy kryzys bezpańskich psów w Rumunii"
+site_description = "Strays of Romania to organizacja non-profit, która łączy i finansuje sieć ratowników, opiekunów tymczasowych i organizacji partnerskich działających na rzecz zakończenia kryzysu bezpańskich psów."
+brand_sub       = "Ratowanie bezpańskich psów · RO"
+
+# --- Nawigacja ---
+nav_primary        = "Główne"
+nav_crisis         = "Kryzys"
+nav_our_work       = "Nasza praca"
+nav_remote_adoption = "Adopcja zdalna"
+nav_get_involved   = "Zaangażuj się"
+nav_stories        = "Historie"
+nav_about          = "O nas"
+menu               = "Menu"
+skip_to_content    = "Przejdź do treści"
+language           = "Język"
+
+# --- Przyciski (używane wielokrotnie) ---
+btn_remote_adopt = "Adoptuj zdalnie"
+btn_donate       = "Wesprzyj"
+btn_get_involved = "Zaangażuj się"
+
+# --- Stopka ---
+footer_explore   = "Odkrywaj"
+footer_act_now   = "Działaj teraz"
+footer_brand_desc = "Organizacja non-profit, która łączy i finansuje ratowników, opiekunów tymczasowych i schroniska działające na rzecz zakończenia kryzysu bezpańskich psów w Rumunii — humanitarnie i na dobre."
+footer_remote_adopt = "Adoptuj psa zdalnie"
+footer_donate    = "Wesprzyj"
+footer_foster    = "Opieka tymczasowa"
+footer_partner   = "Zostań partnerem"
+footer_faq       = "FAQ"
+footer_transparency = "Przejrzystość"
+footer_contact   = "Kontakt"
+footer_follow    = "Śledź losy psów"
+
+# --- Ogólne ---
+label_home       = "Strona główna"
+posts_empty      = "Jeszcze nic tu nie ma — zajrzyj wkrótce."
+tag_story        = "Historia"
+
+# --- Domyślny pasek CTA ---
+cta_default_title = "Każda darowizna to jedno życie z dala od ulicy."
+cta_default_text  = "Sterylizacja, szczepienia, karma i bezpieczna droga do nowego domu — wszystko to opiera się na ludziach, którzy postanawiają pomóc. Zacznij już dziś."
+
+# --- Karty psów ---
+in_care_of       = "Pod opieką {{ .carer }}"
+remotely_adopt   = "Adoptuj zdalnie"
+remotely_adopt_btn = "Adoptuj zdalnie psa {{ .name }} · €{{ .amount }}/mies."
+photo_coming     = "Zdjęcie wkrótce"
+photo_alt        = "Zdjęcie psa {{ .name }} wkrótce"
+
+# --- Zaangażuj się ---
+jump_to          = "Przejdź do"
+in_short         = "W skrócie"
+
+# --- Formularz kontaktowy ---
+form_intent_label = "Interesuje mnie"
+intent_remote_adopt   = "Adopcja zdalna"
+intent_physical_adopt = "Adopcja psa na stałe (przez partnera)"
+intent_foster    = "Opieka tymczasowa"
+intent_partner   = "Współpraca — moja organizacja / grupa ratownicza"
+intent_volunteer = "Wolontariat"
+intent_fundraise = "Zbiórka funduszy"
+intent_media     = "Media / prasa"
+intent_other     = "Coś innego"
+form_name        = "Twoje imię"
+form_email       = "E-mail"
+form_country     = "Gdzie mieszkasz"
+form_country_ph  = "Kraj / miasto"
+form_message     = "Wiadomość"
+form_message_ph  = "Napisz nam trochę o sobie i o tym, jak możemy pomóc."
+form_send        = "Wyślij wiadomość"
+form_consent     = "Wysyłając wiadomość, zgadzasz się, że możemy odpowiedzieć e-mailem. Nigdy nie udostępniamy Twoich danych."
+contact_direct   = "Bezpośrednio"
+contact_phone    = "Telefon"
+contact_where    = "Gdzie jesteśmy"
+contact_registration = "Rejestracja"
+contact_dog_label = "Pytasz o konkretnego psa?"
+contact_dog_text  = "Podaj w wiadomości identyfikator psa (np. RO-241) — niezależnie od tego, czy chodzi o adopcję zdalną, czy o adopcję przez partnera — a my od razu się tym zajmiemy."
+
+# --- Auto-translation notice ---
+autotrans_notice = "Przetłumaczone automatycznie z angielskiego – może zawierać błędy."
+autotrans_original = "Przeczytaj oryginał"

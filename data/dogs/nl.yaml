@@ -1,0 +1,77 @@
+# Dieren beschikbaar voor ADOPTIE OP AFSTAND (een terugkerend abonnement dat
+# de zorg voor de hond binnen ons partnernetwerk financiert). Fysieke opvang/adoptie
+# wordt geregeld door de partner-ngo's en particulieren die voor elke hond zorgen.
+#
+# Velden:
+#   photo:         pad onder /static (bijv. /img/dogs/luca.jpg). Leeg = tijdelijke afbeelding.
+#   carer:         de partner-ngo of het opvanggezin dat momenteel voor de hond zorgt.
+#   monthly:       optioneel voorgesteld maandbedrag (EUR) voor deze hond.
+#   subscribe_url: optionele abonnementslink per hond. Indien leeg, verwijst de knop
+#                  naar params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Reu
+    age: "2 jaar"
+    size: Middelgroot
+    carer: "Partnerasiel · Boekarest"
+    status: Zoekt adoptanten op afstand
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Afgelopen winter uit een openbaar asiel gehaald. Lief en zindelijk — zijn verzorgers betalen voedsel en dierenartskosten, en jouw adoptie op afstand houdt hen op de been.
+  - id: RO-198
+    name: Mara
+    sex: Teef
+    age: "8 maanden"
+    size: Klein
+    carer: "Opvanggezin · Cluj"
+    status: Deels gefinancierd
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Gevonden op een vuilnisbelt samen met haar broertjes en zusjes. Nu veilig in een opvanggezin, volledig gevaccineerd en snel groeiend dankzij gedoneerd voedsel.
+  - id: RO-263
+    name: Bruno
+    sex: Reu
+    age: "4 jaar"
+    size: Groot
+    carer: "Partnersanctuarium · Ploiești"
+    status: Zoekt adoptanten op afstand
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Een rustige, oplettende reus die twee jaar op straat heeft geleefd. Een grote hond kost meer om te voeden — adoptanten op afstand maken zijn plek in het sanctuarium mogelijk.
+  - id: RO-255
+    name: Sofia
+    sex: Teef
+    age: "3 jaar"
+    size: Middelgroot
+    carer: "Opvanggezin · Boekarest"
+    status: Deels gefinancierd
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Gered nadat ze door een auto was aangereden; volledig hersteld dankzij haar opvanggezin. Aanhankelijk en eindeloos dankbaar.
+  - id: RO-271
+    name: Toby
+    sex: Reu
+    age: "1 jaar"
+    size: Middelgroot
+    carer: "Partnerasiel · Sibiu"
+    status: Zoekt dringend adoptanten
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Op straat geboren uit een geredde moeder. Hij leert nog steeds dat mensen aardig kunnen zijn — zijn asiel heeft hulp nodig om zijn zorg te betalen.
+  - id: RO-233
+    name: Nadia
+    sex: Teef
+    age: "5 jaar"
+    size: Klein
+    carer: "Opvanggezin · Sibiu"
+    status: Zoekt adoptanten op afstand
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Een oudere dame met de zachtste ogen, veilig in een opvanggezin. Oudere honden wachten het langst op steun — een paar euro per maand verandert haar wereld.

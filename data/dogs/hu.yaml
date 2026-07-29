@@ -1,0 +1,78 @@
+# TÁVÖRÖKBEFOGADÁSRA elérhető állatok (ismétlődő előfizetés, amely a kutya
+# gondozását finanszírozza partnerhálózatunkon belül). A tényleges gazdisítást/
+# örökbefogadást a partner civil szervezetek és magánszemélyek intézik, akik az
+# egyes kutyákra vigyáznak.
+#
+# Mezők:
+#   photo:         elérési út a /static alatt (pl. /img/dogs/luca.jpg). Üres = helykitöltő.
+#   carer:         a partner civil szervezet vagy gazdi, aki jelenleg a kutyát gondozza.
+#   monthly:       opcionális javasolt havi összeg (EUR) ehhez a kutyához.
+#   subscribe_url: opcionális, kutyánkénti előfizetési link. Ha üres, a gomb ide
+#                  mutat: params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Kan
+    age: "2 év"
+    size: Közepes
+    carer: "Partnermenhely · Bukarest"
+    status: Távörökbefogadókra vár
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Tavaly télen mentették ki egy közmenhelyről. Szelíd és szobatiszta — gondozói fedezik az ételt és az állatorvosi költségeket, a te távörökbefogadásod pedig segít nekik kitartani.
+  - id: RO-198
+    name: Mara
+    sex: Szuka
+    age: "8 hónap"
+    size: Kicsi
+    carer: "Gazdisítói otthon · Kolozsvár"
+    status: Részben finanszírozott
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Testvéreivel együtt egy szeméttelepen találták. Most már biztonságban van egy gazdisítói otthonban, teljesen beoltva, és gyorsan cseperedik az adományozott ételen.
+  - id: RO-263
+    name: Bruno
+    sex: Kan
+    age: "4 év"
+    size: Nagy
+    carer: "Partnermenedék · Ploiești"
+    status: Távörökbefogadókra vár
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Nyugodt, éber óriás, aki két évet töltött az utcán. Egy nagy kutyát drágább etetni — a távörökbefogadók teszik lehetővé a helyét a menedékben.
+  - id: RO-255
+    name: Sofia
+    sex: Szuka
+    age: "3 év"
+    size: Közepes
+    carer: "Gazdisítói otthon · Bukarest"
+    status: Részben finanszírozott
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Miután elütötte egy autó, kimentették; gazdisítójának köszönhetően teljesen felépült. Ragaszkodó és végtelenül hálás.
+  - id: RO-271
+    name: Toby
+    sex: Kan
+    age: "1 év"
+    size: Közepes
+    carer: "Partnermenhely · Nagyszeben"
+    status: Sürgősen örökbefogadókra vár
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Egy megmentett anyakutya kölykeként az utcán született. Még mindig tanulja, hogy az emberek kedvesek lehetnek — a menhelynek segítségre van szüksége a gondozása fedezéséhez.
+  - id: RO-233
+    name: Nadia
+    sex: Szuka
+    age: "5 év"
+    size: Kicsi
+    carer: "Gazdisítói otthon · Nagyszeben"
+    status: Távörökbefogadókra vár
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Idős hölgy a legpuhább tekintettel, biztonságban gazdisítói gondozásban. Az idősebb kutyák várnak a legtovább a támogatásra — havi néhány euró megváltoztatja a világát.

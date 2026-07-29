@@ -1,0 +1,54 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{- $isHome := .IsHome -}}
+  <title>{{ if $isHome }}{{ site.Title }} — {{ T "site_tagline" }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+
+  {{- $desc := .Description | default .Summary | default (T "site_description") -}}
+  <meta name="description" content="{{ $desc | plainify | truncate 180 }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- hreflang alternates -->
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{- if eq .Language.Lang "en" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
+  {{- end }}
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ if $isHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ $desc | plainify | truncate 180 }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:locale" content="{{ replace (site.Language.Locale | default site.Language.Lang) "-" "_" }}">
+  {{- range .AllTranslations }}<meta property="og:locale:alternate" content="{{ replace (.Language.Locale | default .Language.Lang) "-" "_" }}">{{ end }}
+  {{- with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  {{- $css := resources.Get "css/main.css" | fingerprint -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}"{{ end }}>
+
+  {{ if .OutputFormats.Get "RSS" -}}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ (.OutputFormats.Get "RSS").Permalink }}">
+  {{- end }}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  {{- if .IsPage }}
+  <script type="application/ld+json">
+  {{ dict
+      "@context" "https://schema.org"
+      "@type" "Article"
+      "headline" .Title
+      "datePublished" (.PublishDate.Format "2006-01-02")
+      "publisher" (dict "@type" "NGO" "name" site.Title)
+    | jsonify }}
+  </script>
+  {{- end }}
+</head>

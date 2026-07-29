@@ -1,0 +1,43 @@
+---
+title: "Vores arbejde"
+eyebrow: "Programmer"
+subtitle: "Vi er bindevævet: vi finansierer, koordinerer og forstærker et netværk af redningsfolk, plejeværter og shelters. Her er, hvad det netværk gør med din støtte — og den rolle, vi spiller i det."
+description: "Hvordan Strays of Romania arbejder som et netværk: finansierer sterilisation, støtter redning og pleje på tværs af partnerorganisationer og driver fjernadoptioner, der holder hundene passet."
+
+principles_eyebrow: "Sådan arbejder vi"
+principles_title: "Fire principper, vi ikke går på kompromis med."
+cta_title: "Finansiér det arbejde, der gør en ende på krisen."
+cta_text: "Hvert program ovenfor hviler på donationer. €25 steriliserer en hund; en månedlig gave holder en klinik på vejen."
+
+programs:
+  - no: "01"
+    name: "Finansiér sterilisation (CNVR)"
+    tag: "Bestandskontrol"
+    body: "Vi kanaliserer donationer ind i indfang-kastrer-vaccinér-returnér-kampagner drevet af vores partnere og mobile klinikker. En steriliseret hund kan ikke formere sig, og en vaccineret hund spreder ikke rabies — så gadebestanden falder, humant og permanent. Det er her, størstedelen af din almindelige donation går hen."
+    stat: "€25 steriliserer én hund"
+  - no: "02"
+    name: "Støt redning & akuthjælp"
+    tag: "Førstehjælp"
+    body: "Når en partner eller en uafhængig redningsperson trækker en hund ud af fare — den påkørte, det efterladte kuld, shelter-hunden, hvis tid er ved at rinde ud — hjælper vi med at finansiere dyrlægehjælpen, modtagelsen og et sikkert sted at komme sig."
+    stat: "Fælles akutfond"
+  - no: "03"
+    name: "Understøt pleje- & helle-ophold"
+    tag: "Rehabilitering"
+    body: "En gadehund er ikke et kæledyr endnu. I partner-shelters og plejehjem får hundene den tid, det foder og den behandling, de har brug for til at hele. Fjernadoptioner og donationer holder de plejere kørende, mens en hund venter."
+    stat: "Drevet af fjernadoptanter"
+  - no: "04"
+    name: "Forbind hunde med hjem"
+    tag: "Nye begyndelser"
+    body: "Fysisk omplacering varetages af partnerorganisationerne i vores netværk, hver med deres egen proces og standarder. Vi giver deres hunde en større platform, og vores fjernadoptanter holder de hunde passet indtil — og hvis — et permanent hjem findes."
+    stat: "40+ partnere, én platform"
+
+principles:
+  - title: "Human, altid"
+    body: "Ingen aflivning, aldrig. Vi og vores partnere bruger kun metoder, der respekterer hundens velfærd i hvert eneste skridt."
+  - title: "Evidens frem for følelser"
+    body: "Vi bakker op om de tilgange, der rent faktisk mindsker lidelse i stor skala — begyndende med masse-sterilisation."
+  - title: "Et netværk, ikke et monopol"
+    body: "Vi forstærker lokale redningsfolk og ngo'er frem for at erstatte dem. Det er deres kamp; vi hjælper dem med at vinde den."
+  - title: "Ærlig om grænser"
+    body: "Vi kan ikke redde hver eneste hund. Vi er åbne om, hvad netværket kan gøre, og hvad det ikke kan — endnu."
+---

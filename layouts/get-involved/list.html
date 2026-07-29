@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.subtitle }}</p>
+  </div>
+</div>
+
+{{/* quick jump */}}
+<section class="section--tight" style="border-bottom:1px solid var(--line)">
+  <div class="wrap" style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center">
+    <span class="mono small text-muted" style="letter-spacing:.08em;text-transform:uppercase;margin-right:.5rem">{{ T "jump_to" }}</span>
+    {{- range $p.ways }}<a href="#{{ .id }}" class="pill">{{ .kicker }}</a>{{ end }}
+  </div>
+</section>
+
+{{- range $i, $w := $p.ways }}
+{{- $href := $w.href | relLangURL }}{{ with $w.query }}{{ $href = printf "%s?%s" $href . }}{{ end }}
+<section class="section{{ if modBool $i 2 }}{{ else }} on-pine{{ end }}"{{ if modBool $i 2 }} style="background:var(--paper-2)"{{ end }} id="{{ $w.id }}">
+  <div class="wrap">
+    <div class="split split--wide-left" style="align-items:start">
+      <div>
+        <p class="eyebrow"{{ if not (modBool $i 2) }} style="color:var(--amber-soft)"{{ end }}>{{ $w.kicker }}</p>
+        <h2>{{ $w.title }}</h2>
+        <p class="lead"{{ if not (modBool $i 2) }} style="color:var(--muted-on-pine)"{{ end }}>{{ $w.lead }}</p>
+        <a href="{{ $href }}" class="btn btn--primary btn--lg mt-2">{{ $w.cta_label }}</a>
+      </div>
+      <div>
+        <div class="card"{{ if not (modBool $i 2) }} style="background:color-mix(in srgb,var(--paper-on-pine) 8%,transparent);border-color:color-mix(in srgb,var(--paper-on-pine) 20%,transparent)"{{ end }}>
+          <p class="mono small" style="letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem;{{ if not (modBool $i 2) }}color:var(--amber-soft){{ else }}color:var(--muted){{ end }}">{{ T "in_short" }}</p>
+          <ul style="list-style:none;padding:0;margin:0;display:grid;gap:.9rem">
+            {{- range $w.points }}
+            <li style="display:grid;grid-template-columns:1.3rem 1fr;gap:.6rem;{{ if not (modBool $i 2) }}color:var(--paper-on-pine){{ else }}color:var(--ink-soft){{ end }}">
+              <span style="color:var(--amber)">✓</span><span>{{ . }}</span>
+            </li>
+            {{- end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{ partial "cta-band.html" (dict "title" $p.cta_title "text" $p.cta_text) }}
+
+{{ end }}

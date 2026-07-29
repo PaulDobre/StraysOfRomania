@@ -1,0 +1,23 @@
+{{- /* Renders one dog card (used on the home page). Context: a dog map.
+       Links through to the Remote Adoption page anchor where the subscribe button lives. */ -}}
+<a class="dog" href="{{ "adopt/" | relLangURL }}#{{ .id | urlize }}">
+  <div class="dog__photo">
+    <span class="dog__id">{{ .id }}</span>
+    {{- if .photo }}
+      <img src="{{ .photo | relURL }}" alt="{{ T "photo_alt" (dict "name" .name) }}" loading="lazy">
+    {{- else }}
+      {{ partial "dog-placeholder.html" .name }}
+    {{- end }}
+  </div>
+  <div class="dog__body">
+    <div class="dog__name">{{ .name }}</div>
+    <div class="dog__meta">
+      <span>{{ .sex }}</span><span>{{ .age }}</span><span>{{ .size }}</span>
+    </div>
+    <p class="dog__blurb">{{ .blurb }}</p>
+    <div style="margin-top:.9rem;display:flex;gap:.6rem;align-items:center;justify-content:space-between">
+      <span class="pill pill--amber">{{ .status }}</span>
+      <span class="arrow-link" style="font-size:.78rem">{{ T "remotely_adopt" }}</span>
+    </div>
+  </div>
+</a>

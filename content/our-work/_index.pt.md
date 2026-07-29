@@ -1,0 +1,43 @@
+---
+title: "O Nosso Trabalho"
+eyebrow: "Programas"
+subtitle: "Somos o tecido que liga tudo: financiamos, coordenamos e amplificamos uma rede de resgatadores, famílias de acolhimento e abrigos. Eis o que essa rede faz com o seu apoio — e o papel que nela desempenhamos."
+description: "Como a Strays of Romania funciona enquanto rede: financiando a esterilização, apoiando o resgate e o acolhimento através de organizações parceiras e gerindo adoções à distância que mantêm os cães bem cuidados."
+
+principles_eyebrow: "Como trabalhamos"
+principles_title: "Quatro princípios em que não cedemos."
+cta_title: "Financie o trabalho que põe fim à crise."
+cta_text: "Todos os programas acima dependem de donativos. €25 esterilizam um cão; um donativo mensal mantém uma clínica na estrada."
+
+programs:
+  - no: "01"
+    name: "Financiar a esterilização (CNVR)"
+    tag: "Controlo populacional"
+    body: "Canalizamos donativos para campanhas de capturar-esterilizar-vacinar-devolver realizadas pelos nossos parceiros e por clínicas móveis. Um cão esterilizado não se pode reproduzir e um cão vacinado não vai propagar a raiva — por isso, a população de rua diminui, de forma humana e permanente. É para aqui que vai a maior parte do seu donativo geral."
+    stat: "€25 esterilizam um cão"
+  - no: "02"
+    name: "Apoiar o resgate e os cuidados de emergência"
+    tag: "Primeira resposta"
+    body: "Quando um parceiro ou um resgatador independente tira um cão do perigo — o atropelado, a ninhada abandonada, o cão de abrigo com o tempo a esgotar-se — ajudamos a financiar os cuidados veterinários, o acolhimento e o lugar seguro para recuperar."
+    stat: "Fundo de emergência partilhado"
+  - no: "03"
+    name: "Apoiar o acolhimento e os cuidados em santuário"
+    tag: "Recuperação"
+    body: "Um cão de rua ainda não é um animal de estimação. Em abrigos parceiros e famílias de acolhimento, os cães recebem o tempo, a comida e o tratamento de que precisam para sarar. As adoções à distância e os donativos mantêm esses cuidadores enquanto um cão espera."
+    stat: "Impulsionado por adotantes à distância"
+  - no: "04"
+    name: "Ligar os cães a lares"
+    tag: "Novos começos"
+    body: "A recolocação física é tratada pelas organizações parceiras da nossa rede, cada uma com o seu próprio processo e critérios. Damos aos seus cães uma plataforma maior, e os nossos adotantes à distância mantêm esses cães bem cuidados até — e se — for encontrado um lar permanente."
+    stat: "40+ parceiros, uma plataforma"
+
+principles:
+  - title: "Humano, sempre"
+    body: "Nunca o abate. Nós e os nossos parceiros só usamos métodos que respeitam o bem-estar do cão em cada passo."
+  - title: "Evidência acima da emoção"
+    body: "Apoiamos as abordagens que realmente reduzem o sofrimento em larga escala — a começar pela esterilização em massa."
+  - title: "Uma rede, não um monopólio"
+    body: "Amplificamos os resgatadores e as ONG locais em vez de os substituir. Esta luta é deles; nós ajudamo-los a vencê-la."
+  - title: "Honestos quanto aos limites"
+    body: "Não podemos salvar todos os cães. Somos transparentes quanto ao que a rede consegue fazer, e ao que ainda não consegue."
+---

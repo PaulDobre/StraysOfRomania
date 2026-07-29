@@ -1,0 +1,136 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+{{/* ---------------- HERO ---------------- */}}
+<section class="hero">
+  <svg class="hero__grain" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+  <div class="wrap hero__inner">
+    <div>
+      <p class="hero__dateline"><span class="dot"></span> {{ $p.hero.dateline }}</p>
+      <h1>{{ $p.hero.title }} <em>{{ $p.hero.emphasis }}</em></h1>
+      <p class="hero__lead">{{ $p.hero.lead }}</p>
+      <div class="hero__cta">
+        <a href="{{ "adopt/" | relLangURL }}" class="btn btn--primary btn--lg">{{ $p.hero.cta_primary }}</a>
+        <a href="{{ "donate/" | relLangURL }}" class="btn btn--ghost btn--lg">{{ $p.hero.cta_secondary }}</a>
+      </div>
+    </div>
+    <div class="hero__figure">
+      <div class="hero__stats" role="list" aria-label="{{ $p.hero.stats_aria }}">
+        {{- range $p.hero.stats }}
+        <div class="hero__stat" role="listitem">
+          <div class="num">{{ .num }}</div>
+          <div class="lbl">{{ .label }}</div>
+          <div class="src">{{ .note }}</div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---------------- THE PROBLEM (teaser) ---------------- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="split split--wide-left">
+      <div>
+        <p class="eyebrow">{{ $p.problem.eyebrow }}</p>
+        <h2>{{ $p.problem.title }}</h2>
+        <p class="lead">{{ $p.problem.lead }}</p>
+        <p>{{ $p.problem.body }}</p>
+        <a href="{{ "crisis/" | relLangURL }}" class="arrow-link">{{ $p.problem.link }}</a>
+      </div>
+      <div class="figure-frame">
+        <svg viewBox="0 0 600 460" width="100%" role="img" aria-label="{{ $p.problem.caption }}">
+          <rect width="600" height="460" fill="#e7dcc6"/>
+          <g fill="#223b31" opacity="0.9">
+            <rect x="40" y="120" width="90" height="300"/><rect x="150" y="70" width="90" height="350"/><rect x="260" y="150" width="90" height="270"/><rect x="370" y="40" width="90" height="380"/><rect x="480" y="110" width="90" height="310"/>
+          </g>
+          <g fill="#f6f1e7" opacity="0.85">
+            {{- range $x := (seq 5) }}{{- range $y := (seq 8) }}<rect x="{{ add 52 (mul (sub $x 1) 110) }}" y="{{ add 90 (mul (sub $y 1) 42) }}" width="18" height="24"/>{{ end }}{{ end }}
+          </g>
+          <g fill="#d9922f" transform="translate(250 350) scale(5.2)"><path d="M4 6.5c-.6-1.3-.3-2.4.1-2.6.6-.3 1.9.3 2.7 1.3.7-.3 1.4-.4 2.1-.4s1.5.1 2.1.4c.8-1 2.1-1.6 2.7-1.3.4.2.7 1.3.1 2.6.7.9 1.2 1.9 1.2 3.1 0 1.1-.4 2.1-1 2.9.2.5.3 1 .3 1.5 0 2.6-2.5 4.4-5.5 4.4S3.6 20 3.6 17.5c0-.5.1-1 .3-1.5-.6-.8-1-1.8-1-2.9 0-1.2.5-2.2 1.2-3.1Z"/></g>
+        </svg>
+        <div class="figure-cap">{{ $p.problem.caption }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---------------- IMPACT STAT BAND ---------------- */}}
+<section class="section--tight on-pine">
+  <div class="wrap">
+    <p class="eyebrow center" style="color:var(--amber-soft)">{{ $p.impact.label }}</p>
+    <div class="statband" style="--paper:transparent;border-color:color-mix(in srgb,var(--paper-on-pine) 20%,transparent);background:color-mix(in srgb,var(--paper-on-pine) 20%,transparent)">
+      {{- range $p.impact.stats }}
+      <div class="cell" style="background:var(--pine)"><div class="num" style="color:var(--amber-soft)">{{ .num }}</div><div class="lbl" style="color:var(--muted-on-pine)">{{ .label }}</div></div>
+      {{- end }}
+    </div>
+    <p class="center mono small" style="color:var(--muted-on-pine);margin-top:1.2rem">{{ $p.impact.note }}</p>
+  </div>
+</section>
+
+{{/* ---------------- OUR WORK ---------------- */}}
+{{- $icons := slice
+  "<path d=\"M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z\"/><path d=\"M9 11h6M12 8v6\"/>"
+  "<path d=\"M3 13h4l2-4 3 8 2-5h5\"/><circle cx=\"12\" cy=\"12\" r=\"9\"/>"
+  "<path d=\"M4 12a8 8 0 0 1 16 0\"/><path d=\"M4 12v4a2 2 0 0 0 2 2h1v-6H6a2 2 0 0 0-2 2Zm16 0v4a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2Z\"/>"
+  "<path d=\"M12 21s-8-4.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 6.5-8 11-8 11Z\"/>" -}}
+<section class="section">
+  <div class="wrap">
+    <div class="divider-label">{{ $p.work.label }}</div>
+    <div class="split" style="align-items:end;margin-bottom:2.5rem">
+      <h2 class="mb-0">{{ $p.work.title }}</h2>
+      <p class="mb-0 text-muted">{{ $p.work.intro }}</p>
+    </div>
+    <div class="grid grid--4">
+      {{- range $i, $c := $p.work.cards }}
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">{{ index $icons $i | safeHTML }}</svg>
+        <h3>{{ $c.title }}</h3>
+        <p>{{ $c.body }}</p>
+      </article>
+      {{- end }}
+    </div>
+    <p class="mt-2"><a href="{{ "our-work/" | relLangURL }}" class="arrow-link">{{ $p.work.link }}</a></p>
+  </div>
+</section>
+
+{{/* ---------------- FEATURED DOGS ---------------- */}}
+{{- $dogs := partial "dogs-data.html" . }}
+<section class="section on-pine" style="background:var(--paper-2);color:var(--ink)">
+  <div class="wrap">
+    <div class="split" style="align-items:end;margin-bottom:2.5rem">
+      <div>
+        <p class="eyebrow">{{ $p.featured.eyebrow }}</p>
+        <h2 class="mb-0" style="color:var(--ink)">{{ $p.featured.title }}</h2>
+      </div>
+      <p class="mb-0" style="text-align:right"><a href="{{ "adopt/" | relLangURL }}" class="arrow-link" style="color:var(--pine-2)">{{ $p.featured.link }}</a></p>
+    </div>
+    <div class="dog-grid">
+      {{- range first 6 $dogs }}
+        {{ partial "dog-card.html" . }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---------------- WAYS TO HELP ---------------- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="divider-label">{{ $p.ways.label }}</div>
+    <div class="grid grid--3">
+      {{- range $p.ways.items }}
+      <a class="card card--link" href="{{ .href | relLangURL }}" style="text-decoration:none">
+        <span class="card__index">{{ .index }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .body }}</p>
+        <p style="margin-top:1rem"><span class="arrow-link">{{ .link }}</span></p>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "cta-band.html" (dict "title" $p.cta.title "text" $p.cta.text) }}
+
+{{ end }}

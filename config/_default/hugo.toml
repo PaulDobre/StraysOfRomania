@@ -1,0 +1,48 @@
+baseURL = "https://straysofromania.org/"
+title = "Strays of Romania"
+enableRobotsTXT = true
+enableGitInfo = false
+
+# ---- Multilingual ----
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false   # English lives at /, other languages at /<lang>/
+# We translate by filename suffix (_index.de.md, foo.fr.md, …)
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+# ---- Site-wide params (language-neutral) ----
+[params]
+  # Placeholders — replace with real details before launch
+  email = "hello@straysofromania.org"
+  phone = ""
+  registrationNumber = "CIF 00000000"        # Romanian nonprofit fiscal code — replace
+  foundedYear = "2024"
+  addressLine = "Bucharest, Romania"
+
+  # Remote adoption / donations platform.
+  # Each dog's "Remotely adopt" button links here with ?animal=<id>&name=<name>&amount=<n>&interval=month.
+  remoteAdoptBaseUrl = "https://donate.straysofromania.org/remote-adoption"
+  donateBaseUrl = "https://donate.straysofromania.org"
+  remoteAdoptAmounts = [10, 15, 25]
+  remoteAdoptDefault = 15
+
+  [params.social]
+    instagram = "https://instagram.com/"
+    facebook = "https://facebook.com/"
+    youtube = ""
+    tiktok = ""
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[taxonomies]
+  tag = "tags"
+
+[services]
+  [services.rss]
+    limit = 20

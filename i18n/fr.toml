@@ -1,0 +1,86 @@
+# Chaînes d'interface en français. Un fichier <lang>.toml par langue.
+# Traduire uniquement les VALEURS — conserver les clés et tous les jetons {{ .placeholder }}.
+
+# --- Marque / site ---
+site_tagline    = "Le réseau qui met fin à la crise des chiens errants en Roumanie"
+site_description = "Strays of Romania est une association à but non lucratif qui met en relation et finance un réseau de sauveteurs, de familles d'accueil et d'organisations partenaires œuvrant à mettre fin à la crise des chiens errants."
+brand_sub       = "Sauvetage de chiens errants · RO"
+
+# --- Navigation ---
+nav_primary        = "Principal"
+nav_crisis         = "La crise"
+nav_our_work       = "Notre action"
+nav_remote_adoption = "Parrainage à distance"
+nav_get_involved   = "S'impliquer"
+nav_stories        = "Récits"
+nav_about          = "À propos"
+menu               = "Menu"
+skip_to_content    = "Aller au contenu"
+language           = "Langue"
+
+# --- Boutons (réutilisés) ---
+btn_remote_adopt = "Parrainer à distance"
+btn_donate       = "Faire un don"
+btn_get_involved = "S'impliquer"
+
+# --- Pied de page ---
+footer_explore   = "Explorer"
+footer_act_now   = "Agir maintenant"
+footer_brand_desc = "Une association à but non lucratif qui met en relation et finance les sauveteurs, les familles d'accueil et les refuges œuvrant à mettre fin à la crise des chiens errants en Roumanie — avec humanité, et pour de bon."
+footer_remote_adopt = "Parrainer un chien à distance"
+footer_donate    = "Faire un don"
+footer_foster    = "Accueillir"
+footer_partner   = "Devenir partenaire"
+footer_faq       = "FAQ"
+footer_transparency = "Transparence"
+footer_contact   = "Contact"
+footer_follow    = "Suivre les chiens"
+
+# --- Générique ---
+label_home       = "Accueil"
+posts_empty      = "Rien ici pour le moment — revenez bientôt."
+tag_story        = "Récit"
+
+# --- Bandeau d'appel à l'action par défaut ---
+cta_default_title = "Chaque don, c'est une vie arrachée à la rue."
+cta_default_text  = "Stérilisation, vaccination, nourriture et voyage sûr vers un nouveau foyer — tout repose sur celles et ceux qui décident d'aider. Commencez dès aujourd'hui."
+
+# --- Fiches des chiens ---
+in_care_of       = "Pris en charge par {{ .carer }}"
+remotely_adopt   = "Parrainer à distance"
+remotely_adopt_btn = "Parrainer {{ .name }} à distance · {{ .amount }} €/mois"
+photo_coming     = "Photo à venir"
+photo_alt        = "Photo de {{ .name }} à venir"
+
+# --- S'impliquer ---
+jump_to          = "Aller à"
+in_short         = "En bref"
+
+# --- Formulaire de contact ---
+form_intent_label = "Je suis intéressé·e par"
+intent_remote_adopt   = "Le parrainage à distance"
+intent_physical_adopt = "L'adoption réelle d'un chien (via un partenaire)"
+intent_foster    = "L'accueil"
+intent_partner   = "Le partenariat — mon organisation / mon sauvetage"
+intent_volunteer = "Le bénévolat"
+intent_fundraise = "La collecte de fonds"
+intent_media     = "Médias / presse"
+intent_other     = "Autre chose"
+form_name        = "Votre nom"
+form_email       = "E-mail"
+form_country     = "Où vous habitez"
+form_country_ph  = "Pays / ville"
+form_message     = "Message"
+form_message_ph  = "Parlez-nous un peu de vous et de la façon dont nous pouvons aider."
+form_send        = "Envoyer le message"
+form_consent     = "En envoyant ce message, vous acceptez que nous puissions vous répondre par e-mail. Nous ne partageons jamais vos coordonnées."
+contact_direct   = "En direct"
+contact_phone    = "Téléphone"
+contact_where    = "Où nous sommes"
+contact_registration = "Immatriculation"
+contact_dog_label = "Une question sur un chien en particulier ?"
+contact_dog_text  = "Indiquez l'identifiant du chien (par exemple RO-241) dans votre message — qu'il s'agisse d'un parrainage à distance ou d'une adoption via un partenaire — et nous nous en occuperons sans tarder."
+
+# --- Auto-translation notice ---
+autotrans_notice = "Traduit automatiquement de l’anglais – peut contenir des erreurs."
+autotrans_original = "Lire l’original"

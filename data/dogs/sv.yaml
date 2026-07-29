@@ -1,0 +1,77 @@
+# Djur tillgängliga för FJÄRRADOPTION (en återkommande prenumeration som
+# finansierar hundens omsorg inom vårt partnernätverk). Fysiskt jourhem/adoption
+# hanteras av partnerorganisationerna och de personer som tar hand om varje hund.
+#
+# Fält:
+#   photo:         sökväg under /static (t.ex. /img/dogs/luca.jpg). Tom = platshållare.
+#   carer:         partnerorganisationen eller jourhemmet som just nu vårdar hunden.
+#   monthly:       valfritt föreslaget månadsbelopp (EUR) för denna hund.
+#   subscribe_url: valfri prenumerationslänk per hund. Om tom länkar knappen
+#                  till params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Hane
+    age: "2 år"
+    size: Mellan
+    carer: "Partnerhärbärge · Bukarest"
+    status: Behöver fjärradoptanter
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Räddad från ett kommunalt härbärge förra vintern. Snäll och rumsren — hans vårdare täcker mat och veterinärräkningar, och din fjärradoption håller dem igång.
+  - id: RO-198
+    name: Mara
+    sex: Hona
+    age: "8 månader"
+    size: Liten
+    carer: "Jourhem · Cluj"
+    status: Delvis finansierad
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Hittad på en soptipp tillsammans med sina syskon. Trygg nu i ett jourhem, fullt vaccinerad och växer snabbt på skänkt mat.
+  - id: RO-263
+    name: Bruno
+    sex: Hane
+    age: "4 år"
+    size: Stor
+    carer: "Partnerreservat · Ploiești"
+    status: Behöver fjärradoptanter
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: En lugn, vaksam jätte som tillbringade två år på gatan. En stor hund kostar mer att mätta — fjärradoptanter gör hans plats på reservatet möjlig.
+  - id: RO-255
+    name: Sofia
+    sex: Hona
+    age: "3 år"
+    size: Mellan
+    carer: "Jourhem · Bukarest"
+    status: Delvis finansierad
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Räddad efter att ha blivit påkörd av en bil; helt återställd tack vare sitt jourhem. Tillgiven och oändligt tacksam.
+  - id: RO-271
+    name: Toby
+    sex: Hane
+    age: "1 år"
+    size: Mellan
+    carer: "Partnerhärbärge · Sibiu"
+    status: Behöver adoptanter akut
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Född på gatan till en räddad mamma. Lär sig fortfarande att människor kan vara snälla — hans härbärge behöver hjälp att täcka hans omsorg.
+  - id: RO-233
+    name: Nadia
+    sex: Hona
+    age: "5 år"
+    size: Liten
+    carer: "Jourhem · Sibiu"
+    status: Behöver fjärradoptanter
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: En äldre dam med de mjukaste ögonen, trygg i jourhem. Äldre hundar väntar längst på stöd — några euro i månaden förändrar hennes värld.

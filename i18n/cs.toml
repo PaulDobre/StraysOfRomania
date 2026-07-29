@@ -1,0 +1,86 @@
+# České texty uživatelského rozhraní. Jeden soubor <lang>.toml na každý jazyk.
+# Překládejte POUZE hodnoty — klíče a jakékoli tokeny {{ .placeholder }} ponechte beze změny.
+
+# --- Značka / web ---
+site_tagline    = "Síť, která ukončuje krizi toulavých psů v Rumunsku"
+site_description = "Strays of Romania je nezisková organizace, která propojuje a financuje síť zachránců, pěstounů a partnerských organizací usilujících o ukončení krize toulavých psů."
+brand_sub       = "Záchrana toulavých psů · RO"
+
+# --- Navigace ---
+nav_primary        = "Hlavní"
+nav_crisis         = "Krize"
+nav_our_work       = "Naše práce"
+nav_remote_adoption = "Adopce na dálku"
+nav_get_involved   = "Zapojte se"
+nav_stories        = "Příběhy"
+nav_about          = "O nás"
+menu               = "Menu"
+skip_to_content    = "Přejít k obsahu"
+language           = "Jazyk"
+
+# --- Tlačítka (opakovaně používaná) ---
+btn_remote_adopt = "Adoptovat na dálku"
+btn_donate       = "Přispět"
+btn_get_involved = "Zapojit se"
+
+# --- Patička ---
+footer_explore   = "Prozkoumat"
+footer_act_now   = "Jednejte hned"
+footer_brand_desc = "Nezisková organizace, která propojuje a financuje zachránce, pěstouny a útulky usilující o ukončení krize toulavých psů v Rumunsku — humánně a natrvalo."
+footer_remote_adopt = "Adoptovat psa na dálku"
+footer_donate    = "Přispět"
+footer_foster    = "Stát se pěstounem"
+footer_partner   = "Staňte se naším partnerem"
+footer_faq       = "Časté dotazy"
+footer_transparency = "Transparentnost"
+footer_contact   = "Kontakt"
+footer_follow    = "Sledujte psy"
+
+# --- Obecné ---
+label_home       = "Domů"
+posts_empty      = "Zatím tu nic není — podívejte se brzy znovu."
+tag_story        = "Příběh"
+
+# --- Výchozí výzva k akci ---
+cta_default_title = "Každý dar znamená jeden život pryč z ulice."
+cta_default_text  = "Sterilizace, očkování, jídlo a bezpečná cesta do nového domova — to vše stojí na lidech, kteří se rozhodnou pomoci. Začněte ještě dnes."
+
+# --- Karty psů ---
+in_care_of       = "V péči {{ .carer }}"
+remotely_adopt   = "Adoptovat na dálku"
+remotely_adopt_btn = "Adoptovat {{ .name }} na dálku · €{{ .amount }}/měs."
+photo_coming     = "Fotka již brzy"
+photo_alt        = "Fotka {{ .name }} již brzy"
+
+# --- Zapojte se ---
+jump_to          = "Přejít na"
+in_short         = "Ve zkratce"
+
+# --- Kontaktní formulář ---
+form_intent_label = "Zajímá mě"
+intent_remote_adopt   = "Adopce na dálku"
+intent_physical_adopt = "Skutečná adopce psa (přes partnera)"
+intent_foster    = "Pěstounská péče"
+intent_partner   = "Partnerství — moje organizace / záchranná stanice"
+intent_volunteer = "Dobrovolnictví"
+intent_fundraise = "Sbírky"
+intent_media     = "Média / tisk"
+intent_other     = "Něco jiného"
+form_name        = "Vaše jméno"
+form_email       = "E-mail"
+form_country     = "Kde bydlíte"
+form_country_ph  = "Země / město"
+form_message     = "Zpráva"
+form_message_ph  = "Napište nám něco málo o sobě a o tom, jak můžeme pomoci."
+form_send        = "Odeslat zprávu"
+form_consent     = "Odesláním souhlasíte, že vám můžeme odpovědět e-mailem. Vaše údaje nikdy nesdílíme."
+contact_direct   = "Přímý kontakt"
+contact_phone    = "Telefon"
+contact_where    = "Kde nás najdete"
+contact_registration = "Registrace"
+contact_dog_label = "Ptáte se na konkrétního psa?"
+contact_dog_text  = "Uveďte ve zprávě ID psa (např. RO-241) — ať už jde o adopci na dálku, nebo o osvojení přes partnera — a rovnou se na to podíváme."
+
+# --- Auto-translation notice ---
+autotrans_notice = "Automaticky přeloženo z angličtiny – může obsahovat chyby."
+autotrans_original = "Přečíst originál"

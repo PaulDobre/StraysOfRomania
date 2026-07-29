@@ -1,0 +1,43 @@
+---
+title: "Nasza praca"
+eyebrow: "Programy"
+subtitle: "Jesteśmy tkanką łączącą: finansujemy, koordynujemy i wzmacniamy sieć ratowników, opiekunów tymczasowych i schronisk. Oto, co ta sieć robi dzięki Twojemu wsparciu — i jaką rolę w niej odgrywamy."
+description: "Jak Strays of Romania działa jako sieć: finansując sterylizację, wspierając ratownictwo i opiekę tymczasową w organizacjach partnerskich oraz prowadząc adopcje zdalne, które zapewniają psom opiekę."
+
+principles_eyebrow: "Jak działamy"
+principles_title: "Cztery zasady, wobec których nie idziemy na kompromis."
+cta_title: "Sfinansuj pracę, która kończy kryzys."
+cta_text: "Każdy z powyższych programów opiera się na darowiznach. €25 sterylizuje psa; comiesięczny dar utrzymuje klinikę w trasie."
+
+programs:
+  - no: "01"
+    name: "Finansuj sterylizację (CNVR)"
+    tag: "Kontrola populacji"
+    body: "Kierujemy darowizny na kampanie odłów-sterylizacja-szczepienie-powrót prowadzone przez naszych partnerów i mobilne kliniki. Wysterylizowany pies nie może się rozmnażać, a zaszczepiony pies nie roznosi wścieklizny — więc populacja uliczna maleje, humanitarnie i trwale. To tam trafia większość Twojej ogólnej darowizny."
+    stat: "€25 sterylizuje jednego psa"
+  - no: "02"
+    name: "Wspieraj ratownictwo i pomoc w nagłych wypadkach"
+    tag: "Pierwsza reakcja"
+    body: "Gdy partner lub niezależny ratownik wyciąga psa z niebezpieczeństwa — potrąconego przez samochód, porzucony miot, psa ze schroniska, któremu kończy się czas — pomagamy sfinansować opiekę weterynaryjną, przyjęcie i bezpieczne miejsce do dojścia do siebie."
+    stat: "Wspólny fundusz kryzysowy"
+  - no: "03"
+    name: "Wspieraj opiekę tymczasową i azyle"
+    tag: "Rekonwalescencja"
+    body: "Pies z ulicy nie jest jeszcze zwierzęciem domowym. W partnerskich schroniskach i domach tymczasowych psy otrzymują czas, karmę i leczenie, których potrzebują, by wydobrzeć. Adopcje zdalne i darowizny utrzymują tych opiekunów, gdy pies czeka."
+    stat: "Napędzane przez adoptujących zdalnie"
+  - no: "04"
+    name: "Łącz psy z domami"
+    tag: "Nowe początki"
+    body: "Fizycznym szukaniem domów zajmują się organizacje partnerskie w naszej sieci, każda z własnym procesem i standardami. Dajemy ich psom większą platformę, a nasi adoptujący zdalnie zapewniają tym psom opiekę do czasu — i o ile — znalezienia stałego domu."
+    stat: "40+ partnerów, jedna platforma"
+
+principles:
+  - title: "Zawsze humanitarnie"
+    body: "Żadnych odstrzałów, nigdy. My i nasi partnerzy stosujemy wyłącznie metody, które na każdym kroku szanują dobrostan psa."
+  - title: "Dowody ponad emocje"
+    body: "Wspieramy podejścia, które faktycznie zmniejszają cierpienie na dużą skalę — zaczynając od masowej sterylizacji."
+  - title: "Sieć, a nie monopol"
+    body: "Wzmacniamy lokalnych ratowników i organizacje pozarządowe, zamiast ich zastępować. To ich walka; pomagamy im ją wygrać."
+  - title: "Uczciwie o ograniczeniach"
+    body: "Nie możemy uratować każdego psa. Jesteśmy transparentni co do tego, co sieć może zrobić, a czego — jeszcze — nie."
+---

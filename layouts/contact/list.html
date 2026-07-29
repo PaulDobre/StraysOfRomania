@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.subtitle }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:start;gap:clamp(2rem,5vw,4rem)">
+
+      {{/* ---- Form ---- */}}
+      <div>
+        <!-- Connect this form to your backend (Formspree, Netlify Forms, Basin, etc.).
+             Replace the action URL below. The data-netlify attribute enables Netlify Forms if you host there. -->
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" name="contact" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="field">
+            <label for="intent">{{ T "form_intent_label" }}</label>
+            <select id="intent" name="intent">
+              <option value="remote-adopt">{{ T "intent_remote_adopt" }}</option>
+              <option value="physical-adopt">{{ T "intent_physical_adopt" }}</option>
+              <option value="foster">{{ T "intent_foster" }}</option>
+              <option value="partner">{{ T "intent_partner" }}</option>
+              <option value="volunteer">{{ T "intent_volunteer" }}</option>
+              <option value="fundraise">{{ T "intent_fundraise" }}</option>
+              <option value="media">{{ T "intent_media" }}</option>
+              <option value="other">{{ T "intent_other" }}</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">{{ T "form_name" }}</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">{{ T "form_email" }}</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="country">{{ T "form_country" }}</label>
+            <input id="country" name="country" type="text" placeholder="{{ T "form_country_ph" }}" autocomplete="country-name">
+          </div>
+          <div class="field">
+            <label for="message">{{ T "form_message" }}</label>
+            <textarea id="message" name="message" rows="6" placeholder="{{ T "form_message_ph" }}" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg">{{ T "form_send" }}</button>
+          <p class="mono small text-muted" style="margin-top:1rem">{{ T "form_consent" }}</p>
+        </form>
+      </div>
+
+      {{/* ---- Details ---- */}}
+      <div>
+        <div class="card" style="background:var(--paper-2)">
+          <p class="mono small" style="letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem">{{ T "contact_direct" }}</p>
+          {{- with site.Params.email }}
+          <p style="margin-bottom:1rem"><strong>{{ T "form_email" }}</strong><br><a href="mailto:{{ . }}" style="color:var(--pine-2)">{{ . }}</a></p>
+          {{- end }}
+          {{- with site.Params.phone }}
+          <p style="margin-bottom:1rem"><strong>{{ T "contact_phone" }}</strong><br>{{ . }}</p>
+          {{- end }}
+          <p style="margin-bottom:1rem"><strong>{{ T "contact_where" }}</strong><br>{{ site.Params.addressLine }}</p>
+          <p class="mb-0"><strong>{{ T "contact_registration" }}</strong><br><span class="mono small">{{ site.Params.registrationNumber }}</span></p>
+
+          <hr>
+          <p class="mono small" style="letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.8rem">{{ T "footer_follow" }}</p>
+          <div class="social-row" style="filter:none">
+            {{- $s := site.Params.social }}
+            {{- with $s.instagram }}<a href="{{ . }}" aria-label="Instagram" target="_blank" rel="noopener" style="border-color:var(--line);color:var(--ink-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>{{ end }}
+            {{- with $s.facebook }}<a href="{{ . }}" aria-label="Facebook" target="_blank" rel="noopener" style="border-color:var(--line);color:var(--ink-soft)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-2.9h-2.8V9.2c0-.8.3-1.4 1.5-1.4h1.4V5.2c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.1H8.3V14h2.4v7h2.8Z"/></svg></a>{{ end }}
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:1.2rem">
+          <p class="callout__label" style="color:var(--pine-2)">{{ T "contact_dog_label" }}</p>
+          <p>{{ T "contact_dog_text" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

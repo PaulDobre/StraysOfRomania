@@ -1,0 +1,43 @@
+---
+title: "Nuestro trabajo"
+eyebrow: "Programas"
+subtitle: "Somos el tejido conectivo: financiamos, coordinamos y damos voz a una red de rescatadores, familias de acogida y refugios. Esto es lo que esa red hace con tu apoyo — y el papel que desempeñamos en ella."
+description: "Cómo funciona Strays of Romania como red: financiando la esterilización, respaldando el rescate y la acogida a través de organizaciones colaboradoras, y gestionando adopciones a distancia que mantienen a los perros cuidados."
+
+principles_eyebrow: "Cómo trabajamos"
+principles_title: "Cuatro principios que no negociamos."
+cta_title: "Financia el trabajo que pone fin a la crisis."
+cta_text: "Cada uno de los programas anteriores depende de las donaciones. 25 € esterilizan a un perro; un donativo mensual mantiene una clínica en la carretera."
+
+programs:
+  - no: "01"
+    name: "Financiar la esterilización (CNVR)"
+    tag: "Control de la población"
+    body: "Canalizamos las donaciones hacia campañas de capturar-esterilizar-vacunar-devolver que llevan a cabo nuestras organizaciones colaboradoras y clínicas móviles. Un perro esterilizado no puede reproducirse y un perro vacunado no propaga la rabia — así que la población callejera desciende, de forma humana y permanente. Es a donde va la mayor parte de tu donación general."
+    stat: "25 € esterilizan a un perro"
+  - no: "02"
+    name: "Respaldar el rescate y los cuidados de urgencia"
+    tag: "Primera respuesta"
+    body: "Cuando una organización colaboradora o un rescatador independiente saca a un perro del peligro — el atropellado, la camada abandonada, el perro del refugio al que se le acaba el tiempo — ayudamos a financiar los cuidados veterinarios, la acogida y el lugar seguro para recuperarse."
+    stat: "Fondo de emergencia compartido"
+  - no: "03"
+    name: "Apoyar la acogida y los santuarios"
+    tag: "Recuperación"
+    body: "Un perro callejero todavía no es una mascota. En los refugios colaboradores y las casas de acogida, los perros reciben el tiempo, la comida y el tratamiento que necesitan para curarse. Las adopciones a distancia y las donaciones mantienen a esos cuidadores mientras un perro espera."
+    stat: "Impulsado por padrinos a distancia"
+  - no: "04"
+    name: "Conectar a los perros con hogares"
+    tag: "Nuevos comienzos"
+    body: "La reubicación física la gestionan las organizaciones colaboradoras de nuestra red, cada una con su propio proceso y sus propios estándares. Nosotros damos a sus perros una plataforma más grande, y nuestros padrinos a distancia mantienen a esos perros cuidados hasta que — y si — se encuentra un hogar permanente."
+    stat: "40+ colaboradores, una plataforma"
+
+principles:
+  - title: "Humano, siempre"
+    body: "Nunca un sacrificio. Nosotros y nuestras organizaciones colaboradoras solo usamos métodos que respetan el bienestar del perro en cada paso."
+  - title: "La evidencia por encima de la emoción"
+    body: "Respaldamos los enfoques que de verdad reducen el sufrimiento a gran escala — empezando por la esterilización masiva."
+  - title: "Una red, no un monopolio"
+    body: "Damos voz a los rescatadores y ONG locales en lugar de sustituirlos. Esta es su lucha; nosotros les ayudamos a ganarla."
+  - title: "Honestos sobre los límites"
+    body: "No podemos salvar a todos los perros. Somos transparentes sobre lo que la red puede hacer, y lo que aún no puede."
+---

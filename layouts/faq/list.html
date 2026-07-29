@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.subtitle }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap" style="max-width:46rem;margin-inline:auto">
+    {{- range $p.groups }}
+    <div style="margin-bottom:3rem">
+      <div class="divider-label">{{ .heading }}</div>
+      <div class="faq">
+        {{- range .items }}
+        <details>
+          <summary>{{ .q }}</summary>
+          <p>{{ .a }}</p>
+        </details>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+
+    <div class="callout mt-3">
+      <p class="callout__label" style="color:var(--pine-2)">{{ $p.still_label }}</p>
+      <p>{{ $p.still_text }} <a href="{{ "contact/" | relLangURL }}">{{ $p.still_link }} →</a></p>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta-band.html" (dict) }}
+
+{{ end }}

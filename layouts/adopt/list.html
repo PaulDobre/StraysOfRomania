@@ -1,0 +1,106 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+{{- $dogs := partial "dogs-data.html" . -}}
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.subtitle }}</p>
+  </div>
+</div>
+
+{{/* ---- What remote adoption is ---- */}}
+<section class="section--tight" style="border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="callout">
+      <p class="callout__label" style="color:var(--pine-2)">{{ $p.different_label }}</p>
+      <p>{{ $p.different_body | safeHTML }}</p>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Dog gallery ---- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:end;margin-bottom:2rem">
+      <div>
+        <p class="mono small" style="color:var(--muted);letter-spacing:.08em;text-transform:uppercase">{{ len $dogs }} {{ $p.gallery_count_suffix }}</p>
+        <h2 class="mb-0">{{ $p.gallery_heading }}</h2>
+      </div>
+      <p class="mb-0 text-muted small" style="max-width:38ch;text-align:right">{{ $p.gallery_note }}</p>
+    </div>
+
+    <div class="dog-grid">
+      {{- range $dogs }}
+      {{- $url := partial "remote-adopt-url.html" . }}
+      {{- $amount := .monthly | default site.Params.remoteAdoptDefault }}
+      <div class="dog" id="{{ .id | urlize }}">
+        <div class="dog__photo">
+          <span class="dog__id">{{ .id }}</span>
+          {{- if .photo }}<img src="{{ .photo | relURL }}" alt="{{ T "photo_alt" (dict "name" .name) }}" loading="lazy">{{ else }}{{ partial "dog-placeholder.html" .name }}{{ end }}
+        </div>
+        <div class="dog__body">
+          <div class="dog__name">{{ .name }}</div>
+          <div class="dog__meta"><span>{{ .sex }}</span><span>{{ .age }}</span><span>{{ .size }}</span></div>
+          <p class="mono" style="font-size:.72rem;color:var(--muted);letter-spacing:.04em;margin:.5rem 0 0">{{ T "in_care_of" (dict "carer" .carer) }}</p>
+          <p class="dog__blurb">{{ .blurb }}</p>
+          <div style="margin-top:.9rem"><span class="pill pill--amber">{{ .status }}</span></div>
+          <a class="btn btn--primary" style="width:100%;justify-content:center;margin-top:1rem" href="{{ $url }}"{{ if hasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>
+            {{ T "remotely_adopt_btn" (dict "name" .name "amount" $amount) }}
+          </a>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+    <p class="mono small text-muted mt-2">{{ $p.placeholder_note }}</p>
+  </div>
+</section>
+
+{{/* ---- How it works ---- */}}
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <p class="eyebrow">{{ $p.steps_label }}</p>
+    <h2 style="margin-bottom:2rem">{{ $p.steps_title }}</h2>
+    <div class="grid grid--4">
+      {{- range $p.steps }}
+      <article class="card">
+        <span class="card__index">{{ .no }}</span>
+        <h3 style="font-size:1.2rem">{{ .title }}</h3>
+        <p>{{ .body }}</p>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- What it funds + physical adoption note ---- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">{{ $p.funds_label }}</p>
+        <h2>{{ $p.funds_title }}</h2>
+        <ul class="prose" style="padding-left:1.1rem">
+          {{- range $p.funds }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        <p class="text-muted small">{{ $p.funds_note }}</p>
+      </div>
+      <div>
+        <div class="callout">
+          <p class="callout__label" style="color:var(--pine-2)">{{ $p.updates_label }}</p>
+          <p>{{ $p.updates_body }}</p>
+        </div>
+        <div class="callout" style="margin-top:1rem">
+          <p class="callout__label" style="color:var(--pine-2)">{{ $p.physical_label }}</p>
+          <p>{{ $p.physical_body }} <a href="{{ "contact/" | relLangURL }}">{{ $p.physical_link }} →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta-band.html" (dict "title" $p.cta_title "text" $p.cta_text) }}
+
+{{ end }}

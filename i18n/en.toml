@@ -1,0 +1,86 @@
+# English UI strings (source of truth). One <lang>.toml per language.
+# Translate the VALUES only — keep the keys and any {{ .placeholder }} tokens.
+
+# --- Brand / site ---
+site_tagline    = "The network ending Romania's street-dog crisis"
+site_description = "Strays of Romania is a nonprofit that connects and funds a network of rescuers, fosterers and partner organisations working to end the street-dog crisis."
+brand_sub       = "Street-dog rescue · RO"
+
+# --- Navigation ---
+nav_primary        = "Primary"
+nav_crisis         = "The Crisis"
+nav_our_work       = "Our Work"
+nav_remote_adoption = "Remote Adoption"
+nav_get_involved   = "Get Involved"
+nav_stories        = "Stories"
+nav_about          = "About"
+menu               = "Menu"
+skip_to_content    = "Skip to content"
+language           = "Language"
+
+# --- Buttons (reused) ---
+btn_remote_adopt = "Remote adopt"
+btn_donate       = "Donate"
+btn_get_involved = "Get involved"
+
+# --- Footer ---
+footer_explore   = "Explore"
+footer_act_now   = "Act now"
+footer_brand_desc = "A nonprofit connecting and funding the rescuers, fosterers and shelters working to end Romania's street-dog crisis — humanely, and for good."
+footer_remote_adopt = "Remotely adopt a dog"
+footer_donate    = "Donate"
+footer_foster    = "Foster"
+footer_partner   = "Partner with us"
+footer_faq       = "FAQ"
+footer_transparency = "Transparency"
+footer_contact   = "Contact"
+footer_follow    = "Follow the dogs"
+
+# --- Generic ---
+label_home       = "Home"
+posts_empty      = "Nothing here yet — check back soon."
+tag_story        = "Story"
+
+# --- Auto-translation notice (shown on every non-English page; falls back to English) ---
+autotrans_notice = "Automatically translated from English — it may contain mistakes."
+autotrans_original = "Read the original"
+
+# --- Default CTA band ---
+cta_default_title = "Every donation is a life off the street."
+cta_default_text  = "Sterilisation, vaccination, food and safe passage to a new home — it all runs on people who decide to help. Start today."
+
+# --- Dog cards ---
+in_care_of       = "In the care of {{ .carer }}"
+remotely_adopt   = "Remotely adopt"
+remotely_adopt_btn = "Remotely adopt {{ .name }} · €{{ .amount }}/mo"
+photo_coming     = "Photo coming soon"
+photo_alt        = "Photo of {{ .name }} coming soon"
+
+# --- Get Involved ---
+jump_to          = "Jump to"
+in_short         = "In short"
+
+# --- Contact form ---
+form_intent_label = "I'm interested in"
+intent_remote_adopt   = "Remote adoption"
+intent_physical_adopt = "Adopting a dog for real (via a partner)"
+intent_foster    = "Fostering"
+intent_partner   = "Partnering — my organisation / rescue"
+intent_volunteer = "Volunteering"
+intent_fundraise = "Fundraising"
+intent_media     = "Media / press"
+intent_other     = "Something else"
+form_name        = "Your name"
+form_email       = "Email"
+form_country     = "Where you live"
+form_country_ph  = "Country / city"
+form_message     = "Message"
+form_message_ph  = "Tell us a little about you and how we can help."
+form_send        = "Send message"
+form_consent     = "By sending, you agree we may reply by email. We never share your details."
+contact_direct   = "Direct"
+contact_phone    = "Phone"
+contact_where    = "Where we are"
+contact_registration = "Registration"
+contact_dog_label = "Asking about a specific dog?"
+contact_dog_text  = "Mention the dog's ID (e.g. RO-241) in your message — whether it's remote adoption or rehoming through a partner — and we'll get straight to it."

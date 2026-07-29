@@ -1,0 +1,77 @@
+# Zwierzęta dostępne do ADOPCJI ZDALNEJ (cykliczna subskrypcja, która finansuje
+# opiekę nad psem w ramach naszej sieci partnerskiej). Fizyczną opieką tymczasową/adopcją
+# zajmują się partnerskie organizacje pozarządowe i osoby, które opiekują się każdym psem.
+#
+# Pola:
+#   photo:         ścieżka w /static (np. /img/dogs/luca.jpg). Puste = symbol zastępczy.
+#   carer:         partnerska organizacja lub opiekun tymczasowy, który obecnie opiekuje się psem.
+#   monthly:       opcjonalna sugerowana kwota miesięczna (EUR) dla tego psa.
+#   subscribe_url: opcjonalny link subskrypcji dla danego psa. Jeśli pusty, przycisk
+#                  prowadzi do params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Samiec
+    age: "2 lata"
+    size: Średni
+    carer: "Schronisko partnerskie · Bukareszt"
+    status: Potrzebuje adoptujących zdalnie
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Wyciągnięty z publicznego schroniska zeszłej zimy. Łagodny i przyzwyczajony do domu — jego opiekunowie pokrywają koszty karmy i weterynarza, a Twoja adopcja zdalna pozwala im działać dalej.
+  - id: RO-198
+    name: Mara
+    sex: Samica
+    age: "8 miesięcy"
+    size: Mały
+    carer: "Dom tymczasowy · Kluż"
+    status: Częściowo sfinansowana
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Znaleziona na wysypisku śmieci wraz z rodzeństwem. Teraz bezpieczna w domu tymczasowym, w pełni zaszczepiona i szybko rosnąca dzięki podarowanej karmie.
+  - id: RO-263
+    name: Bruno
+    sex: Samiec
+    age: "4 lata"
+    size: Duży
+    carer: "Azyl partnerski · Ploeszti"
+    status: Potrzebuje adoptujących zdalnie
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Spokojny, czujny olbrzym, który spędził dwa lata na ulicy. Duży pies to większe koszty karmienia — adoptujący zdalnie umożliwiają mu miejsce w azylu.
+  - id: RO-255
+    name: Sofia
+    sex: Samica
+    age: "3 lata"
+    size: Średni
+    carer: "Dom tymczasowy · Bukareszt"
+    status: Częściowo sfinansowana
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Uratowana po potrąceniu przez samochód; w pełni wyzdrowiała dzięki opiekunce tymczasowej. Czuła i bezgranicznie wdzięczna.
+  - id: RO-271
+    name: Toby
+    sex: Samiec
+    age: "1 rok"
+    size: Średni
+    carer: "Schronisko partnerskie · Sybin"
+    status: Pilnie potrzebuje adoptujących
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Urodzony na ulicy przez uratowaną matkę. Wciąż uczy się, że ludzie potrafią być dobrzy — jego schronisko potrzebuje pomocy w pokryciu kosztów opieki.
+  - id: RO-233
+    name: Nadia
+    sex: Samica
+    age: "5 lat"
+    size: Mały
+    carer: "Dom tymczasowy · Sybin"
+    status: Potrzebuje adoptujących zdalnie
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Starsza dama o najłagodniejszych oczach, bezpieczna w domu tymczasowym. Starsze psy najdłużej czekają na wsparcie — kilka euro miesięcznie odmienia jej świat.

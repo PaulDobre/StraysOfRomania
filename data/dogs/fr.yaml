@@ -1,0 +1,77 @@
+# Animaux disponibles pour le PARRAINAGE À DISTANCE (un abonnement récurrent qui finance
+# les soins du chien au sein de notre réseau de partenaires). L'accueil et l'adoption réels
+# sont assurés par les ONG partenaires et les particuliers qui s'occupent de chaque chien.
+#
+# Champs :
+#   photo :         chemin sous /static (par exemple /img/dogs/luca.jpg). Vide = image générique.
+#   carer :         l'ONG partenaire ou la famille d'accueil qui prend actuellement soin du chien.
+#   monthly :       montant mensuel suggéré (EUR) pour ce chien, facultatif.
+#   subscribe_url : lien d'abonnement propre au chien, facultatif. S'il est vide, le bouton
+#                  renvoie vers params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Mâle
+    age: "2 ans"
+    size: Moyen
+    carer: "Refuge partenaire · Bucarest"
+    status: Cherche des parrains à distance
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Sorti d'un refuge public l'hiver dernier. Doux et propre — ses soigneurs couvrent la nourriture et les frais vétérinaires, et votre parrainage à distance les aide à tenir.
+  - id: RO-198
+    name: Mara
+    sex: Femelle
+    age: "8 mois"
+    size: Petite
+    carer: "Famille d'accueil · Cluj"
+    status: Partiellement financée
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Trouvée dans une décharge avec ses frères et sœurs. En sécurité désormais dans une famille d'accueil, entièrement vaccinée, elle grandit vite grâce à la nourriture offerte.
+  - id: RO-263
+    name: Bruno
+    sex: Mâle
+    age: "4 ans"
+    size: Grand
+    carer: "Sanctuaire partenaire · Ploiești"
+    status: Cherche des parrains à distance
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Un géant calme et attentif qui a passé deux ans dans la rue. Un grand chien coûte plus cher à nourrir — les parrains à distance rendent sa place au sanctuaire possible.
+  - id: RO-255
+    name: Sofia
+    sex: Femelle
+    age: "3 ans"
+    size: Moyenne
+    carer: "Famille d'accueil · Bucarest"
+    status: Partiellement financée
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Sauvée après avoir été renversée par une voiture ; entièrement rétablie grâce à sa famille d'accueil. Affectueuse et infiniment reconnaissante.
+  - id: RO-271
+    name: Toby
+    sex: Mâle
+    age: "1 an"
+    size: Moyen
+    carer: "Refuge partenaire · Sibiu"
+    status: Cherche des adoptants d'urgence
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Né dans la rue d'une mère sauvée. Il apprend encore que les humains peuvent être bons — son refuge a besoin d'aide pour couvrir ses soins.
+  - id: RO-233
+    name: Nadia
+    sex: Femelle
+    age: "5 ans"
+    size: Petite
+    carer: "Famille d'accueil · Sibiu"
+    status: Cherche des parrains à distance
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Une vieille dame aux yeux les plus doux, en sécurité dans une famille d'accueil. Les chiens âgés attendent le plus longtemps du soutien — quelques euros par mois changent son monde.

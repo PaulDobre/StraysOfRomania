@@ -1,0 +1,84 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+{{- $base := site.Params.donateBaseUrl | default "#" -}}
+
+<section class="hero" style="background:var(--pine)">
+  <svg class="hero__grain" aria-hidden="true"><filter id="nd"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/></filter><rect width="100%" height="100%" filter="url(#nd)"/></svg>
+  <div class="wrap" style="position:relative;padding-block:clamp(3rem,7vw,5rem);text-align:center;max-width:50rem">
+    <p class="hero__dateline" style="justify-content:center"><span class="dot"></span> {{ $p.hero_dateline }}</p>
+    <h1 style="color:var(--paper-on-pine);margin-inline:auto;max-width:18ch">{{ $p.hero_title }}</h1>
+    <p class="hero__lead" style="margin-inline:auto">{{ $p.subtitle }}</p>
+  </div>
+</section>
+
+{{/* ---- Tiers ---- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:center;margin-bottom:2rem">
+      <div>
+        <p class="eyebrow">{{ $p.give_eyebrow }}</p>
+        <h2 class="mb-0">{{ $p.give_title }}</h2>
+      </div>
+      <p class="mb-0 text-muted" style="text-align:right">{{ $p.give_note }}</p>
+    </div>
+
+    <div class="tiers">
+      {{- range $p.tiers }}
+      <div class="tier{{ if .featured }} tier--featured{{ end }}">
+        {{- if .featured }}<span class="pill pill--amber" style="margin-bottom:.8rem">{{ $p.tier_featured_label }}</span>{{ end }}
+        <div class="amt">{{ .amt }}</div>
+        <div class="per">{{ .per }}</div>
+        <p class="buys">{{ .buys }}</p>
+        {{- $amount := replace .amt "€" "" }}
+        {{- $interval := cond (in .per "month") "month" "once" }}
+        {{- $href := printf "%s?amount=%s&interval=%s" $base $amount $interval }}
+        <a href="{{ $href }}"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }} class="btn {{ if .featured }}btn--primary{{ else }}btn--ghost{{ end }}" style="width:100%;justify-content:center">{{ $p.tier_give_prefix }} {{ .amt }}</a>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- What your money does ---- */}}
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="divider-label">{{ $p.impact_label }}</div>
+    <div class="grid grid--4">
+      {{- range $p.impact }}
+      <div class="card">
+        <div class="mono" style="color:var(--amber);font-size:.8rem;letter-spacing:.06em">{{ $p.impact_gives | upper }}</div>
+        <div style="font-family:var(--serif);font-size:2.2rem;color:var(--pine);line-height:1;margin:.3rem 0 .6rem">{{ .num }}</div>
+        <p>{{ .text }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- Donation form placeholder ---- */}}
+<section class="section" id="give">
+  <div class="wrap" style="max-width:40rem;margin-inline:auto">
+    <div class="card" style="padding:2rem;text-align:center;background:var(--sand)">
+      <p class="eyebrow center">{{ $p.form_eyebrow }}</p>
+      <h2>{{ $p.form_title }}</h2>
+      <p class="text-muted">{{ $p.form_body }}</p>
+      <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem">
+        <a href="{{ $base }}{{ if hasPrefix $base "http" }}?interval=once{{ end }}"{{ if hasPrefix $base "http" }} target="_blank" rel="noopener"{{ end }} class="btn btn--primary btn--lg">{{ $p.form_once }}</a>
+        <a href="{{ $base }}{{ if hasPrefix $base "http" }}?interval=month{{ end }}"{{ if hasPrefix $base "http" }} target="_blank" rel="noopener"{{ end }} class="btn btn--pine btn--lg">{{ $p.form_monthly }}</a>
+      </div>
+      <p class="mono small text-muted" style="margin-top:1.5rem">{{ $p.form_other }} <a href="{{ "contact/" | relLangURL }}">{{ $p.form_other_link }}</a>.</p>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Transparency reassurance ---- */}}
+<section class="section on-pine">
+  <div class="wrap" style="text-align:center;margin-inline:auto;max-width:48rem">
+    <p class="eyebrow center" style="color:var(--amber-soft)">{{ $p.trust_eyebrow }}</p>
+    <h2>{{ $p.trust_title }}</h2>
+    <p class="lead" style="color:var(--muted-on-pine);margin-inline:auto">{{ $p.trust_body }}</p>
+    <p class="mt-2"><a href="{{ "about/transparency/" | relLangURL }}" class="btn btn--ghost btn--lg">{{ $p.trust_cta }}</a></p>
+  </div>
+</section>
+
+{{ end }}

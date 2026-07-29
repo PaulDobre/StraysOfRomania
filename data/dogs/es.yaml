@@ -1,0 +1,78 @@
+# Animales disponibles para ADOPCIÓN A DISTANCIA (una suscripción recurrente que
+# financia el cuidado del perro dentro de nuestra red de organizaciones colaboradoras).
+# La acogida/adopción física la gestionan las ONG colaboradoras y las personas que
+# cuidan de cada perro.
+#
+# Campos:
+#   photo:         ruta dentro de /static (p. ej. /img/dogs/luca.jpg). Vacío = marcador de posición.
+#   carer:         la ONG colaboradora o la familia de acogida que cuida actualmente del perro.
+#   monthly:       importe mensual sugerido opcional (EUR) para este perro.
+#   subscribe_url: enlace de suscripción opcional por perro. Si está vacío, el botón
+#                  enlaza a params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Macho
+    age: "2 años"
+    size: Mediano
+    carer: "Refugio colaborador · Bucarest"
+    status: Necesita padrinos a distancia
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Rescatado de un refugio público el invierno pasado. Cariñoso y educado para vivir en casa — sus cuidadores cubren la comida y las facturas del veterinario, y tu adopción a distancia les permite seguir adelante.
+  - id: RO-198
+    name: Mara
+    sex: Hembra
+    age: "8 meses"
+    size: Pequeño
+    carer: "Casa de acogida · Cluj"
+    status: Parcialmente financiada
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Encontrada en un vertedero con sus hermanos. Ahora está a salvo en una casa de acogida, completamente vacunada y creciendo rápido gracias a la comida donada.
+  - id: RO-263
+    name: Bruno
+    sex: Macho
+    age: "4 años"
+    size: Grande
+    carer: "Santuario colaborador · Ploiești"
+    status: Necesita padrinos a distancia
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Un gigante tranquilo y atento que pasó dos años en la calle. Un perro grande cuesta más de alimentar — los padrinos a distancia hacen posible su plaza en el santuario.
+  - id: RO-255
+    name: Sofia
+    sex: Hembra
+    age: "3 años"
+    size: Mediano
+    carer: "Casa de acogida · Bucarest"
+    status: Parcialmente financiada
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Rescatada tras ser atropellada por un coche; totalmente recuperada gracias a su familia de acogida. Cariñosa e infinitamente agradecida.
+  - id: RO-271
+    name: Toby
+    sex: Macho
+    age: "1 año"
+    size: Mediano
+    carer: "Refugio colaborador · Sibiu"
+    status: Necesita padrinos con urgencia
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Nacido en la calle de una madre rescatada. Todavía está aprendiendo que las personas pueden ser buenas — su refugio necesita ayuda para cubrir sus cuidados.
+  - id: RO-233
+    name: Nadia
+    sex: Hembra
+    age: "5 años"
+    size: Pequeño
+    carer: "Casa de acogida · Sibiu"
+    status: Necesita padrinos a distancia
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Una señora mayor con la mirada más dulce, a salvo en acogida. Los perros mayores son los que más esperan para recibir apoyo — unos pocos euros al mes cambian su mundo.

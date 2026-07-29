@@ -1,0 +1,43 @@
+---
+title: "Munca noastră"
+eyebrow: "Programe"
+subtitle: "Suntem țesutul conjunctiv: finanțăm, coordonăm și amplificăm o rețea de salvatori, îngrijitori temporari și adăposturi. Iată ce face această rețea cu sprijinul tău — și rolul pe care îl jucăm în ea."
+description: "Cum funcționează Strays of Romania ca rețea: finanțarea sterilizării, susținerea salvării și a îngrijirii temporare prin organizații partenere și derularea adopțiilor la distanță care țin câinii îngrijiți."
+
+principles_eyebrow: "Cum lucrăm"
+principles_title: "Patru principii la care nu facem compromisuri."
+cta_title: "Finanțează munca ce pune capăt crizei."
+cta_text: "Fiecare program de mai sus se sprijină pe donații. €25 sterilizează un câine; o donație lunară ține o clinică pe drum."
+
+programs:
+  - no: "01"
+    name: "Finanțarea sterilizării (CNVR)"
+    tag: "Controlul populației"
+    body: "Direcționăm donațiile către campanii de prindere-sterilizare-vaccinare-eliberare derulate de partenerii noștri și de clinici mobile. Un câine sterilizat nu se poate reproduce, iar un câine vaccinat nu va răspândi turbarea — așa că populația de pe stradă scade, uman și permanent. Aici ajunge cea mai mare parte a donației tale generale."
+    stat: "€25 sterilizează un câine"
+  - no: "02"
+    name: "Susținerea salvării și a îngrijirii de urgență"
+    tag: "Primă intervenție"
+    body: "Când un partener sau un salvator independent scoate un câine din pericol — cel lovit de mașină, puii abandonați, câinele din adăpost căruia i se scurge timpul — ajutăm la finanțarea îngrijirii veterinare, a preluării și a unui loc sigur pentru recuperare."
+    stat: "Fond comun de urgență"
+  - no: "03"
+    name: "Sprijinirea îngrijirii temporare și de adăpost"
+    tag: "Recuperare"
+    body: "Un câine de pe stradă nu este încă un animal de companie. În adăposturile partenere și în casele de îngrijire temporară, câinii primesc timpul, hrana și tratamentul de care au nevoie pentru a se vindeca. Adopțiile la distanță și donațiile țin acei îngrijitori în picioare cât timp un câine așteaptă."
+    stat: "Susținut de adoptatorii la distanță"
+  - no: "04"
+    name: "Conectarea câinilor cu o casă"
+    tag: "Noi începuturi"
+    body: "Relocarea fizică este gestionată de organizațiile partenere din rețeaua noastră, fiecare cu propriul proces și propriile standarde. Le oferim câinilor lor o platformă mai mare, iar adoptatorii noștri la distanță țin acei câini îngrijiți până când — și dacă — se găsește o casă permanentă."
+    stat: "40+ parteneri, o singură platformă"
+
+principles:
+  - title: "Uman, mereu"
+    body: "Fără ucidere, niciodată. Noi și partenerii noștri folosim doar metode care respectă bunăstarea câinelui la fiecare pas."
+  - title: "Dovezi în locul emoției"
+    body: "Susținem abordările care reduc cu adevărat suferința la scară largă — începând cu sterilizarea în masă."
+  - title: "O rețea, nu un monopol"
+    body: "Amplificăm salvatorii și ONG-urile locale în loc să le înlocuim. Aceasta este lupta lor; noi îi ajutăm să o câștige."
+  - title: "Sinceri în privința limitelor"
+    body: "Nu putem salva fiecare câine. Suntem transparenți în privința a ceea ce poate face rețeaua și a ceea ce nu poate — încă."
+---

@@ -1,0 +1,5 @@
+{{- /* Returns the dog list for the current language (data/dogs/<lang>.yaml → `dogs:` key),
+       falling back to English if that language has no translated list yet. */ -}}
+{{- $file := index hugo.Data.dogs site.Language.Lang -}}
+{{- if not $file }}{{ $file = index hugo.Data.dogs "en" }}{{ end -}}
+{{- return $file.dogs -}}

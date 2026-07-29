@@ -1,0 +1,43 @@
+---
+title: "Notre action"
+eyebrow: "Programmes"
+subtitle: "Nous sommes le tissu conjonctif : nous finançons, coordonnons et amplifions un réseau de sauveteurs, de familles d'accueil et de refuges. Voici ce que ce réseau fait de votre soutien — et le rôle que nous y jouons."
+description: "Comment Strays of Romania fonctionne en réseau : financer la stérilisation, soutenir le sauvetage et l'accueil au sein d'organisations partenaires, et mener des parrainages à distance qui maintiennent les chiens pris en charge."
+
+principles_eyebrow: "Notre façon de travailler"
+principles_title: "Quatre principes sur lesquels nous ne transigeons pas."
+cta_title: "Financez le travail qui met fin à la crise."
+cta_text: "Chacun des programmes ci-dessus repose sur les dons. 25 € stérilisent un chien ; un don mensuel maintient une clinique sur la route."
+
+programs:
+  - no: "01"
+    name: "Financer la stérilisation (CNVR)"
+    tag: "Contrôle de la population"
+    body: "Nous orientons les dons vers des campagnes de capture-stérilisation-vaccination-relâche menées par nos partenaires et des cliniques mobiles. Un chien stérilisé ne peut pas se reproduire et un chien vacciné ne propagera pas la rage — la population des rues diminue donc, avec humanité et durablement. C'est là que va la majeure partie de votre don général."
+    stat: "25 € stérilisent un chien"
+  - no: "02"
+    name: "Soutenir le sauvetage et les soins d'urgence"
+    tag: "Première intervention"
+    body: "Lorsqu'un partenaire ou un sauveteur indépendant sort un chien du danger — celui renversé par une voiture, la portée abandonnée, le chien de refuge dont le temps est compté — nous aidons à financer les soins vétérinaires, la prise en charge et le lieu sûr où se rétablir."
+    stat: "Fonds d'urgence partagé"
+  - no: "03"
+    name: "Soutenir l'accueil et les sanctuaires"
+    tag: "Rétablissement"
+    body: "Un chien des rues n'est pas encore un animal de compagnie. Dans les refuges partenaires et les familles d'accueil, les chiens reçoivent le temps, la nourriture et les soins dont ils ont besoin pour guérir. Les parrainages à distance et les dons permettent à ces soigneurs de tenir pendant qu'un chien attend."
+    stat: "Porté par les parrains à distance"
+  - no: "04"
+    name: "Mettre les chiens en relation avec des foyers"
+    tag: "Nouveaux départs"
+    body: "Le replacement physique est assuré par les organisations partenaires de notre réseau, chacune avec son propre processus et ses propres exigences. Nous offrons à leurs chiens une plus grande visibilité, et nos parrains à distance veillent à ce que ces chiens soient pris en charge jusqu'à ce qu'un foyer permanent soit trouvé — s'il l'est."
+    stat: "40+ partenaires, une seule plateforme"
+
+principles:
+  - title: "Humains, toujours"
+    body: "Jamais d'abattage. Nous et nos partenaires n'utilisons que des méthodes qui respectent le bien-être du chien à chaque étape."
+  - title: "Les preuves avant l'émotion"
+    body: "Nous soutenons les approches qui réduisent réellement la souffrance à grande échelle — à commencer par la stérilisation de masse."
+  - title: "Un réseau, pas un monopole"
+    body: "Nous amplifions les sauveteurs et les ONG locaux plutôt que de les remplacer. C'est leur combat ; nous les aidons à le gagner."
+  - title: "Honnêtes sur nos limites"
+    body: "Nous ne pouvons pas sauver tous les chiens. Nous sommes transparents sur ce que le réseau peut faire, et sur ce qu'il ne peut pas encore faire."
+---

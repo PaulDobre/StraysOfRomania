@@ -1,0 +1,43 @@
+---
+title: "Munkánk"
+eyebrow: "Programok"
+subtitle: "Mi vagyunk a kötőszövet: finanszírozunk, koordinálunk és felerősítünk egy hálózatot, amely mentőkből, gazdisítókból és menhelyekből áll. Íme, mit tesz ez a hálózat a te támogatásoddal — és milyen szerepet játszunk benne."
+description: "Hogyan működik a Strays of Romania hálózatként: ivartalanítás finanszírozása, mentés és gazdisítás támogatása partnerszervezeteken keresztül, valamint távörökbefogadások, amelyek gondoskodnak a kutyákról."
+
+principles_eyebrow: "Hogyan dolgozunk"
+principles_title: "Négy elv, amelyből nem engedünk."
+cta_title: "Finanszírozd a munkát, amely véget vet a válságnak."
+cta_text: "A fenti minden program adományokból működik. €25 ivartalanít egy kutyát; egy havi adomány úton tart egy klinikát."
+
+programs:
+  - no: "01"
+    name: "Ivartalanítás finanszírozása (CNVR)"
+    tag: "Populációszabályozás"
+    body: "Az adományokat partnereink és mobil klinikáink által vezetett befogás-ivartalanítás-oltás-visszaengedés kampányokba irányítjuk. Egy ivartalanított kutya nem szaporodhat, egy beoltott kutya pedig nem terjeszti a veszettséget — így az utcai populáció emberségesen és véglegesen csökken. Ide megy az általános adományod nagy része."
+    stat: "€25 ivartalanít egy kutyát"
+  - no: "02"
+    name: "Mentés és sürgősségi ellátás támogatása"
+    tag: "Elsődleges beavatkozás"
+    body: "Amikor egy partner vagy független mentő veszélyből ránt ki egy kutyát — az elütöttet, az elhagyott almot, az időből kifutó menhelyi kutyát — segítünk finanszírozni az állatorvosi ellátást, a befogadást és a biztonságos helyet a felépüléshez."
+    stat: "Közös sürgősségi alap"
+  - no: "03"
+    name: "Gazdisítói és menedékgondozás támogatása"
+    tag: "Felépülés"
+    body: "Egy utcai kutya még nem háziállat. Partnermenhelyeken és gazdisítói otthonokban a kutyák megkapják az időt, ételt és kezelést, amelyre a gyógyuláshoz szükségük van. A távörökbefogadások és adományok fenntartják ezeket a gondozókat, amíg egy kutya vár."
+    stat: "Távörökbefogadók működtetik"
+  - no: "04"
+    name: "Kutyák otthonhoz kapcsolása"
+    tag: "Új kezdetek"
+    body: "A tényleges új otthonba juttatást a hálózatunk partnerszervezetei intézik, mindegyik a saját folyamatával és normáival. Nagyobb platformot adunk a kutyáiknak, távörökbefogadóink pedig gondoskodnak ezekről a kutyákról, amíg — ha egyáltalán — végleges otthon nem kerül."
+    stat: "40+ partner, egy platform"
+
+principles:
+  - title: "Emberségesen, mindig"
+    body: "Kilövés soha. Mi és partnereink kizárólag olyan módszereket alkalmazunk, amelyek minden lépésnél tiszteletben tartják a kutya jóllétét."
+  - title: "Bizonyíték az érzelem helyett"
+    body: "Azokat a megközelítéseket támogatjuk, amelyek valóban csökkentik a szenvedést nagy léptékben — kezdve a tömeges ivartalanítással."
+  - title: "Hálózat, nem monopólium"
+    body: "A helyi mentőket és civil szervezeteket felerősítjük, nem helyettesítjük. Ez az ő harcuk; mi segítünk megnyerni."
+  - title: "Őszinték a korlátokról"
+    body: "Nem menthetünk meg minden kutyát. Átláthatóak vagyunk arról, hogy mit tud a hálózat, és mit nem — még."
+---

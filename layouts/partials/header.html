@@ -1,0 +1,35 @@
+{{- $items := slice
+  (dict "u" "crisis/" "k" "nav_crisis")
+  (dict "u" "our-work/" "k" "nav_our_work")
+  (dict "u" "adopt/" "k" "nav_remote_adoption")
+  (dict "u" "get-involved/" "k" "nav_get_involved")
+  (dict "u" "stories/" "k" "nav_stories")
+  (dict "u" "about/" "k" "nav_about") -}}
+<header class="site-header" data-open="false">
+  <div class="wrap site-header__inner">
+    <a href="{{ "/" | relLangURL }}" class="brand" aria-label="{{ site.Title }}">
+      {{ partial "brand-mark.html" . }}
+      <span class="brand__text">
+        Strays of Romania
+        <small>{{ T "brand_sub" }}</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="{{ T "nav_primary" }}">
+      {{- range $items }}
+        {{- $url := .u | relLangURL }}
+        {{- $active := and (hasPrefix $.RelPermalink $url) (ne $url ($.Site.Home.RelPermalink)) }}
+        <a href="{{ $url }}"{{ if $active }} aria-current="page"{{ end }}>{{ T .k }}</a>
+      {{- end }}
+    </nav>
+
+    <div class="header-cta">
+      {{ partial "language-switcher.html" . }}
+      <a href="{{ "donate/" | relLangURL }}" class="btn btn--primary">{{ T "btn_donate" }}</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="{{ T "menu" }}" aria-expanded="false" aria-controls="main">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</header>

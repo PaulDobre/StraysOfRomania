@@ -1,0 +1,86 @@
+# Șiruri UI în engleză (sursă de referință). Câte un <lang>.toml per limbă.
+# Traduceți doar VALORILE — păstrați cheile și eventualele token-uri {{ .placeholder }}.
+
+# --- Brand / site ---
+site_tagline    = "Rețeaua care pune capăt crizei câinilor fără stăpân din România"
+site_description = "Strays of Romania este o organizație nonprofit care conectează și finanțează o rețea de salvatori, îngrijitori temporari și organizații partenere care lucrează pentru a pune capăt crizei câinilor fără stăpân."
+brand_sub       = "Salvarea câinilor fără stăpân · RO"
+
+# --- Navigation ---
+nav_primary        = "Principal"
+nav_crisis         = "Criza"
+nav_our_work       = "Munca noastră"
+nav_remote_adoption = "Adopție la distanță"
+nav_get_involved   = "Implică-te"
+nav_stories        = "Povești"
+nav_about          = "Despre noi"
+menu               = "Meniu"
+skip_to_content    = "Sari la conținut"
+language           = "Limbă"
+
+# --- Buttons (reused) ---
+btn_remote_adopt = "Adoptă la distanță"
+btn_donate       = "Donează"
+btn_get_involved = "Implică-te"
+
+# --- Footer ---
+footer_explore   = "Explorează"
+footer_act_now   = "Acționează acum"
+footer_brand_desc = "O organizație nonprofit care conectează și finanțează salvatorii, îngrijitorii temporari și adăposturile care lucrează pentru a pune capăt crizei câinilor fără stăpân din România — uman și definitiv."
+footer_remote_adopt = "Adoptă la distanță un câine"
+footer_donate    = "Donează"
+footer_foster    = "Îngrijire temporară"
+footer_partner   = "Devino partener"
+footer_faq       = "Întrebări frecvente"
+footer_transparency = "Transparență"
+footer_contact   = "Contact"
+footer_follow    = "Urmărește câinii"
+
+# --- Generic ---
+label_home       = "Acasă"
+posts_empty      = "Încă nimic aici — revino în curând."
+tag_story        = "Poveste"
+
+# --- Notă de traducere automată (afișată pe fiecare pagină non-engleză; revine la engleză) ---
+autotrans_notice = "Tradus automat din engleză — poate conține greșeli."
+autotrans_original = "Citește originalul"
+
+# --- Default CTA band ---
+cta_default_title = "Fiecare donație înseamnă o viață scoasă de pe stradă."
+cta_default_text  = "Sterilizare, vaccinare, hrană și un drum sigur spre o casă nouă — totul se sprijină pe oameni care decid să ajute. Începe astăzi."
+
+# --- Dog cards ---
+in_care_of       = "În grija {{ .carer }}"
+remotely_adopt   = "Adoptă la distanță"
+remotely_adopt_btn = "Adoptă la distanță pe {{ .name }} · €{{ .amount }}/lună"
+photo_coming     = "Fotografie în curând"
+photo_alt        = "Fotografia lui {{ .name }} în curând"
+
+# --- Get Involved ---
+jump_to          = "Sari la"
+in_short         = "Pe scurt"
+
+# --- Contact form ---
+form_intent_label = "Mă interesează"
+intent_remote_adopt   = "Adopție la distanță"
+intent_physical_adopt = "Adopția reală a unui câine (printr-un partener)"
+intent_foster    = "Îngrijire temporară"
+intent_partner   = "Parteneriat — organizația / grupul meu de salvare"
+intent_volunteer = "Voluntariat"
+intent_fundraise = "Strângere de fonduri"
+intent_media     = "Media / presă"
+intent_other     = "Altceva"
+form_name        = "Numele tău"
+form_email       = "Email"
+form_country     = "Unde locuiești"
+form_country_ph  = "Țară / oraș"
+form_message     = "Mesaj"
+form_message_ph  = "Spune-ne câteva cuvinte despre tine și cum te putem ajuta."
+form_send        = "Trimite mesajul"
+form_consent     = "Prin trimitere, ești de acord să îți răspundem pe email. Nu îți divulgăm niciodată datele."
+contact_direct   = "Direct"
+contact_phone    = "Telefon"
+contact_where    = "Unde ne aflăm"
+contact_registration = "Înregistrare"
+contact_dog_label = "Întrebi despre un anume câine?"
+contact_dog_text  = "Menționează ID-ul câinelui (de ex. RO-241) în mesajul tău — fie că e vorba de adopție la distanță sau de relocare printr-un partener — și ne vom ocupa imediat."

@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.subtitle }}</p>
+  </div>
+</div>
+
+{{/* mission / story from markdown */}}
+<section class="section">
+  <div class="wrap" style="max-width:44rem;margin-inline:auto">
+    <div class="prose">{{ .Content }}</div>
+  </div>
+</section>
+
+{{/* values */}}
+<section class="section on-pine">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--amber-soft)">{{ $p.values_eyebrow }}</p>
+    <h2 style="margin-bottom:2rem">{{ $p.values_title }}</h2>
+    <div class="grid grid--4">
+      {{- range $p.values }}
+      <div>
+        <h3 style="font-size:1.2rem;color:var(--paper-on-pine)">{{ .title }}</h3>
+        <p style="color:var(--muted-on-pine);font-size:.96rem">{{ .body }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* where we work */}}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">{{ $p.where_eyebrow }}</p>
+        <h2>{{ $p.where_title }}</h2>
+        <p>{{ $p.where_body }}</p>
+        <a href="{{ "about/transparency/" | relLangURL }}" class="arrow-link">{{ $p.where_link }}</a>
+      </div>
+      <div class="figure-frame" style="display:grid;place-items:center;min-height:16rem;background:var(--pine)">
+        <svg viewBox="0 0 200 140" width="70%" role="img" aria-label="Romania">
+          <path d="M20 70 Q40 40 70 45 T130 40 Q170 42 180 70 T150 110 Q110 125 70 115 T20 70Z" fill="none" stroke="#8fae9d" stroke-width="1.4" opacity=".5"/>
+          <circle cx="105" cy="78" r="6" fill="#d9922f"/>
+          <circle cx="105" cy="78" r="14" fill="none" stroke="#d9922f" stroke-width="1.4" opacity=".6"/>
+          <text x="100" y="128" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" letter-spacing="2" fill="#8fae9d">ROMANIA</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* team */}}
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <p class="eyebrow">{{ $p.team_eyebrow }}</p>
+    <h2 style="margin-bottom:2rem">{{ $p.team_title }}</h2>
+    <div class="grid grid--4">
+      {{- range $p.team }}
+      <div class="card" style="text-align:center">
+        <div style="width:4rem;height:4rem;border-radius:50%;background:var(--sand);margin:0 auto 1rem;display:grid;place-items:center;color:var(--pine-2)">
+          <svg viewBox="0 0 24 24" width="26" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <h3 style="font-size:1.1rem;margin-bottom:.2rem">{{ .name }}</h3>
+        <p class="mono small text-muted mb-0">{{ .role }}</p>
+      </div>
+      {{- end }}
+    </div>
+    <p class="mono small text-muted mt-2">{{ $p.team_note }}</p>
+  </div>
+</section>
+
+{{ partial "cta-band.html" (dict) }}
+
+{{ end }}

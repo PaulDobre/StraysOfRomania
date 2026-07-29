@@ -1,0 +1,43 @@
+---
+title: "Our Work"
+eyebrow: "Programmes"
+subtitle: "We're the connective tissue: we fund, coordinate and amplify a network of rescuers, fosterers and shelters. Here's what that network does with your support — and the role we play in it."
+description: "How Strays of Romania works as a network: funding sterilisation, backing rescue and foster care across partner organisations, and running remote adoptions that keep dogs cared for."
+
+principles_eyebrow: "How we work"
+principles_title: "Four principles we don't compromise on."
+cta_title: "Fund the work that ends the crisis."
+cta_text: "Every programme above runs on donations. €25 sterilises a dog; a monthly gift keeps a clinic on the road."
+
+programs:
+  - no: "01"
+    name: "Fund sterilisation (CNVR)"
+    tag: "Population control"
+    body: "We channel donations into catch-neuter-vaccinate-return campaigns run by our partners and mobile clinics. A sterilised dog can't reproduce and a vaccinated dog won't spread rabies — so the street population falls, humanely and permanently. It's where most of your general donation goes."
+    stat: "€25 sterilises one dog"
+  - no: "02"
+    name: "Back rescue & emergency care"
+    tag: "First response"
+    body: "When a partner or independent rescuer pulls a dog out of danger — the hit-by-a-car, the abandoned litter, the shelter dog running out of time — we help fund the vet care, the intake and the safe place to recover."
+    stat: "Shared emergency fund"
+  - no: "03"
+    name: "Support foster & sanctuary care"
+    tag: "Recovery"
+    body: "A street dog isn't a pet yet. In partner shelters and foster homes, dogs get the time, food and treatment they need to heal. Remote adoptions and donations keep those carers going while a dog waits."
+    stat: "Powered by remote adopters"
+  - no: "04"
+    name: "Connect dogs to homes"
+    tag: "New beginnings"
+    body: "Physical rehoming is handled by the partner organisations in our network, each with their own process and standards. We give their dogs a bigger platform, and our remote adopters keep those dogs cared for until — and if — a permanent home is found."
+    stat: "40+ partners, one platform"
+
+principles:
+  - title: "Humane, always"
+    body: "No culling, ever. We and our partners only use methods that respect the dog's welfare at every step."
+  - title: "Evidence over emotion"
+    body: "We back the approaches that actually reduce suffering at scale — starting with mass sterilisation."
+  - title: "A network, not a monopoly"
+    body: "We amplify local rescuers and NGOs rather than replace them. This is their fight; we help them win it."
+  - title: "Honest about limits"
+    body: "We can't save every dog. We're transparent about what the network can do, and what it can't — yet."
+---

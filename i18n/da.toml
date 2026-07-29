@@ -1,0 +1,86 @@
+# Danske UI-strenge. Én <lang>.toml pr. sprog.
+# Oversæt kun VÆRDIERNE — behold nøglerne og alle {{ .placeholder }}-tokens.
+
+# --- Brand / site ---
+site_tagline    = "Netværket, der gør en ende på Rumæniens gadehundekrise"
+site_description = "Strays of Romania er en nonprofit, der forbinder og finansierer et netværk af redningsfolk, plejeværter og partnerorganisationer, som arbejder på at gøre en ende på gadehundekrisen."
+brand_sub       = "Gadehunderedning · RO"
+
+# --- Navigation ---
+nav_primary        = "Primær"
+nav_crisis         = "Krisen"
+nav_our_work       = "Vores arbejde"
+nav_remote_adoption = "Fjernadoption"
+nav_get_involved   = "Bliv en del af det"
+nav_stories        = "Historier"
+nav_about          = "Om os"
+menu               = "Menu"
+skip_to_content    = "Spring til indhold"
+language           = "Sprog"
+
+# --- Buttons (reused) ---
+btn_remote_adopt = "Fjernadopter"
+btn_donate       = "Donér"
+btn_get_involved = "Bliv en del af det"
+
+# --- Footer ---
+footer_explore   = "Udforsk"
+footer_act_now   = "Handl nu"
+footer_brand_desc = "En nonprofit, der forbinder og finansierer de redningsfolk, plejeværter og shelters, der arbejder på at gøre en ende på Rumæniens gadehundekrise — humant og for altid."
+footer_remote_adopt = "Fjernadopter en hund"
+footer_donate    = "Donér"
+footer_foster    = "Bliv plejevært"
+footer_partner   = "Bliv partner"
+footer_faq       = "FAQ"
+footer_transparency = "Åbenhed"
+footer_contact   = "Kontakt"
+footer_follow    = "Følg hundene"
+
+# --- Generic ---
+label_home       = "Forside"
+posts_empty      = "Intet her endnu — kig forbi igen snart."
+tag_story        = "Historie"
+
+# --- Default CTA band ---
+cta_default_title = "Hver donation er et liv væk fra gaden."
+cta_default_text  = "Sterilisation, vaccination, foder og sikker rejse til et nyt hjem — det hele hviler på mennesker, der beslutter sig for at hjælpe. Begynd i dag."
+
+# --- Dog cards ---
+in_care_of       = "I pleje hos {{ .carer }}"
+remotely_adopt   = "Fjernadopter"
+remotely_adopt_btn = "Fjernadopter {{ .name }} · €{{ .amount }}/md."
+photo_coming     = "Foto kommer snart"
+photo_alt        = "Foto af {{ .name }} kommer snart"
+
+# --- Get Involved ---
+jump_to          = "Hop til"
+in_short         = "Kort fortalt"
+
+# --- Contact form ---
+form_intent_label = "Jeg er interesseret i"
+intent_remote_adopt   = "Fjernadoption"
+intent_physical_adopt = "At adoptere en hund i virkeligheden (via en partner)"
+intent_foster    = "At blive plejevært"
+intent_partner   = "Partnerskab — min organisation / redning"
+intent_volunteer = "Frivilligt arbejde"
+intent_fundraise = "Indsamling"
+intent_media     = "Medier / presse"
+intent_other     = "Noget andet"
+form_name        = "Dit navn"
+form_email       = "E-mail"
+form_country     = "Hvor du bor"
+form_country_ph  = "Land / by"
+form_message     = "Besked"
+form_message_ph  = "Fortæl os lidt om dig, og hvordan vi kan hjælpe."
+form_send        = "Send besked"
+form_consent     = "Ved at sende accepterer du, at vi må svare pr. e-mail. Vi deler aldrig dine oplysninger."
+contact_direct   = "Direkte"
+contact_phone    = "Telefon"
+contact_where    = "Hvor vi er"
+contact_registration = "Registrering"
+contact_dog_label = "Spørger du om en bestemt hund?"
+contact_dog_text  = "Nævn hundens ID (f.eks. RO-241) i din besked — uanset om det drejer sig om fjernadoption eller omplacering gennem en partner — så tager vi fat med det samme."
+
+# --- Auto-translation notice ---
+autotrans_notice = "Automatisk oversat fra engelsk – kan indeholde fejl."
+autotrans_original = "Læs originalen"

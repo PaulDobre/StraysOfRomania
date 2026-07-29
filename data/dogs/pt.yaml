@@ -1,0 +1,77 @@
+# Animais disponíveis para ADOÇÃO À DISTÂNCIA (uma subscrição recorrente que financia
+# os cuidados do cão dentro da nossa rede de parceiros). O acolhimento/adoção físico é
+# tratado pelas ONG parceiras e pelas pessoas que cuidam de cada cão.
+#
+# Campos:
+#   photo:         caminho em /static (por exemplo, /img/dogs/luca.jpg). Vazio = imagem provisória.
+#   carer:         a ONG parceira ou a família de acolhimento que atualmente cuida do cão.
+#   monthly:       valor mensal sugerido (opcional, em EUR) para este cão.
+#   subscribe_url: ligação de subscrição por cão (opcional). Se vazio, o botão
+#                  liga a params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Macho
+    age: "2 anos"
+    size: Médio
+    carer: "Abrigo parceiro · Bucareste"
+    status: Precisa de adotantes à distância
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Retirado de um abrigo público no inverno passado. Meigo e habituado a viver em casa — os seus cuidadores cobrem a comida e as despesas veterinárias, e a sua adoção à distância ajuda-os a continuar.
+  - id: RO-198
+    name: Mara
+    sex: Fêmea
+    age: "8 meses"
+    size: Pequeno
+    carer: "Família de acolhimento · Cluj"
+    status: Parcialmente financiada
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Encontrada numa lixeira com os irmãos. Agora está segura numa família de acolhimento, totalmente vacinada e a crescer depressa com comida doada.
+  - id: RO-263
+    name: Bruno
+    sex: Macho
+    age: "4 anos"
+    size: Grande
+    carer: "Santuário parceiro · Ploiești"
+    status: Precisa de adotantes à distância
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Um gigante calmo e atento que passou dois anos na rua. Um cão grande custa mais a alimentar — os adotantes à distância tornam possível o seu lugar no santuário.
+  - id: RO-255
+    name: Sofia
+    sex: Fêmea
+    age: "3 anos"
+    size: Médio
+    carer: "Família de acolhimento · Bucareste"
+    status: Parcialmente financiada
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Resgatada depois de ser atropelada; totalmente recuperada graças à sua família de acolhimento. Carinhosa e infinitamente grata.
+  - id: RO-271
+    name: Toby
+    sex: Macho
+    age: "1 ano"
+    size: Médio
+    carer: "Abrigo parceiro · Sibiu"
+    status: Precisa de adotantes com urgência
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Nasceu na rua, filho de uma mãe resgatada. Ainda está a aprender que as pessoas podem ser gentis — o seu abrigo precisa de ajuda para cobrir os seus cuidados.
+  - id: RO-233
+    name: Nadia
+    sex: Fêmea
+    age: "5 anos"
+    size: Pequeno
+    carer: "Família de acolhimento · Sibiu"
+    status: Precisa de adotantes à distância
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Uma senhora idosa com os olhos mais doces, segura numa família de acolhimento. Os cães mais velhos são os que esperam mais tempo por apoio — uns euros por mês mudam o mundo dela.

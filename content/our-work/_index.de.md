@@ -1,0 +1,43 @@
+---
+title: "Unsere Arbeit"
+eyebrow: "Programme"
+subtitle: "Wir sind das Bindegewebe: Wir finanzieren, koordinieren und stärken ein Netzwerk aus Rettern, Pflegestellen und Tierheimen. Hier ist, was dieses Netzwerk mit deiner Unterstützung tut — und welche Rolle wir dabei spielen."
+description: "Wie Strays of Romania als Netzwerk arbeitet: Sterilisation finanzieren, Rettung und Pflege über Partnerorganisationen unterstützen und Fernadoptionen durchführen, die Hunde versorgt halten."
+
+principles_eyebrow: "Wie wir arbeiten"
+principles_title: "Vier Prinzipien, bei denen wir keine Kompromisse machen."
+cta_title: "Finanziere die Arbeit, die die Krise beendet."
+cta_text: "Jedes der obigen Programme lebt von Spenden. 25 € sterilisieren einen Hund; eine monatliche Spende hält eine Klinik auf der Straße."
+
+programs:
+  - no: "01"
+    name: "Sterilisation finanzieren (CNVR)"
+    tag: "Populationskontrolle"
+    body: "Wir leiten Spenden in Fangen-Kastrieren-Impfen-Zurückbringen-Kampagnen, die von unseren Partnern und mobilen Kliniken durchgeführt werden. Ein sterilisierter Hund kann sich nicht fortpflanzen, und ein geimpfter Hund verbreitet keine Tollwut — so sinkt die Straßenpopulation, human und dauerhaft. Hierhin fließt der Großteil deiner allgemeinen Spende."
+    stat: "25 € sterilisieren einen Hund"
+  - no: "02"
+    name: "Rettung & Notfallversorgung unterstützen"
+    tag: "Erste Hilfe"
+    body: "Wenn ein Partner oder ein unabhängiger Retter einen Hund aus der Gefahr holt — den Angefahrenen, den ausgesetzten Wurf, den Tierheimhund, dem die Zeit davonläuft — helfen wir, die tierärztliche Versorgung, die Aufnahme und den sicheren Ort zur Genesung zu finanzieren."
+    stat: "Gemeinsamer Notfallfonds"
+  - no: "03"
+    name: "Pflege- & Auffangstationen unterstützen"
+    tag: "Genesung"
+    body: "Ein Straßenhund ist noch kein Haustier. In Partner-Tierheimen und Pflegestellen bekommen Hunde die Zeit, das Futter und die Behandlung, die sie zum Heilen brauchen. Fernadoptionen und Spenden halten diese Betreuer am Laufen, während ein Hund wartet."
+    stat: "Getragen von Fernadoptierenden"
+  - no: "04"
+    name: "Hunde mit einem Zuhause verbinden"
+    tag: "Neuanfänge"
+    body: "Die physische Vermittlung übernehmen die Partnerorganisationen in unserem Netzwerk, jede mit ihrem eigenen Prozess und ihren eigenen Standards. Wir geben ihren Hunden eine größere Plattform, und unsere Fernadoptierenden halten diese Hunde versorgt, bis — und falls — ein dauerhaftes Zuhause gefunden wird."
+    stat: "40+ Partner, eine Plattform"
+
+principles:
+  - title: "Immer human"
+    body: "Niemals Töten. Wir und unsere Partner verwenden ausschließlich Methoden, die das Wohl des Hundes bei jedem Schritt achten."
+  - title: "Fakten vor Gefühl"
+    body: "Wir setzen auf die Ansätze, die das Leid tatsächlich in großem Maßstab verringern — angefangen bei der Massensterilisation."
+  - title: "Ein Netzwerk, kein Monopol"
+    body: "Wir stärken lokale Retter und NGOs, statt sie zu ersetzen. Es ist ihr Kampf; wir helfen ihnen, ihn zu gewinnen."
+  - title: "Ehrlich über Grenzen"
+    body: "Wir können nicht jeden Hund retten. Wir sind transparent darüber, was das Netzwerk kann und was noch nicht."
+---

@@ -1,0 +1,502 @@
+# Sveltia CMS configuration — https://sveltiacms.app
+# Edit content in the browser at /admin/ ; changes are committed to Git.
+
+backend:
+  name: github
+  repo: your-org/straysofromania   # ← CHANGE to your GitHub "owner/repo"
+  branch: main
+  # Auth: use the Sveltia GitHub App or your own OAuth (see README → CMS).
+
+# Local editing: run `npx @sveltia/cms-proxy-server` in the repo, then open
+# http://localhost:1313/admin/ while `hugo server` is running.
+local_backend: true
+
+media_folder: static/img
+public_folder: /img
+
+i18n:
+  structure: multiple_files
+  locales: [en, de, fr, nl, es, it, ro, pl, pt, sv, da, cs, hu, el]
+  default_locale: en
+  # Matches Hugo: English is `_index.md`, others are `_index.de.md`, etc.
+  omit_default_locale_from_file_path: true
+
+collections:
+  # ─────────────────────────────  PAGES  ─────────────────────────────
+  - name: pages
+    label: Pages
+    label_singular: Page
+    description: The fixed pages of the site. Most copy lives in these fields.
+    i18n: true
+    files:
+      # ---- Home ----
+      - name: home
+        label: Home
+        file: content/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, label: Title, widget: string, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - name: hero
+            label: Hero
+            widget: object
+            i18n: true
+            fields:
+              - {name: dateline, widget: string, i18n: true}
+              - {name: title, widget: text, i18n: true}
+              - {name: emphasis, label: Emphasised phrase, widget: string, i18n: true}
+              - {name: lead, widget: text, i18n: true}
+              - {name: cta_primary, widget: string, i18n: true}
+              - {name: cta_secondary, widget: string, i18n: true}
+              - {name: stats_aria, label: Stats aria-label, widget: string, i18n: true}
+              - name: stats
+                label: Crisis stats
+                widget: list
+                i18n: true
+                summary: "{{fields.num}} — {{fields.label}}"
+                fields:
+                  - {name: num, widget: string, i18n: true}
+                  - {name: label, widget: string, i18n: true}
+                  - {name: note, widget: string, i18n: true}
+          - name: problem
+            label: Problem teaser
+            widget: object
+            i18n: true
+            fields:
+              - {name: eyebrow, widget: string, i18n: true}
+              - {name: title, widget: text, i18n: true}
+              - {name: lead, widget: text, i18n: true}
+              - {name: body, widget: text, i18n: true}
+              - {name: link, widget: string, i18n: true}
+              - {name: caption, widget: string, i18n: true}
+          - name: impact
+            label: Impact band
+            widget: object
+            i18n: true
+            fields:
+              - {name: label, widget: string, i18n: true}
+              - {name: note, widget: string, i18n: true}
+              - name: stats
+                widget: list
+                i18n: true
+                summary: "{{fields.num}} — {{fields.label}}"
+                fields:
+                  - {name: num, widget: string, i18n: true}
+                  - {name: label, widget: string, i18n: true}
+          - name: work
+            label: Our work
+            widget: object
+            i18n: true
+            fields:
+              - {name: label, widget: string, i18n: true}
+              - {name: title, widget: text, i18n: true}
+              - {name: intro, widget: text, i18n: true}
+              - {name: link, widget: string, i18n: true}
+              - name: cards
+                widget: list
+                i18n: true
+                summary: "{{fields.title}}"
+                fields:
+                  - {name: title, widget: string, i18n: true}
+                  - {name: body, widget: text, i18n: true}
+          - name: featured
+            label: Featured dogs
+            widget: object
+            i18n: true
+            fields:
+              - {name: eyebrow, widget: string, i18n: true}
+              - {name: title, widget: text, i18n: true}
+              - {name: link, widget: string, i18n: true}
+          - name: ways
+            label: Ways to help
+            widget: object
+            i18n: true
+            fields:
+              - {name: label, widget: string, i18n: true}
+              - name: items
+                widget: list
+                i18n: true
+                summary: "{{fields.title}}"
+                fields:
+                  - {name: index, label: Kicker, widget: string, i18n: true}
+                  - {name: title, widget: string, i18n: true}
+                  - {name: body, widget: text, i18n: true}
+                  - {name: link, widget: string, i18n: true}
+                  - {name: href, label: Link target, widget: string, i18n: duplicate}
+          - name: cta
+            label: Closing CTA
+            widget: object
+            i18n: true
+            fields:
+              - {name: title, widget: string, i18n: true}
+              - {name: text, widget: text, i18n: true}
+
+      # ---- The Crisis ----
+      - name: crisis
+        label: The Crisis
+        file: content/crisis/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: eyebrow, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - name: stats
+            label: Headline figures
+            widget: list
+            i18n: true
+            summary: "{{fields.num}} — {{fields.label}}"
+            fields:
+              - {name: num, widget: string, i18n: true}
+              - {name: label, widget: string, i18n: true}
+              - {name: note, widget: string, i18n: true}
+          - {name: scale_lead, widget: text, i18n: true}
+          - {name: origin_eyebrow, widget: string, i18n: true}
+          - {name: origin_title, widget: string, i18n: true}
+          - {name: origin_p1, widget: text, i18n: true, hint: "May contain <strong> tags"}
+          - {name: origin_p2, widget: text, i18n: true}
+          - {name: origin_p3, widget: text, i18n: true}
+          - {name: origin_callout_label, widget: string, i18n: true}
+          - {name: origin_callout_body, widget: text, i18n: true}
+          - {name: causes_label, widget: string, i18n: true}
+          - name: causes
+            widget: list
+            i18n: true
+            summary: "{{fields.title}}"
+            fields:
+              - {name: kicker, widget: string, i18n: true}
+              - {name: title, widget: string, i18n: true}
+              - {name: body, widget: text, i18n: true}
+          - {name: turning_eyebrow, widget: string, i18n: true}
+          - {name: turning_title, widget: string, i18n: true}
+          - {name: turning_intro, widget: text, i18n: true}
+          - {name: turning_note_label, widget: string, i18n: true}
+          - {name: turning_note_body, widget: text, i18n: true}
+          - name: timeline
+            widget: list
+            i18n: true
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - {name: date, widget: string, i18n: true}
+              - {name: title, widget: string, i18n: true}
+              - {name: body, widget: text, i18n: true}
+          - {name: cull_eyebrow, widget: string, i18n: true}
+          - {name: cull_title, widget: string, i18n: true}
+          - {name: cull_p1, widget: text, i18n: true}
+          - {name: cull_p2, widget: text, i18n: true}
+          - {name: cull_card_label, widget: string, i18n: true}
+          - {name: cull_bad_label, widget: string, i18n: true}
+          - {name: cull_bad_body, widget: text, i18n: true}
+          - {name: cull_good_label, widget: string, i18n: true}
+          - {name: cull_good_body, widget: text, i18n: true}
+          - {name: road_eyebrow, widget: string, i18n: true}
+          - {name: road_title, widget: string, i18n: true}
+          - {name: road_body, widget: text, i18n: true}
+          - {name: road_cta, widget: string, i18n: true}
+          - {name: sources_label, widget: string, i18n: true}
+          - {name: sources_note, widget: text, i18n: true}
+          - {name: sources, widget: list, i18n: true, field: {name: source, widget: string}}
+          - {name: cta_title, widget: string, i18n: true}
+          - {name: cta_text, widget: text, i18n: true}
+
+      # ---- Our Work ----
+      - name: our-work
+        label: Our Work
+        file: content/our-work/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: eyebrow, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - {name: principles_eyebrow, widget: string, i18n: true}
+          - {name: principles_title, widget: string, i18n: true}
+          - {name: cta_title, widget: string, i18n: true}
+          - {name: cta_text, widget: text, i18n: true}
+          - name: programs
+            widget: list
+            i18n: true
+            summary: "{{fields.no}} — {{fields.name}}"
+            fields:
+              - {name: 'no', label: Number, widget: string, i18n: true}
+              - {name: name, widget: string, i18n: true}
+              - {name: tag, widget: string, i18n: true}
+              - {name: body, widget: text, i18n: true}
+              - {name: stat, widget: string, i18n: true}
+          - name: principles
+            widget: list
+            i18n: true
+            summary: "{{fields.title}}"
+            fields:
+              - {name: title, widget: string, i18n: true}
+              - {name: body, widget: text, i18n: true}
+          - {name: body, label: Extra prose (optional), widget: markdown, i18n: true, required: false}
+
+      # ---- Remote Adoption ----
+      - name: adopt
+        label: Remote Adoption
+        file: content/adopt/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: eyebrow, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - {name: different_label, widget: string, i18n: true}
+          - {name: different_body, widget: text, i18n: true, hint: "May contain <strong> tags"}
+          - {name: gallery_count_suffix, widget: string, i18n: true}
+          - {name: gallery_heading, widget: string, i18n: true}
+          - {name: gallery_note, widget: text, i18n: true}
+          - {name: placeholder_note, widget: text, i18n: true}
+          - {name: steps_label, widget: string, i18n: true}
+          - {name: steps_title, widget: string, i18n: true}
+          - name: steps
+            widget: list
+            i18n: true
+            summary: "{{fields.no}} — {{fields.title}}"
+            fields:
+              - {name: 'no', label: Number, widget: string, i18n: true}
+              - {name: title, widget: string, i18n: true}
+              - {name: body, widget: text, i18n: true}
+          - {name: funds_label, widget: string, i18n: true}
+          - {name: funds_title, widget: string, i18n: true}
+          - {name: funds_note, widget: text, i18n: true}
+          - {name: funds, widget: list, i18n: true, field: {name: item, widget: string}}
+          - {name: updates_label, widget: string, i18n: true}
+          - {name: updates_body, widget: text, i18n: true}
+          - {name: physical_label, widget: string, i18n: true}
+          - {name: physical_body, widget: text, i18n: true}
+          - {name: physical_link, widget: string, i18n: true}
+          - {name: cta_title, widget: string, i18n: true}
+          - {name: cta_text, widget: text, i18n: true}
+
+      # ---- Get Involved ----
+      - name: get-involved
+        label: Get Involved
+        file: content/get-involved/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: eyebrow, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - {name: cta_title, widget: string, i18n: true}
+          - {name: cta_text, widget: text, i18n: true}
+          - name: ways
+            widget: list
+            i18n: true
+            summary: "{{fields.kicker}} — {{fields.title}}"
+            fields:
+              - {name: id, label: Anchor id, widget: string, i18n: duplicate}
+              - {name: kicker, widget: string, i18n: true}
+              - {name: title, widget: string, i18n: true}
+              - {name: lead, widget: text, i18n: true}
+              - {name: points, widget: list, i18n: true, field: {name: point, widget: string}}
+              - {name: cta_label, widget: string, i18n: true}
+              - {name: href, label: Link target, widget: string, i18n: duplicate}
+              - {name: query, label: URL query (optional), widget: string, i18n: duplicate, required: false}
+
+      # ---- Donate ----
+      - name: donate
+        label: Donate
+        file: content/donate/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - {name: hero_dateline, widget: string, i18n: true}
+          - {name: hero_title, widget: string, i18n: true}
+          - {name: give_eyebrow, widget: string, i18n: true}
+          - {name: give_title, widget: string, i18n: true}
+          - {name: give_note, widget: text, i18n: true}
+          - {name: tier_featured_label, widget: string, i18n: true}
+          - {name: tier_give_prefix, widget: string, i18n: true}
+          - name: tiers
+            widget: list
+            i18n: true
+            summary: "{{fields.amt}} — {{fields.per}}"
+            fields:
+              - {name: amt, label: Amount, widget: string, i18n: true}
+              - {name: per, widget: string, i18n: true}
+              - {name: buys, widget: text, i18n: true}
+              - {name: featured, widget: boolean, i18n: duplicate, default: false}
+          - {name: impact_label, widget: string, i18n: true}
+          - {name: impact_gives, widget: string, i18n: true}
+          - name: impact
+            widget: list
+            i18n: true
+            summary: "{{fields.num}} — {{fields.text}}"
+            fields:
+              - {name: num, widget: string, i18n: true}
+              - {name: text, widget: string, i18n: true}
+          - {name: form_eyebrow, widget: string, i18n: true}
+          - {name: form_title, widget: string, i18n: true}
+          - {name: form_body, widget: text, i18n: true}
+          - {name: form_once, widget: string, i18n: true}
+          - {name: form_monthly, widget: string, i18n: true}
+          - {name: form_other, widget: text, i18n: true}
+          - {name: form_other_link, widget: string, i18n: true}
+          - {name: trust_eyebrow, widget: string, i18n: true}
+          - {name: trust_title, widget: string, i18n: true}
+          - {name: trust_body, widget: text, i18n: true}
+          - {name: trust_cta, widget: string, i18n: true}
+
+      # ---- About ----
+      - name: about
+        label: About
+        file: content/about/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: eyebrow, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - {name: values_eyebrow, widget: string, i18n: true}
+          - {name: values_title, widget: string, i18n: true}
+          - {name: where_eyebrow, widget: string, i18n: true}
+          - {name: where_title, widget: string, i18n: true}
+          - {name: where_body, widget: text, i18n: true}
+          - {name: where_link, widget: string, i18n: true}
+          - {name: team_eyebrow, widget: string, i18n: true}
+          - {name: team_title, widget: string, i18n: true}
+          - {name: team_note, widget: text, i18n: true}
+          - name: values
+            widget: list
+            i18n: true
+            summary: "{{fields.title}}"
+            fields:
+              - {name: title, widget: string, i18n: true}
+              - {name: body, widget: text, i18n: true}
+          - name: team
+            widget: list
+            i18n: true
+            summary: "{{fields.name}}"
+            fields:
+              - {name: name, widget: string, i18n: true}
+              - {name: role, widget: string, i18n: true}
+          - {name: body, label: Mission & story, widget: markdown, i18n: true}
+
+      # ---- Transparency ----
+      - name: transparency
+        label: Transparency
+        file: content/about/transparency.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - {name: body, widget: markdown, i18n: true}
+
+      # ---- FAQ ----
+      - name: faq
+        label: FAQ
+        file: content/faq/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: eyebrow, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+          - {name: still_label, widget: string, i18n: true}
+          - {name: still_text, widget: text, i18n: true}
+          - {name: still_link, widget: string, i18n: true}
+          - name: groups
+            widget: list
+            i18n: true
+            summary: "{{fields.heading}}"
+            fields:
+              - {name: heading, widget: string, i18n: true}
+              - name: items
+                widget: list
+                i18n: true
+                summary: "{{fields.q}}"
+                fields:
+                  - {name: q, label: Question, widget: string, i18n: true}
+                  - {name: a, label: Answer, widget: text, i18n: true}
+
+      # ---- Contact ----
+      - name: contact
+        label: Contact
+        file: content/contact/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: eyebrow, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+
+      # ---- Stories index (section landing) ----
+      - name: stories-index
+        label: Stories — section intro
+        file: content/stories/_index.{{locale}}.md
+        i18n: true
+        fields:
+          - {name: title, widget: string, i18n: true}
+          - {name: subtitle, widget: text, i18n: true}
+          - {name: description, label: SEO description, widget: text, i18n: true}
+
+  # ─────────────────────────────  STORIES (blog)  ─────────────────────────────
+  - name: stories
+    label: Stories
+    label_singular: Story
+    description: Rescue updates and adoption success stories.
+    folder: content/stories
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    # Note: the section's `_index.md` also lives in this folder — edit it under
+    # Pages → "Stories — section intro", and ignore it here.
+    fields:
+      - {name: title, widget: string, i18n: true}
+      - {name: date, widget: datetime, i18n: duplicate}
+      - {name: publishDate, label: Publish date, widget: datetime, i18n: duplicate}
+      - {name: tag, widget: string, i18n: true, required: false}
+      - {name: location, widget: string, i18n: true, required: false}
+      - {name: subtitle, widget: text, i18n: true, required: false}
+      - {name: summary, widget: text, i18n: true, required: false}
+      - {name: tags, widget: list, i18n: true, required: false, field: {name: tag, widget: string}}
+      - {name: body, widget: markdown, i18n: true}
+
+  # ─────────────────────────────  DOGS (per language)  ─────────────────────────────
+  # Each language keeps its own list. Edit the language you need; the English
+  # list is the fallback for any language not yet filled in.
+  - name: dogs
+    label: Adoptable dogs
+    label_singular: Dog list
+    description: The animals shown on the Remote Adoption page.
+    files:
+      - name: dogs_en
+        label: "Dogs — English"
+        file: data/dogs/en.yaml
+        fields:
+          - name: dogs
+            label: Dogs
+            label_singular: Dog
+            widget: list
+            summary: "{{fields.name}} ({{fields.id}})"
+            fields: &dogfields
+              - {name: id, label: ID, widget: string, hint: "e.g. RO-241 — tags the subscription"}
+              - {name: name, label: Name, widget: string}
+              - {name: sex, label: Sex, widget: string}
+              - {name: age, label: Age, widget: string}
+              - {name: size, label: Size, widget: string}
+              - {name: carer, label: In the care of, widget: string}
+              - {name: status, label: Status, widget: string}
+              - {name: monthly, label: Suggested €/month, widget: number, value_type: int, required: false}
+              - {name: blurb, label: Blurb, widget: text}
+              - {name: photo, label: Photo, widget: image, required: false, media_folder: /static/img/dogs, public_folder: /img/dogs}
+              - {name: subscribe_url, label: Custom subscribe URL, widget: string, required: false}
+      - {name: dogs_de, label: "Dogs — Deutsch",    file: data/dogs/de.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_fr, label: "Dogs — Français",   file: data/dogs/fr.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_nl, label: "Dogs — Nederlands", file: data/dogs/nl.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_es, label: "Dogs — Español",    file: data/dogs/es.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_it, label: "Dogs — Italiano",   file: data/dogs/it.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_ro, label: "Dogs — Română",     file: data/dogs/ro.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_pl, label: "Dogs — Polski",     file: data/dogs/pl.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_pt, label: "Dogs — Português",  file: data/dogs/pt.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_sv, label: "Dogs — Svenska",    file: data/dogs/sv.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_da, label: "Dogs — Dansk",      file: data/dogs/da.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_cs, label: "Dogs — Čeština",    file: data/dogs/cs.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_hu, label: "Dogs — Magyar",     file: data/dogs/hu.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}
+      - {name: dogs_el, label: "Dogs — Ελληνικά",   file: data/dogs/el.yaml, fields: [{name: dogs, label: Dogs, label_singular: Dog, widget: list, summary: "{{fields.name}} ({{fields.id}})", fields: *dogfields}]}

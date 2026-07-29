@@ -1,0 +1,43 @@
+---
+title: "Ons werk"
+eyebrow: "Programma's"
+subtitle: "Wij zijn het bindweefsel: we financieren, coördineren en versterken een netwerk van redders, opvanggezinnen en asielen. Dit is wat dat netwerk met jouw steun doet — en de rol die wij daarin spelen."
+description: "Hoe Strays of Romania werkt als netwerk: sterilisatie financieren, redding en opvang ondersteunen bij partnerorganisaties, en adopties op afstand organiseren die honden verzorgd houden."
+
+principles_eyebrow: "Hoe we werken"
+principles_title: "Vier principes waarop we geen concessies doen."
+cta_title: "Financier het werk dat de crisis beëindigt."
+cta_text: "Elk bovenstaand programma draait op donaties. €25 steriliseert een hond; een maandelijkse gift houdt een kliniek op de weg."
+
+programs:
+  - no: "01"
+    name: "Financier sterilisatie (CNVR)"
+    tag: "Populatiebeheersing"
+    body: "We sluizen donaties naar vangen-steriliseren-vaccineren-terugplaatsen-campagnes die door onze partners en mobiele klinieken worden uitgevoerd. Een gesteriliseerde hond kan zich niet voortplanten en een gevaccineerde hond verspreidt geen hondsdolheid — dus de straatpopulatie daalt, humaan en blijvend. Hier gaat het grootste deel van je algemene donatie naartoe."
+    stat: "€25 steriliseert één hond"
+  - no: "02"
+    name: "Ondersteun redding en spoedzorg"
+    tag: "Eerste respons"
+    body: "Wanneer een partner of onafhankelijke redder een hond uit gevaar haalt — het aangereden dier, het verlaten nest, de asielhond wiens tijd bijna om is — helpen we de diergeneeskundige zorg, de opvang en de veilige plek om te herstellen te financieren."
+    stat: "Gedeeld noodfonds"
+  - no: "03"
+    name: "Steun opvang- en sanctuariumzorg"
+    tag: "Herstel"
+    body: "Een zwerfhond is nog geen huisdier. In partnerasielen en opvanggezinnen krijgen honden de tijd, het voedsel en de behandeling die ze nodig hebben om te genezen. Adopties op afstand en donaties houden die verzorgers op de been terwijl een hond wacht."
+    stat: "Mogelijk gemaakt door adoptanten op afstand"
+  - no: "04"
+    name: "Breng honden naar een thuis"
+    tag: "Een nieuw begin"
+    body: "Fysieke herplaatsing wordt geregeld door de partnerorganisaties in ons netwerk, elk met hun eigen proces en normen. Wij geven hun honden een groter podium, en onze adoptanten op afstand houden die honden verzorgd totdat — en als — een permanent thuis wordt gevonden."
+    stat: "40+ partners, één platform"
+
+principles:
+  - title: "Altijd humaan"
+    body: "Nooit ruimen, echt nooit. Wij en onze partners gebruiken alleen methoden die het welzijn van de hond bij elke stap respecteren."
+  - title: "Bewijs boven emotie"
+    body: "Wij steunen de aanpakken die het lijden op grote schaal daadwerkelijk verminderen — te beginnen met massale sterilisatie."
+  - title: "Een netwerk, geen monopolie"
+    body: "We versterken lokale redders en ngo's in plaats van ze te vervangen. Dit is hun strijd; wij helpen hen die te winnen."
+  - title: "Eerlijk over grenzen"
+    body: "We kunnen niet elke hond redden. We zijn transparant over wat het netwerk wel kan doen, en wat het nog niet kan."
+---

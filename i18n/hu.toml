@@ -1,0 +1,86 @@
+# Magyar UI-szövegek. Nyelvenként egy <lang>.toml fájl.
+# Csak az ÉRTÉKEKET fordítsd — a kulcsokat és a {{ .placeholder }} tokeneket hagyd meg.
+
+# --- Márka / oldal ---
+site_tagline    = "A hálózat, amely felszámolja Románia utcaikutya-válságát"
+site_description = "A Strays of Romania egy nonprofit szervezet, amely összekapcsolja és finanszírozza a mentők, gazdisítók és partnerszervezetek hálózatát, amely az utcaikutya-válság felszámolásán dolgozik."
+brand_sub       = "Utcaikutya-mentés · RO"
+
+# --- Navigáció ---
+nav_primary        = "Fő"
+nav_crisis         = "A válság"
+nav_our_work       = "Munkánk"
+nav_remote_adoption = "Távörökbefogadás"
+nav_get_involved   = "Csatlakozz"
+nav_stories        = "Történetek"
+nav_about          = "Rólunk"
+menu               = "Menü"
+skip_to_content    = "Ugrás a tartalomra"
+language           = "Nyelv"
+
+# --- Gombok (ismétlődő) ---
+btn_remote_adopt = "Távörökbefogadás"
+btn_donate       = "Adományozok"
+btn_get_involved = "Csatlakozz"
+
+# --- Lábléc ---
+footer_explore   = "Fedezd fel"
+footer_act_now   = "Cselekedj most"
+footer_brand_desc = "Nonprofit szervezet, amely összekapcsolja és finanszírozza a mentőket, gazdisítókat és menhelyeket, akik Románia utcaikutya-válságának felszámolásán dolgoznak — emberségesen és véglegesen."
+footer_remote_adopt = "Fogadj örökbe egy kutyát távolról"
+footer_donate    = "Adományozok"
+footer_foster    = "Gazdisítás"
+footer_partner   = "Legyél partnerünk"
+footer_faq       = "GYIK"
+footer_transparency = "Átláthatóság"
+footer_contact   = "Kapcsolat"
+footer_follow    = "Kövesd a kutyákat"
+
+# --- Általános ---
+label_home       = "Főoldal"
+posts_empty      = "Itt még nincs semmi — nézz vissza hamarosan."
+tag_story        = "Történet"
+
+# --- Automatikus fordítási értesítés (minden nem angol oldalon megjelenik; angolra vált vissza) ---
+autotrans_notice = "Angolból automatikusan lefordítva — hibákat tartalmazhat."
+autotrans_original = "Olvasd el az eredetit"
+
+# --- Alapértelmezett CTA-sáv ---
+cta_default_title = "Minden adomány egy élet az utcáról."
+cta_default_text  = "Ivartalanítás, oltás, étel és biztonságos út egy új otthonba — mindez azokon múlik, akik úgy döntenek, hogy segítenek. Kezdd el még ma."
+
+# --- Kutyakártyák ---
+in_care_of       = "{{ .carer }} gondozásában"
+remotely_adopt   = "Távörökbefogadás"
+remotely_adopt_btn = "Fogadd örökbe {{ .name }} kutyát távolról · €{{ .amount }}/hó"
+photo_coming     = "A fotó hamarosan érkezik"
+photo_alt        = "{{ .name }} fotója hamarosan érkezik"
+
+# --- Csatlakozz ---
+jump_to          = "Ugorj ide"
+in_short         = "Röviden"
+
+# --- Kapcsolatfelvételi űrlap ---
+form_intent_label = "Ez érdekel"
+intent_remote_adopt   = "Távörökbefogadás"
+intent_physical_adopt = "Kutya valódi örökbefogadása (partneren keresztül)"
+intent_foster    = "Gazdisítás"
+intent_partner   = "Partnerség — szervezetem / mentőcsapatom"
+intent_volunteer = "Önkéntesség"
+intent_fundraise = "Adománygyűjtés"
+intent_media     = "Média / sajtó"
+intent_other     = "Valami más"
+form_name        = "Neved"
+form_email       = "E-mail"
+form_country     = "Hol laksz"
+form_country_ph  = "Ország / város"
+form_message     = "Üzenet"
+form_message_ph  = "Mesélj egy kicsit magadról és arról, hogyan segíthetünk."
+form_send        = "Üzenet küldése"
+form_consent     = "A küldéssel elfogadod, hogy e-mailben válaszolhatunk. Adataidat soha nem adjuk ki."
+contact_direct   = "Közvetlen"
+contact_phone    = "Telefon"
+contact_where    = "Hol vagyunk"
+contact_registration = "Nyilvántartás"
+contact_dog_label = "Egy konkrét kutyáról érdeklődsz?"
+contact_dog_text  = "Említsd meg a kutya azonosítóját (pl. RO-241) az üzenetedben — legyen szó távörökbefogadásról vagy partneren keresztüli gazdisításról — és rögtön intézzük."

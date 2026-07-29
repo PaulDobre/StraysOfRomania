@@ -1,0 +1,78 @@
+# Animali disponibili per l'ADOZIONE A DISTANZA (un abbonamento ricorrente che
+# finanzia la cura del cane all'interno della nostra rete di partner). L'affido e
+# l'adozione fisica sono gestiti dalle ONG partner e dalle persone che si prendono
+# cura di ciascun cane.
+#
+# Campi:
+#   photo:         percorso sotto /static (es. /img/dogs/luca.jpg). Vuoto = segnaposto.
+#   carer:         la ONG partner o la famiglia affidataria che attualmente cura il cane.
+#   monthly:       importo mensile suggerito facoltativo (EUR) per questo cane.
+#   subscribe_url: link di abbonamento facoltativo per singolo cane. Se vuoto, il pulsante
+#                  rimanda a params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Maschio
+    age: "2 anni"
+    size: Media
+    carer: "Rifugio partner · Bucarest"
+    status: Cerca adottanti a distanza
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Salvato da un rifugio pubblico lo scorso inverno. Dolce e abituato a vivere in casa — chi se ne prende cura copre cibo e spese veterinarie, e la tua adozione a distanza li aiuta a continuare.
+  - id: RO-198
+    name: Mara
+    sex: Femmina
+    age: "8 mesi"
+    size: Piccola
+    carer: "Famiglia affidataria · Cluj"
+    status: Parzialmente finanziata
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Trovata in una discarica con i suoi fratellini. Ora è al sicuro in una famiglia affidataria, completamente vaccinata e cresce in fretta grazie al cibo donato.
+  - id: RO-263
+    name: Bruno
+    sex: Maschio
+    age: "4 anni"
+    size: Grande
+    carer: "Santuario partner · Ploiești"
+    status: Cerca adottanti a distanza
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Un gigante calmo e attento che ha trascorso due anni per strada. Un cane grande costa di più da nutrire — chi lo adotta a distanza rende possibile il suo posto al santuario.
+  - id: RO-255
+    name: Sofia
+    sex: Femmina
+    age: "3 anni"
+    size: Media
+    carer: "Famiglia affidataria · Bucarest"
+    status: Parzialmente finanziata
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Salvata dopo essere stata investita da un'auto; completamente guarita grazie alla sua famiglia affidataria. Affettuosa e infinitamente riconoscente.
+  - id: RO-271
+    name: Toby
+    sex: Maschio
+    age: "1 anno"
+    size: Media
+    carer: "Rifugio partner · Sibiu"
+    status: Cerca adottanti con urgenza
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Nato per strada da una mamma soccorsa. Sta ancora imparando che le persone possono essere gentili — il suo rifugio ha bisogno di aiuto per coprire le sue cure.
+  - id: RO-233
+    name: Nadia
+    sex: Femmina
+    age: "5 anni"
+    size: Piccola
+    carer: "Famiglia affidataria · Sibiu"
+    status: Cerca adottanti a distanza
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Una signora anziana con gli occhi più dolci del mondo, al sicuro in affido. I cani più anziani aspettano più a lungo un sostegno — pochi euro al mese cambiano il suo mondo.

@@ -1,0 +1,18 @@
+{{- /* Reusable call-to-action band. Optional context overrides via dict:
+       .title, .text. Falls back to translated defaults. */ -}}
+{{- $title := .title | default (T "cta_default_title") -}}
+{{- $text := .text | default (T "cta_default_text") -}}
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>{{ $title }}</h2>
+        <p>{{ $text }}</p>
+      </div>
+      <div class="actions">
+        <a href="{{ "donate/" | relLangURL }}" class="btn btn--pine btn--lg">{{ T "btn_donate" }}</a>
+        <a href="{{ "get-involved/" | relLangURL }}" class="btn btn--ghost btn--lg">{{ T "btn_get_involved" }}</a>
+      </div>
+    </div>
+  </div>
+</section>

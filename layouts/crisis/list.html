@@ -1,0 +1,147 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ "/" | relLangURL }}">{{ T "label_home" }}</a> / {{ .Title }}</p>
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.subtitle }}</p>
+  </div>
+</div>
+
+{{/* ---- Scale ---- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="statband statband--3" style="margin-bottom:2.5rem">
+      {{- range $p.stats }}
+      <div class="cell">
+        <div class="num">{{ .num }}</div>
+        <div class="lbl">{{ .label }}</div>
+        {{- with .note }}<div class="small text-muted" style="margin-top:.5rem;font-family:var(--mono);font-size:.72rem;line-height:1.4">{{ . }}</div>{{ end }}
+      </div>
+      {{- end }}
+    </div>
+    <div style="max-width:44rem">
+      <p class="lead">{{ $p.scale_lead }}</p>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Origin ---- */}}
+<section class="section on-pine">
+  <div class="wrap">
+    <div class="split split--wide-left">
+      <div>
+        <p class="eyebrow" style="color:var(--amber-soft)">{{ $p.origin_eyebrow }}</p>
+        <h2>{{ $p.origin_title }}</h2>
+        <p>{{ $p.origin_p1 | safeHTML }}</p>
+        <p>{{ $p.origin_p2 | safeHTML }}</p>
+        <p>{{ $p.origin_p3 | safeHTML }}</p>
+      </div>
+      <div>
+        <div class="callout" style="background:color-mix(in srgb,var(--paper-on-pine) 8%,transparent);border-left-color:var(--amber-soft)">
+          <p class="callout__label" style="color:var(--amber-soft)">{{ $p.origin_callout_label }}</p>
+          <p style="margin-bottom:0;color:var(--paper-on-pine)">{{ $p.origin_callout_body | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Causes ---- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="divider-label">{{ $p.causes_label }}</div>
+    <div class="grid grid--2">
+      {{- range $p.causes }}
+      <article class="card">
+        <span class="card__index">{{ .kicker }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .body }}</p>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- 2013 turning point ---- */}}
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="split split--wide-left" style="align-items:start">
+      <div>
+        <p class="eyebrow">{{ $p.turning_eyebrow }}</p>
+        <h2>{{ $p.turning_title }}</h2>
+        <p>{{ $p.turning_intro }}</p>
+        <div class="callout callout--rust mt-2">
+          <p class="callout__label">{{ $p.turning_note_label }}</p>
+          <p>{{ $p.turning_note_body }}</p>
+        </div>
+      </div>
+      <div class="timeline">
+        {{- range $p.timeline }}
+        <div class="timeline__item">
+          <div class="timeline__date">{{ .date }}</div>
+          <h3>{{ .title }}</h3>
+          <p>{{ .body }}</p>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Cull vs cure ---- */}}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">{{ $p.cull_eyebrow }}</p>
+        <h2>{{ $p.cull_title }}</h2>
+        <p>{{ $p.cull_p1 }}</p>
+        <p>{{ $p.cull_p2 | safeHTML }}</p>
+      </div>
+      <div>
+        <div class="card" style="background:var(--sand);border-color:var(--line)">
+          <p class="mono small" style="color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem">{{ $p.cull_card_label }}</p>
+          <div style="display:grid;gap:1rem">
+            <div>
+              <h4 style="color:var(--rust);margin-bottom:.2rem;font-family:var(--mono);font-size:.9rem;letter-spacing:.04em">{{ $p.cull_bad_label }}</h4>
+              <p class="mb-0 small" style="color:var(--ink-soft)">{{ $p.cull_bad_body }}</p>
+            </div>
+            <hr style="margin:.4rem 0">
+            <div>
+              <h4 style="color:var(--pine-2);margin-bottom:.2rem;font-family:var(--mono);font-size:.9rem;letter-spacing:.04em">{{ $p.cull_good_label }}</h4>
+              <p class="mb-0 small" style="color:var(--ink-soft)">{{ $p.cull_good_body }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---- The road out ---- */}}
+<section class="section on-pine">
+  <div class="wrap" style="text-align:center;max-width:52rem;margin-inline:auto">
+    <p class="eyebrow center" style="color:var(--amber-soft)">{{ $p.road_eyebrow }}</p>
+    <h2>{{ $p.road_title }}</h2>
+    <p class="lead" style="margin-inline:auto">{{ $p.road_body | safeHTML }}</p>
+    <p style="margin-top:1.5rem"><a href="{{ "adopt/" | relLangURL }}" class="btn btn--primary btn--lg">{{ $p.road_cta }}</a></p>
+  </div>
+</section>
+
+{{/* ---- Sources ---- */}}
+<section class="section--tight">
+  <div class="wrap" style="max-width:44rem;margin-inline:auto">
+    <p class="mono small" style="color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem">{{ $p.sources_label }}</p>
+    <ul class="small text-muted" style="line-height:1.9;padding-left:1.1rem">
+      {{- range $p.sources }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    <p class="small text-muted" style="margin-top:1rem">{{ $p.sources_note }}</p>
+  </div>
+</section>
+
+{{ partial "cta-band.html" (dict "title" $p.cta_title "text" $p.cta_text) }}
+
+{{ end }}

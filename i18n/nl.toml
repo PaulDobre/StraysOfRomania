@@ -1,0 +1,86 @@
+# Nederlandse UI-teksten. Eén <lang>.toml per taal.
+# Vertaal alleen de WAARDEN — laat de sleutels en eventuele {{ .placeholder }} tokens intact.
+
+# --- Merk / site ---
+site_tagline    = "Het netwerk dat een einde maakt aan de zwerfhondencrisis in Roemenië"
+site_description = "Strays of Romania is een non-profitorganisatie die een netwerk van redders, opvanggezinnen en partnerorganisaties verbindt en financiert om een einde te maken aan de zwerfhondencrisis."
+brand_sub       = "Zwerfhondenredding · RO"
+
+# --- Navigatie ---
+nav_primary        = "Hoofdmenu"
+nav_crisis         = "De crisis"
+nav_our_work       = "Ons werk"
+nav_remote_adoption = "Adoptie op afstand"
+nav_get_involved   = "Doe mee"
+nav_stories        = "Verhalen"
+nav_about          = "Over ons"
+menu               = "Menu"
+skip_to_content    = "Ga naar inhoud"
+language           = "Taal"
+
+# --- Knoppen (hergebruikt) ---
+btn_remote_adopt = "Adopteer op afstand"
+btn_donate       = "Doneer"
+btn_get_involved = "Doe mee"
+
+# --- Footer ---
+footer_explore   = "Ontdek"
+footer_act_now   = "Kom nu in actie"
+footer_brand_desc = "Een non-profitorganisatie die de redders, opvanggezinnen en asielen verbindt en financiert die werken aan een einde van de zwerfhondencrisis in Roemenië — op een humane manier, en voorgoed."
+footer_remote_adopt = "Adopteer een hond op afstand"
+footer_donate    = "Doneer"
+footer_foster    = "Word opvanggezin"
+footer_partner   = "Word partner"
+footer_faq       = "Veelgestelde vragen"
+footer_transparency = "Transparantie"
+footer_contact   = "Contact"
+footer_follow    = "Volg de honden"
+
+# --- Algemeen ---
+label_home       = "Home"
+posts_empty      = "Hier staat nog niets — kom snel terug."
+tag_story        = "Verhaal"
+
+# --- Standaard CTA-balk ---
+cta_default_title = "Elke donatie is een leven weg van de straat."
+cta_default_text  = "Sterilisatie, vaccinatie, voedsel en een veilige reis naar een nieuw thuis — het draait allemaal op mensen die besluiten te helpen. Begin vandaag."
+
+# --- Hondenkaarten ---
+in_care_of       = "Onder de zorg van {{ .carer }}"
+remotely_adopt   = "Adopteer op afstand"
+remotely_adopt_btn = "Adopteer {{ .name }} op afstand · €{{ .amount }}/mnd"
+photo_coming     = "Foto volgt binnenkort"
+photo_alt        = "Foto van {{ .name }} volgt binnenkort"
+
+# --- Doe mee ---
+jump_to          = "Ga naar"
+in_short         = "Kort samengevat"
+
+# --- Contactformulier ---
+form_intent_label = "Ik heb interesse in"
+intent_remote_adopt   = "Adoptie op afstand"
+intent_physical_adopt = "Een hond echt adopteren (via een partner)"
+intent_foster    = "Opvang"
+intent_partner   = "Partner worden — mijn organisatie / redding"
+intent_volunteer = "Vrijwilligerswerk"
+intent_fundraise = "Geld inzamelen"
+intent_media     = "Media / pers"
+intent_other     = "Iets anders"
+form_name        = "Uw naam"
+form_email       = "E-mail"
+form_country     = "Waar u woont"
+form_country_ph  = "Land / stad"
+form_message     = "Bericht"
+form_message_ph  = "Vertel ons iets over uzelf en hoe we kunnen helpen."
+form_send        = "Bericht versturen"
+form_consent     = "Door te versturen gaat u ermee akkoord dat we per e-mail mogen reageren. We delen uw gegevens nooit."
+contact_direct   = "Rechtstreeks"
+contact_phone    = "Telefoon"
+contact_where    = "Waar we zijn"
+contact_registration = "Registratie"
+contact_dog_label = "Vraag over een specifieke hond?"
+contact_dog_text  = "Vermeld het ID van de hond (bijv. RO-241) in uw bericht — of het nu om adoptie op afstand gaat of om herplaatsing via een partner — en we gaan er meteen mee aan de slag."
+
+# --- Auto-translation notice ---
+autotrans_notice = "Automatisch vertaald uit het Engels – kan fouten bevatten."
+autotrans_original = "Lees het origineel"

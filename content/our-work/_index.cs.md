@@ -1,0 +1,43 @@
+---
+title: "Naše práce"
+eyebrow: "Programy"
+subtitle: "Jsme pojivová tkáň: financujeme, koordinujeme a zesilujeme síť zachránců, pěstounů a útulků. Zde je to, co tato síť s vaší podporou dělá — a role, kterou v ní hrajeme."
+description: "Jak Strays of Romania funguje jako síť: financuje sterilizace, podporuje záchranu a pěstounskou péči napříč partnerskými organizacemi a provozuje adopce na dálku, které udržují psy v péči."
+
+principles_eyebrow: "Jak pracujeme"
+principles_title: "Čtyři principy, na kterých neslevujeme."
+cta_title: "Financujte práci, která krizi ukončí."
+cta_text: "Každý výše uvedený program běží na darech. €25 sterilizuje psa; měsíční dar udrží kliniku na cestách."
+
+programs:
+  - no: "01"
+    name: "Financovat sterilizaci (CNVR)"
+    tag: "Regulace populace"
+    body: "Dary směřujeme do kampaní odchyt-kastrace-očkování-návrat, které vedou naši partneři a mobilní kliniky. Sterilizovaný pes se nemůže rozmnožovat a očkovaný pes nešíří vzteklinu — takže pouliční populace klesá, humánně a natrvalo. Právě sem míří většina vašeho obecného daru."
+    stat: "€25 sterilizuje jednoho psa"
+  - no: "02"
+    name: "Podpořit záchranu a akutní péči"
+    tag: "První pomoc"
+    body: "Když partner nebo nezávislý zachránce vytáhne psa z nebezpečí — sraženého autem, opuštěný vrh, psa v útulku, kterému dochází čas — pomáháme financovat veterinární péči, převzetí a bezpečné místo k zotavení."
+    stat: "Společný fond pro naléhavé případy"
+  - no: "03"
+    name: "Podpořit pěstounskou péči a záchranné stanice"
+    tag: "Zotavení"
+    body: "Toulavý pes ještě není mazlíček. V partnerských útulcích a pěstounských rodinách dostávají psi čas, jídlo a ošetření, které potřebují k uzdravení. Adopce na dálku a dary udržují tyto pečovatele v chodu, zatímco pes čeká."
+    stat: "Poháněno adoptivními rodiči na dálku"
+  - no: "04"
+    name: "Propojit psy s domovy"
+    tag: "Nové začátky"
+    body: "Fyzické hledání domovů zajišťují partnerské organizace v naší síti, každá s vlastním postupem a standardy. My dáváme jejich psům větší platformu a naši adoptivní rodiče na dálku o tyto psy pečují, dokud — a pokud — se nenajde trvalý domov."
+    stat: "40+ partnerů, jedna platforma"
+
+principles:
+  - title: "Vždy humánně"
+    body: "Nikdy žádné vybíjení. My i naši partneři používáme pouze metody, které v každém kroku respektují dobré životní podmínky psa."
+  - title: "Důkazy nad emocemi"
+    body: "Podporujeme přístupy, které skutečně snižují utrpení ve velkém měřítku — počínaje hromadnou sterilizací."
+  - title: "Síť, ne monopol"
+    body: "Zesilujeme místní zachránce a neziskovky, místo abychom je nahrazovali. Toto je jejich boj; my jim pomáháme jej vyhrát."
+  - title: "Upřímní ohledně mezí"
+    body: "Nemůžeme zachránit každého psa. Otevřeně mluvíme o tom, co síť dokáže a co zatím ne."
+---

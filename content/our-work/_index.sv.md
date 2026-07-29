@@ -1,0 +1,43 @@
+---
+title: "Vårt arbete"
+eyebrow: "Program"
+subtitle: "Vi är den sammanbindande väven: vi finansierar, samordnar och förstärker ett nätverk av räddare, jourhem och härbärgen. Här är vad det nätverket gör med ditt stöd — och rollen vi spelar i det."
+description: "Hur Strays of Romania fungerar som ett nätverk: finansierar sterilisering, stöttar räddning och jourhemsvård över partnerorganisationer, och driver fjärradoptioner som håller hundar omhändertagna."
+
+principles_eyebrow: "Hur vi arbetar"
+principles_title: "Fyra principer vi inte kompromissar med."
+cta_title: "Finansiera arbetet som avslutar krisen."
+cta_text: "Varje program ovan drivs av gåvor. €25 steriliserar en hund; en månadsgåva håller en klinik på vägarna."
+
+programs:
+  - no: "01"
+    name: "Finansiera sterilisering (CNVR)"
+    tag: "Populationskontroll"
+    body: "Vi kanaliserar gåvor till fånga-kastrera-vaccinera-återför-kampanjer som drivs av våra partner och mobila kliniker. En steriliserad hund kan inte föröka sig och en vaccinerad hund sprider inte rabies — så gatupopulationen faller, humant och permanent. Det är dit merparten av din allmänna gåva går."
+    stat: "€25 steriliserar en hund"
+  - no: "02"
+    name: "Stötta räddning & akutvård"
+    tag: "Första insats"
+    body: "När en partner eller oberoende räddare drar en hund ur fara — den bilpåkörda, den övergivna kullen, härbärgeshunden vars tid håller på att ta slut — hjälper vi till att finansiera veterinärvården, intaget och den trygga platsen att återhämta sig på."
+    stat: "Gemensam akutfond"
+  - no: "03"
+    name: "Stöd jourhems- & reservatsvård"
+    tag: "Återhämtning"
+    body: "En gatuhund är inte ett husdjur ännu. På partnerhärbärgen och i jourhem får hundar den tid, mat och behandling de behöver för att läka. Fjärradoptioner och gåvor håller dessa vårdare igång medan en hund väntar."
+    stat: "Drivs av fjärradoptanter"
+  - no: "04"
+    name: "Koppla hundar till hem"
+    tag: "Nya början"
+    body: "Fysisk omplacering hanteras av partnerorganisationerna i vårt nätverk, var och en med sin egen process och sina egna krav. Vi ger deras hundar en större plattform, och våra fjärradoptanter håller dessa hundar omhändertagna tills — och om — ett permanent hem hittas."
+    stat: "40+ partner, en plattform"
+
+principles:
+  - title: "Humant, alltid"
+    body: "Ingen avlivning, någonsin. Vi och våra partner använder endast metoder som respekterar hundens välfärd i varje steg."
+  - title: "Fakta framför känslor"
+    body: "Vi stöttar de tillvägagångssätt som faktiskt minskar lidandet i stor skala — med början i massterilisering."
+  - title: "Ett nätverk, inte ett monopol"
+    body: "Vi förstärker lokala räddare och organisationer i stället för att ersätta dem. Detta är deras kamp; vi hjälper dem att vinna den."
+  - title: "Ärliga om begränsningar"
+    body: "Vi kan inte rädda varje hund. Vi är transparenta om vad nätverket kan göra, och vad det inte kan — ännu."
+---

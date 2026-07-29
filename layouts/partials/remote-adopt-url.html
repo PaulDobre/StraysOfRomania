@@ -1,0 +1,18 @@
+{{- /*
+  Returns the remote-adoption subscription URL for one dog.
+  Context: a dog map from data/dogs.yaml.
+  Uses the dog's own subscribe_url if set, else builds one from
+  params.remoteAdoptBaseUrl with the animal id/name/amount as query params.
+*/ -}}
+{{- $d := . -}}
+{{- $amount := site.Params.remoteAdoptDefault | default 15 -}}
+{{- with $d.monthly }}{{ $amount = . }}{{ end -}}
+{{- $url := "" -}}
+{{- if $d.subscribe_url -}}
+  {{- $url = $d.subscribe_url -}}
+{{- else -}}
+  {{- $base := site.Params.remoteAdoptBaseUrl | default "/donate/" -}}
+  {{- $q := querify "animal" $d.id "name" $d.name "amount" $amount "interval" "month" -}}
+  {{- $url = printf "%s?%s" $base $q -}}
+{{- end -}}
+{{- return $url -}}

@@ -1,0 +1,77 @@
+# Zvířata dostupná k ADOPCI NA DÁLKU (opakované předplatné, které financuje
+# péči o psa v rámci naší partnerské sítě). Fyzickou pěstounskou péči/adopci
+# zajišťují partnerské neziskové organizace a jednotlivci, kteří o každého psa pečují.
+#
+# Pole:
+#   photo:         cesta pod /static (např. /img/dogs/luca.jpg). Prázdné = zástupný obrázek.
+#   carer:         partnerská nezisková organizace nebo pěstoun, který o psa aktuálně pečuje.
+#   monthly:       volitelná doporučená měsíční částka (EUR) pro tohoto psa.
+#   subscribe_url: volitelný odkaz na předplatné pro konkrétního psa. Pokud je prázdný,
+#                  tlačítko odkazuje na params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Pes
+    age: "2 roky"
+    size: Střední
+    carer: "Partnerský útulek · Bukurešť"
+    status: Hledá adoptivní rodiče na dálku
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Loni v zimě vytažen z veřejného útulku. Mírný a naučený na venčení — jeho pečovatelé hradí jídlo a veterinární účty a vaše adopce na dálku jim pomáhá vytrvat.
+  - id: RO-198
+    name: Mara
+    sex: Fena
+    age: "8 měsíců"
+    size: Malá
+    carer: "Pěstounská rodina · Kluž"
+    status: Částečně financována
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Nalezena na smetišti spolu se sourozenci. Teď je v bezpečí v pěstounské rodině, plně naočkovaná a rychle roste díky darovanému jídlu.
+  - id: RO-263
+    name: Bruno
+    sex: Pes
+    age: "4 roky"
+    size: Velký
+    carer: "Partnerská záchranná stanice · Ploješť"
+    status: Hledá adoptivní rodiče na dálku
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Klidný, pozorný obr, který strávil dva roky na ulici. Velký pes stojí víc na krmení — adoptivní rodiče na dálku umožňují jeho místo v záchranné stanici.
+  - id: RO-255
+    name: Sofia
+    sex: Fena
+    age: "3 roky"
+    size: Střední
+    carer: "Pěstounská rodina · Bukurešť"
+    status: Částečně financována
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Zachráněna poté, co ji srazilo auto; plně se zotavila díky své pěstounce. Mazlivá a nekonečně vděčná.
+  - id: RO-271
+    name: Toby
+    sex: Pes
+    age: "1 rok"
+    size: Střední
+    carer: "Partnerský útulek · Sibiň"
+    status: Naléhavě hledá adoptivní rodiče
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Narodil se na ulici zachráněné matce. Teprve se učí, že lidé mohou být laskaví — jeho útulek potřebuje pomoc s úhradou péče o něj.
+  - id: RO-233
+    name: Nadia
+    sex: Fena
+    age: "5 let"
+    size: Malá
+    carer: "Pěstounská rodina · Sibiň"
+    status: Hledá adoptivní rodiče na dálku
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Starší dáma s těma nejjemnějšíma očima, v bezpečí v pěstounské péči. Starší psi čekají na podporu nejdéle — pár eur měsíčně jí změní celý svět.

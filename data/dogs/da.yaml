@@ -1,0 +1,77 @@
+# Dyr til rådighed for FJERNADOPTION (et løbende abonnement, der finansierer
+# hundens pleje inden for vores partnernetværk). Fysisk pleje/adoption
+# varetages af de partner-ngo'er og enkeltpersoner, der passer hver hund.
+#
+# Felter:
+#   photo:         sti under /static (f.eks. /img/dogs/luca.jpg). Tom = pladsholder.
+#   carer:         partner-ngo'en eller plejeværten, der aktuelt passer hunden.
+#   monthly:       valgfrit foreslået månedligt beløb (EUR) for denne hund.
+#   subscribe_url: valgfrit abonnementslink pr. hund. Hvis tomt, linker knappen
+#                  til params.remoteAdoptBaseUrl?animal=<id>&name=<name>&amount=<n>.
+dogs:
+  - id: RO-241
+    name: Luca
+    sex: Han
+    age: "2 år"
+    size: Mellem
+    carer: "Partner-shelter · Bukarest"
+    status: Har brug for fjernadoptanter
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Hentet ud af et offentligt shelter sidste vinter. Blid og renlig — hans plejere dækker foder og dyrlægeregninger, og din fjernadoption holder dem kørende.
+  - id: RO-198
+    name: Mara
+    sex: Hun
+    age: "8 måneder"
+    size: Lille
+    carer: "Plejehjem · Cluj"
+    status: Delvist finansieret
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Fundet på en losseplads sammen med sine søskende. Nu i sikkerhed i et plejehjem, fuldt vaccineret og i hastig vækst på doneret foder.
+  - id: RO-263
+    name: Bruno
+    sex: Han
+    age: "4 år"
+    size: Stor
+    carer: "Partnerhelle · Ploiești"
+    status: Har brug for fjernadoptanter
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: En rolig, årvågen kæmpe, der tilbragte to år på gaden. En stor hund koster mere at fodre — fjernadoptanter gør hans plads på hellen mulig.
+  - id: RO-255
+    name: Sofia
+    sex: Hun
+    age: "3 år"
+    size: Mellem
+    carer: "Plejehjem · Bukarest"
+    status: Delvist finansieret
+    monthly: 15
+    photo: ""
+    subscribe_url: ""
+    blurb: Reddet efter at være blevet påkørt af en bil; fuldt kommet sig takket være sin plejevært. Kærlig og uendeligt taknemmelig.
+  - id: RO-271
+    name: Toby
+    sex: Han
+    age: "1 år"
+    size: Mellem
+    carer: "Partner-shelter · Sibiu"
+    status: Har akut brug for adoptanter
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: Født på gaden af en reddet mor. Er stadig ved at lære, at mennesker kan være gode — hans shelter har brug for hjælp til at dække hans pleje.
+  - id: RO-233
+    name: Nadia
+    sex: Hun
+    age: "5 år"
+    size: Lille
+    carer: "Plejehjem · Sibiu"
+    status: Har brug for fjernadoptanter
+    monthly: 10
+    photo: ""
+    subscribe_url: ""
+    blurb: En ældre dame med de blødeste øjne, i sikkerhed i pleje. Ældre hunde venter længst på støtte — nogle få euro om måneden ændrer hele hendes verden.
