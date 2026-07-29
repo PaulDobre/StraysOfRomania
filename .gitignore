@@ -5,6 +5,7 @@
 
 # Node tooling (translation script)
 /node_modules/
+package-lock.json
 
 # OS / editor
 .DS_Store
