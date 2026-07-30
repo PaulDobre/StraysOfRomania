@@ -46,10 +46,12 @@
           <div class="dog__meta"><span>{{ .sex }}</span><span>{{ .age }}</span><span>{{ .size }}</span></div>
           <p class="mono" style="font-size:.72rem;color:var(--muted);letter-spacing:.04em;margin:.5rem 0 0">{{ T "in_care_of" (dict "carer" .carer) }}</p>
           <p class="dog__blurb">{{ .blurb }}</p>
-          <div style="margin-top:.9rem"><span class="pill pill--amber">{{ .status }}</span></div>
-          <a class="btn btn--primary" style="width:100%;justify-content:center;margin-top:1rem" href="{{ $url }}"{{ if hasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>
-            {{ T "remotely_adopt_btn" (dict "name" .name "amount" $amount) }}
-          </a>
+          <div class="dog__foot">
+            <div><span class="pill pill--amber">{{ .status }}</span></div>
+            <a class="btn btn--primary" style="width:100%;justify-content:center;margin-top:.9rem" href="{{ $url }}"{{ if hasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>
+              {{ T "remotely_adopt_btn" (dict "name" .name "amount" $amount) }}
+            </a>
+          </div>
         </div>
       </div>
       {{- end }}
