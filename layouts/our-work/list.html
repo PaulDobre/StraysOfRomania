@@ -23,11 +23,7 @@
             <h3>{{ .name }}</h3>
             <p>{{ .body }}</p>
           </div>
-          <div>
-            <div class="card" style="background:var(--paper-2);text-align:center;padding:1.4rem">
-              <div class="mono small" style="color:var(--pine-2);font-size:1rem;letter-spacing:.02em">{{ .stat }}</div>
-            </div>
-          </div>
+          <div class="dossier__stat">{{ .stat }}</div>
         </div>
       </div>
       {{- end }}

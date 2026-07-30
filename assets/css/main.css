@@ -287,6 +287,10 @@ strong { font-weight: 600; }
 .dossier__row h3 { margin-bottom: .5rem; }
 .dossier__row p { margin-bottom: 0; color: var(--ink-soft); }
 .dossier__row .meta { font-family: var(--mono); font-size: .74rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-top: .8rem; }
+/* right-column annotation — a filed "stamp", content-height, amber corner tab
+   echoing the page-head; replaces the old hollow centred card */
+.dossier__stat { position: relative; align-self: start; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.2rem; font-family: var(--mono); font-size: .88rem; line-height: 1.45; letter-spacing: .01em; color: var(--pine-2); }
+.dossier__stat::before { content: ""; position: absolute; left: -1px; top: -1px; width: 2.2rem; height: 3px; background: var(--amber); border-radius: var(--radius) 0 0 0; }
 @media (max-width: 40rem) { .dossier__row { grid-template-columns: 1fr; gap: .5rem; } }
 
 /* ---------- Dog cards ---------- */
@@ -298,7 +302,10 @@ strong { font-weight: 600; }
 .dog__photo { aspect-ratio: 4/3; background: var(--sand); position: relative; overflow: hidden; }
 .dog__photo img { width: 100%; height: 100%; object-fit: cover; }
 .dog__id { position: absolute; top: .7rem; left: .7rem; font-family: var(--mono); font-size: .68rem; letter-spacing: .06em; background: color-mix(in srgb, var(--pine-ink) 82%, transparent); color: var(--paper-on-pine); padding: .25rem .5rem; border-radius: 2px; }
-.dog__body { padding: 1.1rem 1.2rem 1.3rem; }
+.dog__body { padding: 1.1rem 1.2rem 1.3rem; display: flex; flex-direction: column; flex: 1 1 auto; }
+/* action footer pinned to the card's base, so the CTA aligns across a row
+   whatever the blurb length (grid stretches cards in a row to equal height) */
+.dog__foot { margin-top: auto; }
 .dog__name { font-family: var(--serif); font-size: 1.4rem; line-height: 1; margin-bottom: .5rem; }
 .dog__meta { font-family: var(--mono); font-size: .74rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; display: flex; gap: .5rem; flex-wrap: wrap; }
 .dog__meta span::after { content: "·"; margin-left: .5rem; color: var(--line); }
@@ -355,13 +362,33 @@ strong { font-weight: 600; }
 .prose a { color: var(--pine-2); }
 .footnote-ref, .source-cite { font-family: var(--mono); font-size: .82rem; color: var(--muted); }
 
-/* ---------- Page header ---------- */
-.page-head { padding-block: clamp(3rem, 6vw, 5rem) clamp(2rem, 4vw, 3rem); border-bottom: 1px solid var(--line); }
+/* ---------- Page header (case-file cover) ---------- */
+/* interior-page opener: echoes the hero's dossier language — warm depth, a
+   faint pine corner glow, an amber classification tab, and the same rise-in */
+.page-head {
+  position: relative; overflow: hidden;
+  padding-block: clamp(3.2rem, 6vw, 5.2rem) clamp(2.2rem, 4vw, 3.2rem);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(120% 150% at 100% -45%, color-mix(in srgb, var(--pine) 9%, transparent), transparent 56%),
+    linear-gradient(var(--paper-2), var(--paper));
+}
+/* dossier tab — amber classification stripe pinned to the corner; the one
+   signature mark, kin to the hero dateline dot and the footer colophon rule */
+.page-head::before { content: ""; position: absolute; left: 0; top: 0; width: clamp(3rem, 7vw, 4.5rem); height: 4px; background: var(--amber); }
 .page-head h1 { max-width: 20ch; }
-.page-head .lead { max-width: 54ch; margin-top: .5rem; }
+.page-head .lead { max-width: 54ch; margin-top: .6rem; }
 .breadcrumb { font-family: var(--mono); font-size: .74rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; }
 .breadcrumb a { text-decoration: none; }
 .breadcrumb a:hover { color: var(--ink); }
+
+/* staggered entrance, mirroring the hero — reduced-motion is neutralised globally */
+.page-head .breadcrumb, .page-head .eyebrow, .page-head h1, .page-head .lead {
+  animation: hero-rise .6s cubic-bezier(.2,.7,.2,1) both;
+}
+.page-head .eyebrow { animation-delay: .05s; }
+.page-head h1 { animation-delay: .1s; }
+.page-head .lead { animation-delay: .16s; }
 
 /* ---------- CTA band ---------- */
 .cta-band { position: relative; color: var(--ink); border-radius: var(--radius); padding: clamp(2.2rem, 5vw, 3.6rem); display: grid; grid-template-columns: 1.4fr .6fr; gap: 2rem; align-items: center;
